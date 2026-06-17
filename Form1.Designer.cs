@@ -196,8 +196,9 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(764, 938);
+            ClientSize = new Size(798, 867);
             Controls.Add(uiPanel1);
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Form1";
             Text = "LOGIN";
             Load += Form1_Load;
