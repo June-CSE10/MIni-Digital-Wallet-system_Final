@@ -79,6 +79,7 @@
             txtPassword.Padding = new Padding(5);
             txtPassword.ShowText = false;
             txtPassword.Size = new Size(477, 44);
+            txtPassword.Symbol = 61475;
             txtPassword.TabIndex = 3;
             txtPassword.TextAlignment = ContentAlignment.MiddleLeft;
             txtPassword.Watermark = "Enter your password";
@@ -93,6 +94,7 @@
             txtEmail.Padding = new Padding(5);
             txtEmail.ShowText = false;
             txtEmail.Size = new Size(477, 44);
+            txtEmail.Symbol = 61443;
             txtEmail.TabIndex = 14;
             txtEmail.TextAlignment = ContentAlignment.MiddleLeft;
             txtEmail.Watermark = "Enter your email";
