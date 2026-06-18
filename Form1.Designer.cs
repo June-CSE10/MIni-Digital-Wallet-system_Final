@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             uiPanel1 = new Sunny.UI.UIPanel();
+            txtPassword = new Sunny.UI.UITextBox();
+            txtEmail = new Sunny.UI.UITextBox();
             lblDHAA = new Label();
             linkRegister = new Sunny.UI.UILinkLabel();
             chkRemember = new Sunny.UI.UICheckBox();
@@ -39,8 +41,6 @@
             lblSubTitle = new Sunny.UI.UILabel();
             pictureBox1 = new PictureBox();
             lblTitle = new Sunny.UI.UILabel();
-            txtEmail = new Sunny.UI.UITextBox();
-            txtPassword = new Sunny.UI.UITextBox();
             uiPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -60,49 +60,52 @@
             uiPanel1.Controls.Add(pictureBox1);
             uiPanel1.Controls.Add(lblTitle);
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-<<<<<<< HEAD
-            uiPanel1.Location = new Point(98, 14);
+            uiPanel1.Location = new Point(109, 37);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(574, 863);
-=======
-            uiPanel1.Location = new Point(185, 61);
-            uiPanel1.Margin = new Padding(7, 8, 7, 8);
-            uiPanel1.MinimumSize = new Size(2, 2);
-            uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(869, 1378);
->>>>>>> d29dac016a680f501d40e409e98b88660f6a61ef
+            uiPanel1.Size = new Size(564, 840);
             uiPanel1.TabIndex = 0;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // txtPassword
+            // 
+            txtPassword.Font = new Font("Microsoft Sans Serif", 12F);
+            txtPassword.Location = new Point(42, 489);
+            txtPassword.Margin = new Padding(4, 5, 4, 5);
+            txtPassword.MinimumSize = new Size(1, 16);
+            txtPassword.Name = "txtPassword";
+            txtPassword.Padding = new Padding(5);
+            txtPassword.ShowText = false;
+            txtPassword.Size = new Size(477, 44);
+            txtPassword.TabIndex = 3;
+            txtPassword.TextAlignment = ContentAlignment.MiddleLeft;
+            txtPassword.Watermark = "Enter your password";
+            // 
+            // txtEmail
+            // 
+            txtEmail.Font = new Font("Microsoft Sans Serif", 12F);
+            txtEmail.Location = new Point(42, 371);
+            txtEmail.Margin = new Padding(4, 5, 4, 5);
+            txtEmail.MinimumSize = new Size(1, 16);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Padding = new Padding(5);
+            txtEmail.ShowText = false;
+            txtEmail.Size = new Size(477, 44);
+            txtEmail.TabIndex = 14;
+            txtEmail.TextAlignment = ContentAlignment.MiddleLeft;
+            txtEmail.Watermark = "Enter your email";
             // 
             // lblDHAA
             // 
             lblDHAA.AutoSize = true;
             lblDHAA.Location = new Point(93, 719);
             lblDHAA.Name = "lblDHAA";
-            lblDHAA.Size = new Size(440, 46);
+            lblDHAA.Size = new Size(257, 29);
             lblDHAA.TabIndex = 13;
             lblDHAA.Text = "Don't have an account?";
             // 
-<<<<<<< HEAD
-=======
-            // txtPassword
-            // 
-            txtPassword.Location = new Point(25, 498);
-            txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(454, 53);
-            txtPassword.TabIndex = 12;
-            // 
-            // txtEmail
-            // 
-            txtEmail.Location = new Point(25, 378);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(454, 53);
-            txtEmail.TabIndex = 11;
-            // 
->>>>>>> d29dac016a680f501d40e409e98b88660f6a61ef
             // linkRegister
             // 
             linkRegister.ActiveLinkColor = Color.FromArgb(80, 160, 255);
@@ -205,46 +208,13 @@
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Welcome Back!";
             // 
-            // txtEmail
-            // 
-            txtEmail.Font = new Font("Microsoft Sans Serif", 12F);
-            txtEmail.Location = new Point(42, 371);
-            txtEmail.Margin = new Padding(4, 5, 4, 5);
-            txtEmail.MinimumSize = new Size(1, 16);
-            txtEmail.Name = "txtEmail";
-            txtEmail.Padding = new Padding(5);
-            txtEmail.ShowText = false;
-            txtEmail.Size = new Size(477, 44);
-            txtEmail.TabIndex = 14;
-            txtEmail.TextAlignment = ContentAlignment.MiddleLeft;
-            txtEmail.Watermark = "Enter your email";
-            // 
-            // txtPassword
-            // 
-            txtPassword.Font = new Font("Microsoft Sans Serif", 12F);
-            txtPassword.Location = new Point(42, 489);
-            txtPassword.Margin = new Padding(4, 5, 4, 5);
-            txtPassword.MinimumSize = new Size(1, 16);
-            txtPassword.Name = "txtPassword";
-            txtPassword.Padding = new Padding(5);
-            txtPassword.ShowText = false;
-            txtPassword.Size = new Size(477, 44);
-            txtPassword.TabIndex = 3;
-            txtPassword.TextAlignment = ContentAlignment.MiddleLeft;
-            txtPassword.Watermark = "Enter your password";
-            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-<<<<<<< HEAD
-            ClientSize = new Size(798, 959);
-=======
-            ClientSize = new Size(1350, 1422);
->>>>>>> d29dac016a680f501d40e409e98b88660f6a61ef
+            ClientSize = new Size(799, 937);
             Controls.Add(uiPanel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(5, 5, 5, 5);
             Name = "Form1";
             Text = "LOGIN";
             Load += Form1_Load;
