@@ -31,6 +31,7 @@
             components = new System.ComponentModel.Container();
             tabMenu = new Sunny.UI.UITabControlMenu();
             tabDashboard = new TabPage();
+            LblHistory = new Label();
             dgvTransactions = new DataGridView();
             colName = new DataGridViewTextBoxColumn();
             colAmount = new DataGridViewTextBoxColumn();
@@ -52,7 +53,6 @@
             tabTransactions = new TabPage();
             tabProfile = new TabPage();
             imageList1 = new ImageList(components);
-            LblHistory = new Label();
             tabMenu.SuspendLayout();
             tabDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvTransactions).BeginInit();
@@ -101,6 +101,17 @@
             tabDashboard.TabIndex = 0;
             tabDashboard.Text = "Dashboard";
             tabDashboard.Click += tabDashboard_Click;
+            // 
+            // LblHistory
+            // 
+            LblHistory.AutoSize = true;
+            LblHistory.BackColor = Color.DarkTurquoise;
+            LblHistory.ForeColor = SystemColors.HighlightText;
+            LblHistory.Location = new Point(154, 354);
+            LblHistory.Name = "LblHistory";
+            LblHistory.Size = new Size(145, 46);
+            LblHistory.TabIndex = 3;
+            LblHistory.Text = "History";
             // 
             // dgvTransactions
             // 
@@ -202,7 +213,7 @@
             pnlSendMoneyCard.MinimumSize = new Size(2, 2);
             pnlSendMoneyCard.Name = "pnlSendMoneyCard";
             pnlSendMoneyCard.Radius = 10;
-            pnlSendMoneyCard.Size = new Size(740, 599);
+            pnlSendMoneyCard.Size = new Size(784, 587);
             pnlSendMoneyCard.TabIndex = 4;
             pnlSendMoneyCard.Text = null;
             pnlSendMoneyCard.TextAlignment = ContentAlignment.MiddleCenter;
@@ -346,17 +357,6 @@
             imageList1.ColorDepth = ColorDepth.Depth32Bit;
             imageList1.ImageSize = new Size(16, 16);
             imageList1.TransparentColor = Color.Transparent;
-            // 
-            // LblHistory
-            // 
-            LblHistory.AutoSize = true;
-            LblHistory.BackColor = Color.DarkTurquoise;
-            LblHistory.ForeColor = SystemColors.HighlightText;
-            LblHistory.Location = new Point(154, 354);
-            LblHistory.Name = "LblHistory";
-            LblHistory.Size = new Size(145, 46);
-            LblHistory.TabIndex = 3;
-            LblHistory.Text = "History";
             // 
             // Main
             // 
