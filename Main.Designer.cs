@@ -89,20 +89,20 @@
             tabMenu.Font = new Font("Microsoft Sans Serif", 12F);
             tabMenu.ImageList = imageList1;
             tabMenu.Location = new Point(0, 0);
-<<<<<<< HEAD
+//<<<<<<< HEAD
             tabMenu.Margin = new Padding(2);
-=======
+//=======
             tabMenu.Margin = new Padding(2, 2, 2, 2);
->>>>>>> Update
+//>>>>>>> Update
             tabMenu.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             tabMenu.Multiline = true;
             tabMenu.Name = "tabMenu";
             tabMenu.SelectedIndex = 0;
-<<<<<<< HEAD
+//<<<<<<< HEAD
             tabMenu.Size = new Size(975, 658);
-=======
+//=======
             tabMenu.Size = new Size(1055, 658);
->>>>>>> Update
+//>>>>>>> Update
             tabMenu.SizeMode = TabSizeMode.Fixed;
             tabMenu.TabBackColor = Color.FromArgb(96, 43, 217);
             tabMenu.TabIndex = 0;
@@ -117,15 +117,15 @@
             tabDashboard.Controls.Add(LblName);
             tabDashboard.Cursor = Cursors.Hand;
             tabDashboard.Location = new Point(201, 0);
-<<<<<<< HEAD
+//<<<<<<< HEAD
             tabDashboard.Margin = new Padding(2);
             tabDashboard.Name = "tabDashboard";
             tabDashboard.Size = new Size(774, 658);
-=======
+//=======
             tabDashboard.Margin = new Padding(2, 2, 2, 2);
             tabDashboard.Name = "tabDashboard";
             tabDashboard.Size = new Size(854, 658);
->>>>>>> Update
+//>>>>>>> Update
             tabDashboard.TabIndex = 0;
             tabDashboard.Text = "Dashboard";
             tabDashboard.Click += tabDashboard_Click;
@@ -226,16 +226,15 @@
             tabSendMoney.Controls.Add(uiLabel1);
             tabSendMoney.Cursor = Cursors.Hand;
             tabSendMoney.Location = new Point(201, 0);
-<<<<<<< HEAD
+//<<<<<<< HEAD
             tabSendMoney.Margin = new Padding(2);
             tabSendMoney.Name = "tabSendMoney";
             tabSendMoney.Size = new Size(774, 658);
-=======
+//=======
             tabSendMoney.Margin = new Padding(2, 2, 2, 2);
             tabSendMoney.Name = "tabSendMoney";
             tabSendMoney.Size = new Size(854, 658);
->>>>>>> Update
-            tabSendMoney.TabIndex = 1;
+//            tabSendMoney.TabIndex = 1;
             tabSendMoney.Text = "Send Money";
             // 
             // uiLedLabel1
@@ -269,16 +268,23 @@
             pnlSendMoneyCard.Name = "pnlSendMoneyCard";
             pnlSendMoneyCard.Radius = 20;
 //<<<<<<< HEAD
+//<<<<<<< HEAD
             pnlSendMoneyCard.RectColor = Color.FromArgb(230, 230, 230);
-<<<<<<< HEAD
+///<<<<<<< HEAD
             pnlSendMoneyCard.Size = new Size(663, 511);
-=======
+//=======
             pnlSendMoneyCard.Size = new Size(585, 594);
 //=======
             pnlSendMoneyCard.RectColor = Color.Gainsboro;
             pnlSendMoneyCard.Size = new Size(468, 475);
 //>>>>>>> Update
->>>>>>> Update
+//>>>>>>> Update
+//=======
+            pnlSendMoneyCard.RectColor = Color.Gainsboro;
+            pnlSendMoneyCard.Size = new Size(468, 475);
+            pnlSendMoneyCard.RectColor = Color.FromArgb(230, 230, 230);
+            pnlSendMoneyCard.Size = new Size(585, 594);
+//>>>>>>> update
             pnlSendMoneyCard.Style = Sunny.UI.UIStyle.Custom;
             pnlSendMoneyCard.TabIndex = 4;
             pnlSendMoneyCard.Text = null;
@@ -421,15 +427,15 @@
             tabTransactions.BackColor = Color.WhiteSmoke;
             tabTransactions.Cursor = Cursors.Hand;
             tabTransactions.Location = new Point(201, 0);
-<<<<<<< HEAD
+//<<<<<<< HEAD
             tabTransactions.Margin = new Padding(2);
             tabTransactions.Name = "tabTransactions";
             tabTransactions.Size = new Size(774, 658);
-=======
+//=======
             tabTransactions.Margin = new Padding(2, 2, 2, 2);
             tabTransactions.Name = "tabTransactions";
             tabTransactions.Size = new Size(854, 658);
->>>>>>> Update
+//>>>>>>> Update
             tabTransactions.TabIndex = 2;
             tabTransactions.Text = "Transactions";
             // 
@@ -450,17 +456,17 @@
             tabProfile.Controls.Add(lblmyprofile);
             tabProfile.Cursor = Cursors.Hand;
             tabProfile.Location = new Point(201, 0);
-<<<<<<< HEAD
+//<<<<<<< HEAD
             tabProfile.Margin = new Padding(2);
             tabProfile.Name = "tabProfile";
             tabProfile.RightToLeft = RightToLeft.No;
             tabProfile.Size = new Size(774, 658);
-=======
+//=======
             tabProfile.Margin = new Padding(2, 2, 2, 2);
             tabProfile.Name = "tabProfile";
             tabProfile.RightToLeft = RightToLeft.No;
             tabProfile.Size = new Size(854, 658);
->>>>>>> Update
+//>>>>>>> Update
             tabProfile.TabIndex = 3;
             tabProfile.Text = "Profile";
             // 
@@ -623,18 +629,17 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-<<<<<<< HEAD
+//<<<<<<< HEAD
             ClientSize = new Size(975, 658);
             Controls.Add(tabMenu);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(2);
-=======
+//=======
             ClientSize = new Size(1055, 658);
             Controls.Add(tabMenu);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(2, 2, 2, 2);
->>>>>>> Update
-            Name = "Main";
+//            Name = "Main";
             Text = "Mini Digital Wallet System";
             Load += Main_Load;
             tabMenu.ResumeLayout(false);
