@@ -31,6 +31,15 @@
             components = new System.ComponentModel.Container();
             tabMenu = new Sunny.UI.UITabControlMenu();
             tabDashboard = new TabPage();
+            LblHistory = new Label();
+            dgvTransactions = new DataGridView();
+            colName = new DataGridViewTextBoxColumn();
+            colAmount = new DataGridViewTextBoxColumn();
+            colDate = new DataGridViewTextBoxColumn();
+            PanelBalance = new Panel();
+            LblTotal = new Label();
+            LblMoney = new Label();
+            LblName = new Label();
             tabSendMoney = new TabPage();
             pnlSendMoneyCard = new Sunny.UI.UIPanel();
             btnSendMoney = new Sunny.UI.UIButton();
@@ -45,6 +54,9 @@
             tabProfile = new TabPage();
             imageList1 = new ImageList(components);
             tabMenu.SuspendLayout();
+            tabDashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTransactions).BeginInit();
+            PanelBalance.SuspendLayout();
             tabSendMoney.SuspendLayout();
             pnlSendMoneyCard.SuspendLayout();
             SuspendLayout();
@@ -63,11 +75,16 @@
             tabMenu.Font = new Font("Microsoft Sans Serif", 12F);
             tabMenu.ImageList = imageList1;
             tabMenu.Location = new Point(0, 0);
+            tabMenu.Margin = new Padding(5);
             tabMenu.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             tabMenu.Multiline = true;
             tabMenu.Name = "tabMenu";
             tabMenu.SelectedIndex = 0;
-            tabMenu.Size = new Size(1219, 822);
+//<<<<<<< HEAD
+            tabMenu.Size = new Size(798, 464);
+//=======
+            tabMenu.Size = new Size(2072, 1348);
+//>>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
             tabMenu.SizeMode = TabSizeMode.Fixed;
             tabMenu.TabBackColor = Color.FromArgb(30, 27, 75);
             tabMenu.TabIndex = 0;
@@ -76,12 +93,104 @@
             // tabDashboard
             // 
             tabDashboard.BackColor = Color.WhiteSmoke;
+            tabDashboard.Controls.Add(LblHistory);
+            tabDashboard.Controls.Add(dgvTransactions);
+            tabDashboard.Controls.Add(PanelBalance);
+            tabDashboard.Controls.Add(LblName);
             tabDashboard.Cursor = Cursors.Hand;
             tabDashboard.Location = new Point(201, 0);
+            tabDashboard.Margin = new Padding(5);
             tabDashboard.Name = "tabDashboard";
-            tabDashboard.Size = new Size(1018, 822);
+//<<<<<<< HEAD
+            tabDashboard.Size = new Size(597, 464);
+//=======
+            tabDashboard.Size = new Size(1871, 1348);
+//>>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
             tabDashboard.TabIndex = 0;
             tabDashboard.Text = "Dashboard";
+            tabDashboard.Click += tabDashboard_Click;
+            // 
+            // LblHistory
+            // 
+            LblHistory.AutoSize = true;
+            LblHistory.BackColor = Color.DarkTurquoise;
+            LblHistory.ForeColor = SystemColors.HighlightText;
+            LblHistory.Location = new Point(154, 354);
+            LblHistory.Name = "LblHistory";
+            LblHistory.Size = new Size(145, 46);
+            LblHistory.TabIndex = 3;
+            LblHistory.Text = "History";
+            // 
+            // dgvTransactions
+            // 
+            dgvTransactions.BackgroundColor = SystemColors.ButtonFace;
+            dgvTransactions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTransactions.Columns.AddRange(new DataGridViewColumn[] { colName, colAmount, colDate });
+            dgvTransactions.Location = new Point(154, 430);
+            dgvTransactions.Name = "dgvTransactions";
+            dgvTransactions.RowHeadersWidth = 102;
+            dgvTransactions.Size = new Size(934, 375);
+            dgvTransactions.TabIndex = 2;
+            // 
+            // colName
+            // 
+            colName.HeaderText = "Name";
+            colName.MinimumWidth = 12;
+            colName.Name = "colName";
+            colName.Width = 250;
+            // 
+            // colAmount
+            // 
+            colAmount.HeaderText = "Amount";
+            colAmount.MinimumWidth = 12;
+            colAmount.Name = "colAmount";
+            colAmount.Width = 250;
+            // 
+            // colDate
+            // 
+            colDate.HeaderText = "Date";
+            colDate.MinimumWidth = 12;
+            colDate.Name = "colDate";
+            colDate.Width = 250;
+            // 
+            // PanelBalance
+            // 
+            PanelBalance.BackColor = Color.MediumTurquoise;
+            PanelBalance.Controls.Add(LblTotal);
+            PanelBalance.Controls.Add(LblMoney);
+            PanelBalance.ForeColor = SystemColors.ControlLightLight;
+            PanelBalance.Location = new Point(154, 183);
+            PanelBalance.Name = "PanelBalance";
+            PanelBalance.Size = new Size(932, 141);
+            PanelBalance.TabIndex = 1;
+            // 
+            // LblTotal
+            // 
+            LblTotal.AutoSize = true;
+            LblTotal.Location = new Point(38, 35);
+            LblTotal.Name = "LblTotal";
+            LblTotal.Size = new Size(265, 46);
+            LblTotal.TabIndex = 2;
+            LblTotal.Text = "Total Balance";
+            // 
+            // LblMoney
+            // 
+            LblMoney.AutoSize = true;
+            LblMoney.Location = new Point(574, 35);
+            LblMoney.Name = "LblMoney";
+            LblMoney.Size = new Size(196, 46);
+            LblMoney.TabIndex = 0;
+            LblMoney.Text = "$1,250.00";
+            // 
+            // LblName
+            // 
+            LblName.AutoSize = true;
+            LblName.Font = new Font("Segoe UI", 15.9000006F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LblName.Location = new Point(130, 84);
+            LblName.Name = "LblName";
+            LblName.Size = new Size(594, 72);
+            LblName.TabIndex = 0;
+            LblName.Text = "Good Morning, Messi!";
             // 
             // tabSendMoney
             // 
@@ -90,8 +199,13 @@
             tabSendMoney.Controls.Add(uiLabel1);
             tabSendMoney.Cursor = Cursors.Hand;
             tabSendMoney.Location = new Point(201, 0);
+            tabSendMoney.Margin = new Padding(5);
             tabSendMoney.Name = "tabSendMoney";
-            tabSendMoney.Size = new Size(1018, 822);
+//<<<<<<< HEAD
+            tabSendMoney.Size = new Size(597, 464);
+//=======
+            tabSendMoney.Size = new Size(1871, 1348);
+//>>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
             tabSendMoney.TabIndex = 1;
             tabSendMoney.Text = "Send Money";
             // 
@@ -106,12 +220,12 @@
             pnlSendMoneyCard.Controls.Add(txtRecipientId);
             pnlSendMoneyCard.Controls.Add(uiLabel3);
             pnlSendMoneyCard.Font = new Font("Microsoft Sans Serif", 12F);
-            pnlSendMoneyCard.Location = new Point(81, 51);
-            pnlSendMoneyCard.Margin = new Padding(4, 5, 4, 5);
-            pnlSendMoneyCard.MinimumSize = new Size(1, 1);
+            pnlSendMoneyCard.Location = new Point(138, 84);
+            pnlSendMoneyCard.Margin = new Padding(7, 8, 7, 8);
+            pnlSendMoneyCard.MinimumSize = new Size(2, 2);
             pnlSendMoneyCard.Name = "pnlSendMoneyCard";
             pnlSendMoneyCard.Radius = 10;
-            pnlSendMoneyCard.Size = new Size(435, 365);
+            pnlSendMoneyCard.Size = new Size(784, 587);
             pnlSendMoneyCard.TabIndex = 4;
             pnlSendMoneyCard.Text = null;
             pnlSendMoneyCard.TextAlignment = ContentAlignment.MiddleCenter;
@@ -133,7 +247,7 @@
             // txtAddNote
             // 
             txtAddNote.Font = new Font("Microsoft Sans Serif", 12F);
-            txtAddNote.ForeColor = Color.Silver;
+            txtAddNote.ForeColor = Color.Black;
             txtAddNote.Location = new Point(41, 232);
             txtAddNote.Margin = new Padding(4, 5, 4, 5);
             txtAddNote.MaxLength = 200;
@@ -144,15 +258,17 @@
             txtAddNote.ShowText = false;
             txtAddNote.Size = new Size(355, 36);
             txtAddNote.Symbol = 61788;
+            txtAddNote.SymbolColor = Color.FromArgb(30, 27, 75);
             txtAddNote.TabIndex = 3;
             txtAddNote.TextAlignment = ContentAlignment.MiddleCenter;
             txtAddNote.Watermark = "Add a note";
-            txtAddNote.WatermarkColor = Color.Silver;
+            txtAddNote.WatermarkActiveColor = Color.LightGray;
+            txtAddNote.WatermarkColor = Color.Gainsboro;
             // 
             // txtAmount
             // 
             txtAmount.Font = new Font("Microsoft Sans Serif", 12F);
-            txtAmount.ForeColor = Color.Silver;
+            txtAmount.ForeColor = Color.Black;
             txtAmount.Location = new Point(42, 152);
             txtAmount.Margin = new Padding(4, 5, 4, 5);
             txtAmount.MinimumSize = new Size(1, 16);
@@ -162,10 +278,12 @@
             txtAmount.ShowText = false;
             txtAmount.Size = new Size(355, 36);
             txtAmount.Symbol = 61781;
+            txtAmount.SymbolColor = Color.FromArgb(30, 27, 75);
             txtAmount.TabIndex = 3;
             txtAmount.TextAlignment = ContentAlignment.MiddleCenter;
             txtAmount.Watermark = "Enter amount";
-            txtAmount.WatermarkColor = Color.Silver;
+            txtAmount.WatermarkActiveColor = Color.LightGray;
+            txtAmount.WatermarkColor = Color.Gainsboro;
             txtAmount.KeyPress += txtAmount_KeyPress;
             // 
             // uiLabel4
@@ -191,7 +309,7 @@
             // txtRecipientId
             // 
             txtRecipientId.Font = new Font("Microsoft Sans Serif", 12F);
-            txtRecipientId.ForeColor = Color.Silver;
+            txtRecipientId.ForeColor = Color.Black;
             txtRecipientId.Location = new Point(42, 68);
             txtRecipientId.Margin = new Padding(4, 5, 4, 5);
             txtRecipientId.MinimumSize = new Size(1, 16);
@@ -201,10 +319,12 @@
             txtRecipientId.ShowText = false;
             txtRecipientId.Size = new Size(355, 36);
             txtRecipientId.Symbol = 62146;
+            txtRecipientId.SymbolColor = Color.FromArgb(30, 27, 75);
             txtRecipientId.TabIndex = 3;
             txtRecipientId.TextAlignment = ContentAlignment.MiddleCenter;
             txtRecipientId.Watermark = "Enter recipient ID";
-            txtRecipientId.WatermarkColor = Color.Silver;
+            txtRecipientId.WatermarkActiveColor = Color.LightGray;
+            txtRecipientId.WatermarkColor = Color.Gainsboro;
             // 
             // uiLabel3
             // 
@@ -220,9 +340,10 @@
             // 
             uiLabel1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(81, 3);
+            uiLabel1.Location = new Point(138, 5);
+            uiLabel1.Margin = new Padding(5, 0, 5, 0);
             uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(225, 43);
+            uiLabel1.Size = new Size(382, 71);
             uiLabel1.TabIndex = 0;
             uiLabel1.Text = "Send Money";
             // 
@@ -231,8 +352,9 @@
             tabTransactions.BackColor = Color.WhiteSmoke;
             tabTransactions.Cursor = Cursors.Hand;
             tabTransactions.Location = new Point(201, 0);
+            tabTransactions.Margin = new Padding(5);
             tabTransactions.Name = "tabTransactions";
-            tabTransactions.Size = new Size(597, 464);
+            tabTransactions.Size = new Size(1871, 1348);
             tabTransactions.TabIndex = 2;
             tabTransactions.Text = "Transactions";
             // 
@@ -241,9 +363,10 @@
             tabProfile.BackColor = Color.WhiteSmoke;
             tabProfile.Cursor = Cursors.Hand;
             tabProfile.Location = new Point(201, 0);
+            tabProfile.Margin = new Padding(5);
             tabProfile.Name = "tabProfile";
             tabProfile.RightToLeft = RightToLeft.No;
-            tabProfile.Size = new Size(597, 464);
+            tabProfile.Size = new Size(1871, 1348);
             tabProfile.TabIndex = 3;
             tabProfile.Text = "Profile";
             // 
@@ -255,14 +378,24 @@
             // 
             // Main
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1219, 822);
+//<<<<<<< HEAD
+            ClientSize = new Size(798, 464);
+//=======
+            ClientSize = new Size(2072, 1348);
+//>>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
             Controls.Add(tabMenu);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(5);
             Name = "Main";
             Text = "Mini Digital Wallet System";
             tabMenu.ResumeLayout(false);
+            tabDashboard.ResumeLayout(false);
+            tabDashboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTransactions).EndInit();
+            PanelBalance.ResumeLayout(false);
+            PanelBalance.PerformLayout();
             tabSendMoney.ResumeLayout(false);
             pnlSendMoneyCard.ResumeLayout(false);
             ResumeLayout(false);
@@ -285,5 +418,14 @@
         private Sunny.UI.UITextBox txtAddNote;
         private Sunny.UI.UILabel uiLabel4;
         private Sunny.UI.UIButton btnSendMoney;
+        private Label LblName;
+        private Panel PanelBalance;
+        private Label LblTotal;
+        private Label LblMoney;
+        private DataGridView dgvTransactions;
+        private DataGridViewTextBoxColumn colName;
+        private DataGridViewTextBoxColumn colAmount;
+        private DataGridViewTextBoxColumn colDate;
+        private Label LblHistory;
     }
 }
