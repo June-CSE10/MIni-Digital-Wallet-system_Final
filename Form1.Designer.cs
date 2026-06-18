@@ -60,11 +60,11 @@
             uiPanel1.Controls.Add(pictureBox1);
             uiPanel1.Controls.Add(lblTitle);
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(109, 37);
-            uiPanel1.Margin = new Padding(4, 5, 4, 5);
-            uiPanel1.MinimumSize = new Size(1, 1);
+            uiPanel1.Location = new Point(185, 61);
+            uiPanel1.Margin = new Padding(7, 8, 7, 8);
+            uiPanel1.MinimumSize = new Size(2, 2);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(511, 840);
+            uiPanel1.Size = new Size(869, 1378);
             uiPanel1.TabIndex = 0;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -74,7 +74,7 @@
             lblDHAA.AutoSize = true;
             lblDHAA.Location = new Point(59, 719);
             lblDHAA.Name = "lblDHAA";
-            lblDHAA.Size = new Size(257, 29);
+            lblDHAA.Size = new Size(440, 46);
             lblDHAA.TabIndex = 13;
             lblDHAA.Text = "Don't have an account?";
             // 
@@ -82,14 +82,14 @@
             // 
             txtPassword.Location = new Point(25, 498);
             txtPassword.Name = "txtPassword";
-            txtPassword.Size = new Size(454, 35);
+            txtPassword.Size = new Size(454, 53);
             txtPassword.TabIndex = 12;
             // 
             // txtEmail
             // 
             txtEmail.Location = new Point(25, 378);
             txtEmail.Name = "txtEmail";
-            txtEmail.Size = new Size(454, 35);
+            txtEmail.Size = new Size(454, 53);
             txtEmail.TabIndex = 11;
             // 
             // linkRegister
@@ -194,11 +194,12 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(798, 867);
+            ClientSize = new Size(1350, 1422);
             Controls.Add(uiPanel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(5, 5, 5, 5);
             Name = "Form1";
             Text = "LOGIN";
             Load += Form1_Load;
