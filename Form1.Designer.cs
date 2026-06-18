@@ -60,11 +60,11 @@
             uiPanel1.Controls.Add(pictureBox1);
             uiPanel1.Controls.Add(lblTitle);
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(109, 37);
-            uiPanel1.Margin = new Padding(4, 5, 4, 5);
+            uiPanel1.Location = new Point(146, 2);
+            uiPanel1.Margin = new Padding(3, 4, 3, 4);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(564, 840);
+            uiPanel1.Size = new Size(559, 735);
             uiPanel1.TabIndex = 0;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -102,11 +102,12 @@
             // lblDHAA
             // 
             lblDHAA.AutoSize = true;
-            lblDHAA.Location = new Point(93, 719);
+            lblDHAA.Location = new Point(50, 688);
             lblDHAA.Name = "lblDHAA";
-            lblDHAA.Size = new Size(257, 29);
+            lblDHAA.Size = new Size(217, 25);
             lblDHAA.TabIndex = 13;
             lblDHAA.Text = "Don't have an account?";
+            lblDHAA.Click += lblDHAA_Click;
             // 
             // linkRegister
             // 
@@ -114,9 +115,9 @@
             linkRegister.Font = new Font("Microsoft Sans Serif", 12F);
             linkRegister.ForeColor = Color.FromArgb(48, 48, 48);
             linkRegister.LinkBehavior = LinkBehavior.AlwaysUnderline;
-            linkRegister.Location = new Point(345, 719);
+            linkRegister.Location = new Point(410, 688);
             linkRegister.Name = "linkRegister";
-            linkRegister.Size = new Size(109, 37);
+            linkRegister.Size = new Size(109, 25);
             linkRegister.TabIndex = 10;
             linkRegister.TabStop = true;
             linkRegister.Text = "Register";
@@ -152,10 +153,10 @@
             // btnLogin
             // 
             btnLogin.Font = new Font("Microsoft Sans Serif", 12F);
-            btnLogin.Location = new Point(42, 647);
+            btnLogin.Location = new Point(42, 618);
             btnLogin.MinimumSize = new Size(1, 1);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(477, 52);
+            btnLogin.Size = new Size(477, 47);
             btnLogin.TabIndex = 7;
             btnLogin.Text = "Login";
             btnLogin.TipsFont = new Font("Microsoft Sans Serif", 9F);
@@ -212,11 +213,12 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(799, 937);
+            ClientSize = new Size(1003, 806);
             Controls.Add(uiPanel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "LOGIN";
             Load += Form1_Load;

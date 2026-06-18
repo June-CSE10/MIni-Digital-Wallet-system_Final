@@ -32,10 +32,11 @@
             // 
             // Register
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(798, 464);
+            ClientSize = new Size(1183, 614);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Register";
             Text = "REGISTER";
             ResumeLayout(false);
