@@ -67,7 +67,7 @@
             tabMenu.Multiline = true;
             tabMenu.Name = "tabMenu";
             tabMenu.SelectedIndex = 0;
-            tabMenu.Size = new Size(1219, 822);
+            tabMenu.Size = new Size(798, 464);
             tabMenu.SizeMode = TabSizeMode.Fixed;
             tabMenu.TabBackColor = Color.FromArgb(30, 27, 75);
             tabMenu.TabIndex = 0;
@@ -79,7 +79,7 @@
             tabDashboard.Cursor = Cursors.Hand;
             tabDashboard.Location = new Point(201, 0);
             tabDashboard.Name = "tabDashboard";
-            tabDashboard.Size = new Size(1018, 822);
+            tabDashboard.Size = new Size(597, 464);
             tabDashboard.TabIndex = 0;
             tabDashboard.Text = "Dashboard";
             // 
@@ -91,7 +91,7 @@
             tabSendMoney.Cursor = Cursors.Hand;
             tabSendMoney.Location = new Point(201, 0);
             tabSendMoney.Name = "tabSendMoney";
-            tabSendMoney.Size = new Size(1018, 822);
+            tabSendMoney.Size = new Size(597, 464);
             tabSendMoney.TabIndex = 1;
             tabSendMoney.Text = "Send Money";
             // 
@@ -133,7 +133,7 @@
             // txtAddNote
             // 
             txtAddNote.Font = new Font("Microsoft Sans Serif", 12F);
-            txtAddNote.ForeColor = Color.Silver;
+            txtAddNote.ForeColor = Color.Black;
             txtAddNote.Location = new Point(41, 232);
             txtAddNote.Margin = new Padding(4, 5, 4, 5);
             txtAddNote.MaxLength = 200;
@@ -144,15 +144,17 @@
             txtAddNote.ShowText = false;
             txtAddNote.Size = new Size(355, 36);
             txtAddNote.Symbol = 61788;
+            txtAddNote.SymbolColor = Color.FromArgb(30, 27, 75);
             txtAddNote.TabIndex = 3;
             txtAddNote.TextAlignment = ContentAlignment.MiddleCenter;
             txtAddNote.Watermark = "Add a note";
-            txtAddNote.WatermarkColor = Color.Silver;
+            txtAddNote.WatermarkActiveColor = Color.LightGray;
+            txtAddNote.WatermarkColor = Color.Gainsboro;
             // 
             // txtAmount
             // 
             txtAmount.Font = new Font("Microsoft Sans Serif", 12F);
-            txtAmount.ForeColor = Color.Silver;
+            txtAmount.ForeColor = Color.Black;
             txtAmount.Location = new Point(42, 152);
             txtAmount.Margin = new Padding(4, 5, 4, 5);
             txtAmount.MinimumSize = new Size(1, 16);
@@ -162,10 +164,12 @@
             txtAmount.ShowText = false;
             txtAmount.Size = new Size(355, 36);
             txtAmount.Symbol = 61781;
+            txtAmount.SymbolColor = Color.FromArgb(30, 27, 75);
             txtAmount.TabIndex = 3;
             txtAmount.TextAlignment = ContentAlignment.MiddleCenter;
             txtAmount.Watermark = "Enter amount";
-            txtAmount.WatermarkColor = Color.Silver;
+            txtAmount.WatermarkActiveColor = Color.LightGray;
+            txtAmount.WatermarkColor = Color.Gainsboro;
             txtAmount.KeyPress += txtAmount_KeyPress;
             // 
             // uiLabel4
@@ -191,7 +195,7 @@
             // txtRecipientId
             // 
             txtRecipientId.Font = new Font("Microsoft Sans Serif", 12F);
-            txtRecipientId.ForeColor = Color.Silver;
+            txtRecipientId.ForeColor = Color.Black;
             txtRecipientId.Location = new Point(42, 68);
             txtRecipientId.Margin = new Padding(4, 5, 4, 5);
             txtRecipientId.MinimumSize = new Size(1, 16);
@@ -201,10 +205,12 @@
             txtRecipientId.ShowText = false;
             txtRecipientId.Size = new Size(355, 36);
             txtRecipientId.Symbol = 62146;
+            txtRecipientId.SymbolColor = Color.FromArgb(30, 27, 75);
             txtRecipientId.TabIndex = 3;
             txtRecipientId.TextAlignment = ContentAlignment.MiddleCenter;
             txtRecipientId.Watermark = "Enter recipient ID";
-            txtRecipientId.WatermarkColor = Color.Silver;
+            txtRecipientId.WatermarkActiveColor = Color.LightGray;
+            txtRecipientId.WatermarkColor = Color.Gainsboro;
             // 
             // uiLabel3
             // 
@@ -257,7 +263,7 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1219, 822);
+            ClientSize = new Size(798, 464);
             Controls.Add(tabMenu);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Main";
