@@ -80,11 +80,11 @@
             tabMenu.Multiline = true;
             tabMenu.Name = "tabMenu";
             tabMenu.SelectedIndex = 0;
-<<<<<<< HEAD
+//<<<<<<< HEAD
             tabMenu.Size = new Size(798, 464);
-=======
+//=======
             tabMenu.Size = new Size(2072, 1348);
->>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
+//>>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
             tabMenu.SizeMode = TabSizeMode.Fixed;
             tabMenu.TabBackColor = Color.FromArgb(30, 27, 75);
             tabMenu.TabIndex = 0;
@@ -101,11 +101,11 @@
             tabDashboard.Location = new Point(201, 0);
             tabDashboard.Margin = new Padding(5);
             tabDashboard.Name = "tabDashboard";
-<<<<<<< HEAD
+//<<<<<<< HEAD
             tabDashboard.Size = new Size(597, 464);
-=======
+//=======
             tabDashboard.Size = new Size(1871, 1348);
->>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
+//>>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
             tabDashboard.TabIndex = 0;
             tabDashboard.Text = "Dashboard";
             tabDashboard.Click += tabDashboard_Click;
@@ -201,11 +201,11 @@
             tabSendMoney.Location = new Point(201, 0);
             tabSendMoney.Margin = new Padding(5);
             tabSendMoney.Name = "tabSendMoney";
-<<<<<<< HEAD
+//<<<<<<< HEAD
             tabSendMoney.Size = new Size(597, 464);
-=======
+//=======
             tabSendMoney.Size = new Size(1871, 1348);
->>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
+//>>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
             tabSendMoney.TabIndex = 1;
             tabSendMoney.Text = "Send Money";
             // 
@@ -380,11 +380,11 @@
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-<<<<<<< HEAD
+//<<<<<<< HEAD
             ClientSize = new Size(798, 464);
-=======
+//=======
             ClientSize = new Size(2072, 1348);
->>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
+//>>>>>>> a4a3b24980fa926526e338211720163a3bb6ba41
             Controls.Add(tabMenu);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(5);
