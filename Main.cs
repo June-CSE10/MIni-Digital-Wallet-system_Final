@@ -65,11 +65,21 @@ namespace MIni_Digital_Wallet_system_Final
 
         private void tabDashboard_Click(object sender, EventArgs e)
         {
-        
+
             dgvTransactions.Rows.Add("Alice", "-$50", "03,Jun,2026");
             dgvTransactions.Rows.Add("Bob", "+$100", "04,Jun,2026");
             dgvTransactions.Rows.Add("John", "-$25", "05,Jun,2026");
         }
+
+        private void uiLabel3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uiLabel2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
-    }
+}
 

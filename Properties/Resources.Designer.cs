@@ -59,5 +59,26 @@ namespace MIni_Digital_Wallet_system_Final.Properties {
                 resourceCulture = value;
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _022a71256d0768b517c4ccc789f90988 {
+            get {
+                object obj = ResourceManager.GetObject("022a71256d0768b517c4ccc789f90988", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_up_portrait_of_smiling_handsome_young_caucasian_man_face_looking_at_camera_on_isolated_light_gray_studio_background_photo {
+            get {
+                object obj = ResourceManager.GetObject("close-up-portrait-of-smiling-handsome-young-caucasian-man-face-looking-at-camera-" +
+                        "on-isolated-light-gray-studio-background-photo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
