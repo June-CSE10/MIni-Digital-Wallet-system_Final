@@ -14,12 +14,12 @@ namespace MIni_Digital_Wallet_system_Final
 
         private void Form1_Load(object sender, EventArgs e)
         {
-      
+
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            
+
             if (txtEmail.Text == "" &&
                  txtPassword.Text == "")
             {
@@ -50,6 +50,11 @@ namespace MIni_Digital_Wallet_system_Final
 
                 this.Hide();
             }
+
+        }
+
+        private void lblDHAA_Click(object sender, EventArgs e)
+        {
 
         }
     }
