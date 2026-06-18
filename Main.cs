@@ -6,11 +6,19 @@ using System.Data;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
+using Microsoft.Data.SqlClient;
 
 namespace MIni_Digital_Wallet_system_Final
 {
     public partial class Main : Form
     {
+        string MyServer = "JUNE-IT\\sQL_2025_C002";
+        string MyDb = "[Project]";
+        string MyUserID = "sa";
+        string MyPwd = "1206";
+
+        SqlConnection MyConn = new();       //establis connect
+
         public Main()
         {
             InitializeComponent();
@@ -34,33 +42,34 @@ namespace MIni_Digital_Wallet_system_Final
             e.Handled = true;
         }
 
-        private void btnSendMoney_Click(object sender, EventArgs e)
+        private void btnSendMoney_Click_1(object sender, EventArgs e)
         {
-            /*
-            // 1. Required field check
-            string recipId = txtRecipientId.Text.Trim();
-            if (string.IsNullOrEmpty(recipId))
-            { UIMessageTip.ShowWarning("Enter a recipient ID."); return; }
+            //Input
+            string StrMyConn_SqlAuth =
+            $"Server={MyServer}; " +
+            $"Database={MyDb}; " +
+            $"User id={MyUserID}; Password={MyPwd}; " +
+            "Encrypt=True; " +
+            "TrustServerCertificate=True; ";
 
-            // 2. Numeric amount validation
-            if (!decimal.TryParse(txtAmount.Text, out decimal amount) || amount <= 0)
-            { UIMessageTip.ShowError("Enter a valid positive amount."); return; }
+            using (MyConn = new SqlConnection(StrMyConn_SqlAuth))
+            {
+                MyConn.Open();      //Start connect to sqlserver
+                try
+                {
+                    MyConn.Open();
+                    MessageBox.Show("ការតភ្ជាប់ទៅកាន់ Database បានជោគជ័យ!", "ជោគជ័យ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            // 3. Self-send guard
-            if (recipId == _currentUserCode)
-            { UIMessageTip.ShowWarning("You cannot send money to yourself."); return; }
+                    MyConn.Close();
+                }
 
-            // 4. Execute DB transaction (atomic debit + credit)
-            try
-            { DatabaseHelper.SendMoney(_userId, recipId, amount, txtAddNote.Text); }
-            catch (Exception ex)
-            { UIMessageTip.ShowError(ex.Message); return; }
-
-            // 5. Clear fields, refresh dashboard
-            txtRecipientId.Clear(); txtAmount.Clear(); txtAddNote.Clear();
-            LoadDashboard();
-            UIMessageTip.ShowOk($"${amount:F2} sent successfully!");
-            */
+                catch (SqlException ex)
+                {
+                    // បង្ហាញសារព្រមានច្បាស់លាស់ ប្រសិនបើការតភ្ជាប់មានបញ្ហា (ដូចជាខុសឈ្មោះម៉ាស៊ីន ឬ SQL មិនទាន់ Start)
+                    MessageBox.Show("មិនអាចភ្ជាប់ទៅកាន់ Database បានទេ! មូលហេតុ៖\n" + ex.Message,
+                                    "កំហុសតភ្ជាប់ (Error 26/Else)", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
         }
 
         private void tabDashboard_Click(object sender, EventArgs e)
