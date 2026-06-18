@@ -30,6 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             uiPanel1 = new Sunny.UI.UIPanel();
+            pictureBox9 = new PictureBox();
+            pictureBox8 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            pictureBox6 = new PictureBox();
+            pictureBox4 = new PictureBox();
+            pictureBox3 = new PictureBox();
+            pictureBox5 = new PictureBox();
             uiButton7 = new Sunny.UI.UIButton();
             uiButton6 = new Sunny.UI.UIButton();
             uiButton5 = new Sunny.UI.UIButton();
@@ -38,39 +45,32 @@
             uiButton2 = new Sunny.UI.UIButton();
             uiButton1 = new Sunny.UI.UIButton();
             uiPanel2 = new Sunny.UI.UIPanel();
+            uiPanel3 = new Sunny.UI.UIPanel();
+            uiLabel7 = new Sunny.UI.UILabel();
+            uiLabel6 = new Sunny.UI.UILabel();
+            pictureBox10 = new PictureBox();
+            uiLabel5 = new Sunny.UI.UILabel();
+            uiLabel4 = new Sunny.UI.UILabel();
+            uiLabel3 = new Sunny.UI.UILabel();
+            uiComboBox1 = new Sunny.UI.UIComboBox();
+            uiAvatar1 = new Sunny.UI.UIAvatar();
             pictureBox2 = new PictureBox();
             pictureBox1 = new PictureBox();
             uiLabel2 = new Sunny.UI.UILabel();
             uiLabel1 = new Sunny.UI.UILabel();
-            uiAvatar1 = new Sunny.UI.UIAvatar();
-            uiComboBox1 = new Sunny.UI.UIComboBox();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
-            pictureBox8 = new PictureBox();
-            pictureBox9 = new PictureBox();
-            uiLabel3 = new Sunny.UI.UILabel();
-            uiPanel3 = new Sunny.UI.UIPanel();
-            uiLabel4 = new Sunny.UI.UILabel();
-            uiLabel5 = new Sunny.UI.UILabel();
-            pictureBox10 = new PictureBox();
-            uiLabel6 = new Sunny.UI.UILabel();
-            uiLabel7 = new Sunny.UI.UILabel();
             uiPanel1.SuspendLayout();
-            uiPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            uiPanel2.SuspendLayout();
             uiPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiPanel1
@@ -100,6 +100,83 @@
             uiPanel1.TabIndex = 0;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox9
+            // 
+            pictureBox9.BackColor = Color.Transparent;
+            pictureBox9.Image = Properties.Resources.Wallet;
+            pictureBox9.Location = new Point(45, 302);
+            pictureBox9.Name = "pictureBox9";
+            pictureBox9.Size = new Size(22, 22);
+            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox9.TabIndex = 12;
+            pictureBox9.TabStop = false;
+            // 
+            // pictureBox8
+            // 
+            pictureBox8.BackColor = Color.Transparent;
+            pictureBox8.Image = Properties.Resources.Settings;
+            pictureBox8.Location = new Point(45, 450);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(22, 22);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 11;
+            pictureBox8.TabStop = false;
+            // 
+            // pictureBox7
+            // 
+            pictureBox7.BackColor = Color.Transparent;
+            pictureBox7.Image = Properties.Resources.Person;
+            pictureBox7.Location = new Point(45, 401);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(22, 22);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 10;
+            pictureBox7.TabStop = false;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.BackColor = Color.Transparent;
+            pictureBox6.Image = Properties.Resources.People;
+            pictureBox6.Location = new Point(45, 350);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(22, 22);
+            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox6.TabIndex = 9;
+            pictureBox6.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.BackColor = Color.Transparent;
+            pictureBox4.Image = Properties.Resources.Paper_Plane;
+            pictureBox4.Location = new Point(45, 199);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(22, 22);
+            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox4.TabIndex = 6;
+            pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackColor = Color.Transparent;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(45, 149);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(22, 22);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 7;
+            pictureBox3.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.BackColor = Color.Transparent;
+            pictureBox5.Image = Properties.Resources.Sum;
+            pictureBox5.Location = new Point(45, 250);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(22, 22);
+            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox5.TabIndex = 8;
+            pictureBox5.TabStop = false;
             // 
             // uiButton7
             // 
@@ -337,10 +414,126 @@
             uiPanel2.Name = "uiPanel2";
             uiPanel2.RectColor = Color.White;
             uiPanel2.RectDisableColor = Color.White;
-            uiPanel2.Size = new Size(899, 652);
+            uiPanel2.Size = new Size(899, 666);
             uiPanel2.TabIndex = 7;
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // uiPanel3
+            // 
+            uiPanel3.Controls.Add(uiLabel7);
+            uiPanel3.Controls.Add(uiLabel6);
+            uiPanel3.Controls.Add(pictureBox10);
+            uiPanel3.Controls.Add(uiLabel5);
+            uiPanel3.Controls.Add(uiLabel4);
+            uiPanel3.Font = new Font("Microsoft Sans Serif", 12F);
+            uiPanel3.Location = new Point(25, 107);
+            uiPanel3.Margin = new Padding(4, 5, 4, 5);
+            uiPanel3.MinimumSize = new Size(1, 1);
+            uiPanel3.Name = "uiPanel3";
+            uiPanel3.Size = new Size(859, 225);
+            uiPanel3.TabIndex = 7;
+            uiPanel3.Text = null;
+            uiPanel3.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // uiLabel7
+            // 
+            uiLabel7.Font = new Font("Microsoft YaHei", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiLabel7.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel7.Location = new Point(42, 48);
+            uiLabel7.Name = "uiLabel7";
+            uiLabel7.Size = new Size(351, 85);
+            uiLabel7.TabIndex = 8;
+            uiLabel7.Text = "1200.00$";
+            // 
+            // uiLabel6
+            // 
+            uiLabel6.BackColor = Color.Yellow;
+            uiLabel6.Font = new Font("Microsoft Uighur", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiLabel6.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel6.Location = new Point(42, 150);
+            uiLabel6.Name = "uiLabel6";
+            uiLabel6.Size = new Size(105, 29);
+            uiLabel6.TabIndex = 8;
+            uiLabel6.Text = "Demo Balance";
+            uiLabel6.Click += uiLabel6_Click;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.Image = Properties.Resources.pngtree_flat_design_purple_wallet_and_money_vector_png_image_13259615;
+            pictureBox10.Location = new Point(617, 0);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(242, 225);
+            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox10.TabIndex = 8;
+            pictureBox10.TabStop = false;
+            pictureBox10.Click += pictureBox10_Click;
+            // 
+            // uiLabel5
+            // 
+            uiLabel5.Font = new Font("Microsoft Sans Serif", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiLabel5.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel5.Location = new Point(162, 85);
+            uiLabel5.Name = "uiLabel5";
+            uiLabel5.Size = new Size(456, 94);
+            uiLabel5.TabIndex = 1;
+            // 
+            // uiLabel4
+            // 
+            uiLabel4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiLabel4.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel4.Location = new Point(42, 10);
+            uiLabel4.Name = "uiLabel4";
+            uiLabel4.Size = new Size(103, 22);
+            uiLabel4.TabIndex = 0;
+            uiLabel4.Text = "Total Balance";
+            uiLabel4.Click += uiLabel4_Click;
+            // 
+            // uiLabel3
+            // 
+            uiLabel3.BackColor = Color.White;
+            uiLabel3.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiLabel3.ForeColor = Color.Black;
+            uiLabel3.Location = new Point(666, 45);
+            uiLabel3.Name = "uiLabel3";
+            uiLabel3.Size = new Size(100, 20);
+            uiLabel3.TabIndex = 6;
+            uiLabel3.Text = "Standard User";
+            // 
+            // uiComboBox1
+            // 
+            uiComboBox1.DataSource = null;
+            uiComboBox1.FillColor = Color.White;
+            uiComboBox1.FillColor2 = Color.FromArgb(224, 224, 224);
+            uiComboBox1.FillDisableColor = Color.Silver;
+            uiComboBox1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiComboBox1.ItemHoverColor = Color.White;
+            uiComboBox1.ItemRectColor = Color.White;
+            uiComboBox1.ItemSelectBackColor = Color.White;
+            uiComboBox1.ItemSelectForeColor = Color.FromArgb(235, 243, 255);
+            uiComboBox1.Location = new Point(666, 15);
+            uiComboBox1.Margin = new Padding(4, 5, 4, 5);
+            uiComboBox1.MinimumSize = new Size(63, 0);
+            uiComboBox1.Name = "uiComboBox1";
+            uiComboBox1.Padding = new Padding(0, 0, 30, 2);
+            uiComboBox1.RectColor = Color.FromArgb(224, 224, 224);
+            uiComboBox1.Size = new Size(188, 25);
+            uiComboBox1.SymbolSize = 24;
+            uiComboBox1.TabIndex = 5;
+            uiComboBox1.Text = "Dave Jonh";
+            uiComboBox1.TextAlignment = ContentAlignment.MiddleLeft;
+            uiComboBox1.Watermark = "";
+            // 
+            // uiAvatar1
+            // 
+            uiAvatar1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiAvatar1.Image = Properties.Resources.Hello_Kitty;
+            uiAvatar1.Location = new Point(587, 0);
+            uiAvatar1.MinimumSize = new Size(1, 1);
+            uiAvatar1.Name = "uiAvatar1";
+            uiAvatar1.Size = new Size(72, 84);
+            uiAvatar1.TabIndex = 4;
+            uiAvatar1.Text = "uiAvatar1";
             // 
             // pictureBox2
             // 
@@ -389,198 +582,6 @@
             uiLabel1.TabIndex = 0;
             uiLabel1.Text = "Welcome,Dave!";
             // 
-            // uiAvatar1
-            // 
-            uiAvatar1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiAvatar1.Image = Properties.Resources.Hello_Kitty;
-            uiAvatar1.Location = new Point(587, 0);
-            uiAvatar1.MinimumSize = new Size(1, 1);
-            uiAvatar1.Name = "uiAvatar1";
-            uiAvatar1.Size = new Size(72, 84);
-            uiAvatar1.TabIndex = 4;
-            uiAvatar1.Text = "uiAvatar1";
-            // 
-            // uiComboBox1
-            // 
-            uiComboBox1.DataSource = null;
-            uiComboBox1.FillColor = Color.White;
-            uiComboBox1.FillColor2 = Color.FromArgb(224, 224, 224);
-            uiComboBox1.FillDisableColor = Color.Silver;
-            uiComboBox1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiComboBox1.ItemHoverColor = Color.White;
-            uiComboBox1.ItemRectColor = Color.White;
-            uiComboBox1.ItemSelectBackColor = Color.White;
-            uiComboBox1.ItemSelectForeColor = Color.FromArgb(235, 243, 255);
-            uiComboBox1.Location = new Point(666, 15);
-            uiComboBox1.Margin = new Padding(4, 5, 4, 5);
-            uiComboBox1.MinimumSize = new Size(63, 0);
-            uiComboBox1.Name = "uiComboBox1";
-            uiComboBox1.Padding = new Padding(0, 0, 30, 2);
-            uiComboBox1.RectColor = Color.FromArgb(224, 224, 224);
-            uiComboBox1.Size = new Size(188, 25);
-            uiComboBox1.SymbolSize = 24;
-            uiComboBox1.TabIndex = 5;
-            uiComboBox1.Text = "Dave Jonh";
-            uiComboBox1.TextAlignment = ContentAlignment.MiddleLeft;
-            uiComboBox1.Watermark = "";
-            // 
-            // pictureBox3
-            // 
-            pictureBox3.BackColor = Color.Transparent;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(45, 149);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(22, 22);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 7;
-            pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.BackColor = Color.Transparent;
-            pictureBox4.Image = Properties.Resources.Paper_Plane;
-            pictureBox4.Location = new Point(45, 199);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(22, 22);
-            pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox4.TabIndex = 6;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.BackColor = Color.Transparent;
-            pictureBox5.Image = Properties.Resources.Sum;
-            pictureBox5.Location = new Point(45, 250);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(22, 22);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 8;
-            pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            pictureBox6.BackColor = Color.Transparent;
-            pictureBox6.Image = Properties.Resources.People;
-            pictureBox6.Location = new Point(45, 350);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(22, 22);
-            pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox6.TabIndex = 9;
-            pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.BackColor = Color.Transparent;
-            pictureBox7.Image = Properties.Resources.Person;
-            pictureBox7.Location = new Point(45, 401);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(22, 22);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 10;
-            pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            pictureBox8.BackColor = Color.Transparent;
-            pictureBox8.Image = Properties.Resources.Settings;
-            pictureBox8.Location = new Point(45, 450);
-            pictureBox8.Name = "pictureBox8";
-            pictureBox8.Size = new Size(22, 22);
-            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox8.TabIndex = 11;
-            pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            pictureBox9.BackColor = Color.Transparent;
-            pictureBox9.Image = Properties.Resources.Wallet;
-            pictureBox9.Location = new Point(45, 302);
-            pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(22, 22);
-            pictureBox9.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox9.TabIndex = 12;
-            pictureBox9.TabStop = false;
-            // 
-            // uiLabel3
-            // 
-            uiLabel3.BackColor = Color.White;
-            uiLabel3.Font = new Font("Microsoft YaHei", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiLabel3.ForeColor = Color.Black;
-            uiLabel3.Location = new Point(666, 45);
-            uiLabel3.Name = "uiLabel3";
-            uiLabel3.Size = new Size(100, 20);
-            uiLabel3.TabIndex = 6;
-            uiLabel3.Text = "Standard User";
-            // 
-            // uiPanel3
-            // 
-            uiPanel3.Controls.Add(uiLabel7);
-            uiPanel3.Controls.Add(uiLabel6);
-            uiPanel3.Controls.Add(pictureBox10);
-            uiPanel3.Controls.Add(uiLabel5);
-            uiPanel3.Controls.Add(uiLabel4);
-            uiPanel3.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel3.Location = new Point(25, 107);
-            uiPanel3.Margin = new Padding(4, 5, 4, 5);
-            uiPanel3.MinimumSize = new Size(1, 1);
-            uiPanel3.Name = "uiPanel3";
-            uiPanel3.Size = new Size(859, 225);
-            uiPanel3.TabIndex = 7;
-            uiPanel3.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // uiLabel4
-            // 
-            uiLabel4.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiLabel4.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel4.Location = new Point(42, 10);
-            uiLabel4.Name = "uiLabel4";
-            uiLabel4.Size = new Size(103, 22);
-            uiLabel4.TabIndex = 0;
-            uiLabel4.Text = "Total Balance";
-            uiLabel4.Click += uiLabel4_Click;
-            // 
-            // uiLabel5
-            // 
-            uiLabel5.Font = new Font("Microsoft Sans Serif", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiLabel5.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel5.Location = new Point(162, 85);
-            uiLabel5.Name = "uiLabel5";
-            uiLabel5.Size = new Size(456, 94);
-            uiLabel5.TabIndex = 1;
-            // 
-            // pictureBox10
-            // 
-            pictureBox10.Image = Properties.Resources.pngtree_flat_design_purple_wallet_and_money_vector_png_image_13259615;
-            pictureBox10.Location = new Point(617, 0);
-            pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(242, 225);
-            pictureBox10.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox10.TabIndex = 8;
-            pictureBox10.TabStop = false;
-            pictureBox10.Click += pictureBox10_Click;
-            // 
-            // uiLabel6
-            // 
-            uiLabel6.BackColor = Color.Yellow;
-            uiLabel6.Font = new Font("Microsoft Uighur", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiLabel6.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel6.Location = new Point(42, 150);
-            uiLabel6.Name = "uiLabel6";
-            uiLabel6.Size = new Size(105, 29);
-            uiLabel6.TabIndex = 8;
-            uiLabel6.Text = "Demo Balance";
-            uiLabel6.Click += uiLabel6_Click;
-            // 
-            // uiLabel7
-            // 
-            uiLabel7.Font = new Font("Microsoft YaHei", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiLabel7.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel7.Location = new Point(42, 48);
-            uiLabel7.Name = "uiLabel7";
-            uiLabel7.Size = new Size(351, 85);
-            uiLabel7.TabIndex = 8;
-            uiLabel7.Text = "1200.00$";
-            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -591,18 +592,18 @@
             Name = "Dashboard";
             Text = "Dashboard";
             uiPanel1.ResumeLayout(false);
-            uiPanel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            uiPanel2.ResumeLayout(false);
             uiPanel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
