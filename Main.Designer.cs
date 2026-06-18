@@ -53,6 +53,7 @@
             tabTransactions = new TabPage();
             tabProfile = new TabPage();
             imageList1 = new ImageList(components);
+            uiLedLabel1 = new Sunny.UI.UILedLabel();
             tabMenu.SuspendLayout();
             tabDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvTransactions).BeginInit();
@@ -191,6 +192,7 @@
             // tabSendMoney
             // 
             tabSendMoney.BackColor = Color.WhiteSmoke;
+            tabSendMoney.Controls.Add(uiLedLabel1);
             tabSendMoney.Controls.Add(pnlSendMoneyCard);
             tabSendMoney.Controls.Add(uiLabel1);
             tabSendMoney.Cursor = Cursors.Hand;
@@ -346,8 +348,6 @@
             txtRecipientId.Watermark = "Enter recipient ID (e.g. U002)";
             txtRecipientId.WatermarkActiveColor = Color.LightGray;
             txtRecipientId.WatermarkColor = Color.Gainsboro;
-            //txtRecipientId.Leave += txtRecipientId_Leave;
-            //txtRecipientId.Enter += txtRecipientId_Enter;
             // 
             // uiLabel1
             // 
@@ -385,6 +385,16 @@
             imageList1.ColorDepth = ColorDepth.Depth32Bit;
             imageList1.ImageSize = new Size(16, 16);
             imageList1.TransparentColor = Color.Transparent;
+            // 
+            // uiLedLabel1
+            // 
+            uiLedLabel1.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLedLabel1.Location = new Point(751, 236);
+            uiLedLabel1.MinimumSize = new Size(1, 1);
+            uiLedLabel1.Name = "uiLedLabel1";
+            uiLedLabel1.Size = new Size(150, 52);
+            uiLedLabel1.TabIndex = 6;
+            uiLedLabel1.Text = "uiLedLabel1";
             // 
             // Main
             // 
@@ -433,5 +443,6 @@
         private DataGridViewTextBoxColumn colDate;
         private Label LblHistory;
         private Sunny.UI.UISymbolButton uiSymbolButton1;
+        private Sunny.UI.UILedLabel uiLedLabel1;
     }
 }
