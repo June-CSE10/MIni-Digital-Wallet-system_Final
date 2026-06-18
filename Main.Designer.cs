@@ -42,7 +42,7 @@
             LblName = new Label();
             tabSendMoney = new TabPage();
             pnlSendMoneyCard = new Sunny.UI.UIPanel();
-            btnSendMoney = new Sunny.UI.UIButton();
+            uiSymbolButton1 = new Sunny.UI.UISymbolButton();
             txtAddNote = new Sunny.UI.UITextBox();
             uiLabel4 = new Sunny.UI.UILabel();
             uiLabel3 = new Sunny.UI.UILabel();
@@ -81,7 +81,7 @@
             tabMenu.SelectedIndex = 0;
             tabMenu.Size = new Size(1219, 822);
             tabMenu.SizeMode = TabSizeMode.Fixed;
-            tabMenu.TabBackColor = Color.FromArgb(30, 27, 75);
+            tabMenu.TabBackColor = Color.FromArgb(96, 43, 217);
             tabMenu.TabIndex = 0;
             tabMenu.TabUnSelectedForeColor = Color.WhiteSmoke;
             // 
@@ -204,7 +204,7 @@
             // 
             pnlSendMoneyCard.BackColor = Color.Transparent;
             pnlSendMoneyCard.BackgroundImageLayout = ImageLayout.None;
-            pnlSendMoneyCard.Controls.Add(btnSendMoney);
+            pnlSendMoneyCard.Controls.Add(uiSymbolButton1);
             pnlSendMoneyCard.Controls.Add(txtAddNote);
             pnlSendMoneyCard.Controls.Add(uiLabel4);
             pnlSendMoneyCard.Controls.Add(uiLabel3);
@@ -219,31 +219,37 @@
             pnlSendMoneyCard.MinimumSize = new Size(1, 1);
             pnlSendMoneyCard.Name = "pnlSendMoneyCard";
             pnlSendMoneyCard.Radius = 20;
-            pnlSendMoneyCard.RectColor = Color.Gainsboro;
+            pnlSendMoneyCard.RectColor = Color.FromArgb(230, 230, 230);
             pnlSendMoneyCard.Size = new Size(585, 594);
             pnlSendMoneyCard.Style = Sunny.UI.UIStyle.Custom;
             pnlSendMoneyCard.TabIndex = 4;
             pnlSendMoneyCard.Text = null;
             pnlSendMoneyCard.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // btnSendMoney
+            // uiSymbolButton1
             // 
-            btnSendMoney.FillColor = Color.FromArgb(96, 43, 217);
-            btnSendMoney.Font = new Font("Microsoft Sans Serif", 12F);
-            btnSendMoney.Location = new Point(49, 434);
-            btnSendMoney.MinimumSize = new Size(1, 1);
-            btnSendMoney.Name = "btnSendMoney";
-            btnSendMoney.Radius = 6;
-            btnSendMoney.Size = new Size(501, 52);
-            btnSendMoney.TabIndex = 5;
-            btnSendMoney.Text = "Send Money";
-            btnSendMoney.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            btnSendMoney.Click += btnSendMoney_Click;
+            uiSymbolButton1.FillColor = Color.FromArgb(96, 43, 217);
+            uiSymbolButton1.FillHoverColor = Color.FromArgb(120, 60, 255);
+            uiSymbolButton1.FillPressColor = Color.FromArgb(70, 20, 180);
+            uiSymbolButton1.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiSymbolButton1.Location = new Point(49, 434);
+            uiSymbolButton1.MinimumSize = new Size(1, 1);
+            uiSymbolButton1.Name = "uiSymbolButton1";
+            uiSymbolButton1.RectColor = Color.FromArgb(96, 43, 217);
+            uiSymbolButton1.RectHoverColor = Color.FromArgb(120, 60, 255);
+            uiSymbolButton1.RectPressColor = Color.FromArgb(70, 20, 180);
+            uiSymbolButton1.Size = new Size(499, 52);
+            uiSymbolButton1.Style = Sunny.UI.UIStyle.Custom;
+            uiSymbolButton1.Symbol = 61912;
+            uiSymbolButton1.SymbolSize = 34;
+            uiSymbolButton1.TabIndex = 5;
+            uiSymbolButton1.Text = "Send Money";
+            uiSymbolButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
             // txtAddNote
             // 
-            txtAddNote.Font = new Font("Microsoft Sans Serif", 12F);
-            txtAddNote.ForeColor = Color.Black;
+            txtAddNote.Font = new Font("Segoe UI", 10F);
+            txtAddNote.ForeColor = Color.FromArgb(31, 41, 55);
             txtAddNote.Location = new Point(48, 340);
             txtAddNote.Margin = new Padding(4, 5, 4, 5);
             txtAddNote.MaxLength = 200;
@@ -251,11 +257,12 @@
             txtAddNote.Name = "txtAddNote";
             txtAddNote.Padding = new Padding(5);
             txtAddNote.Radius = 6;
-            txtAddNote.RectColor = Color.Silver;
+            txtAddNote.RectColor = Color.Gainsboro;
             txtAddNote.ShowText = false;
             txtAddNote.Size = new Size(500, 50);
+            txtAddNote.Style = Sunny.UI.UIStyle.Custom;
             txtAddNote.Symbol = 61788;
-            txtAddNote.SymbolColor = Color.FromArgb(30, 27, 75);
+            txtAddNote.SymbolColor = Color.Gainsboro;
             txtAddNote.SymbolSize = 34;
             txtAddNote.TabIndex = 3;
             txtAddNote.TextAlignment = ContentAlignment.MiddleCenter;
@@ -282,7 +289,6 @@
             uiLabel3.Size = new Size(150, 34);
             uiLabel3.TabIndex = 2;
             uiLabel3.Text = "Recipient ID";
-            uiLabel3.Click += uiLabel3_Click;
             // 
             // uiLabel2
             // 
@@ -293,23 +299,23 @@
             uiLabel2.Size = new Size(150, 34);
             uiLabel2.TabIndex = 2;
             uiLabel2.Text = "Amount";
-            uiLabel2.Click += uiLabel2_Click;
             // 
             // txtAmount
             // 
-            txtAmount.Font = new Font("Microsoft Sans Serif", 12F);
-            txtAmount.ForeColor = Color.Black;
+            txtAmount.Font = new Font("Segoe UI", 10F);
+            txtAmount.ForeColor = Color.FromArgb(31, 41, 55);
             txtAmount.Location = new Point(49, 226);
             txtAmount.Margin = new Padding(4, 5, 4, 5);
             txtAmount.MinimumSize = new Size(1, 16);
             txtAmount.Name = "txtAmount";
             txtAmount.Padding = new Padding(5);
             txtAmount.Radius = 6;
-            txtAmount.RectColor = Color.Silver;
+            txtAmount.RectColor = Color.Gainsboro;
             txtAmount.ShowText = false;
             txtAmount.Size = new Size(500, 50);
+            txtAmount.Style = Sunny.UI.UIStyle.Custom;
             txtAmount.Symbol = 61781;
-            txtAmount.SymbolColor = Color.FromArgb(30, 27, 75);
+            txtAmount.SymbolColor = Color.Gainsboro;
             txtAmount.SymbolSize = 34;
             txtAmount.TabIndex = 3;
             txtAmount.TextAlignment = ContentAlignment.MiddleCenter;
@@ -320,25 +326,28 @@
             // 
             // txtRecipientId
             // 
-            txtRecipientId.Font = new Font("Microsoft Sans Serif", 12F);
-            txtRecipientId.ForeColor = Color.Black;
+            txtRecipientId.Font = new Font("Segoe UI", 10F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtRecipientId.ForeColor = Color.FromArgb(31, 41, 55);
             txtRecipientId.Location = new Point(49, 109);
             txtRecipientId.Margin = new Padding(4, 5, 4, 5);
             txtRecipientId.MinimumSize = new Size(1, 16);
             txtRecipientId.Name = "txtRecipientId";
             txtRecipientId.Padding = new Padding(5);
             txtRecipientId.Radius = 6;
-            txtRecipientId.RectColor = Color.Silver;
+            txtRecipientId.RectColor = Color.Gainsboro;
             txtRecipientId.ShowText = false;
             txtRecipientId.Size = new Size(500, 50);
+            txtRecipientId.Style = Sunny.UI.UIStyle.Custom;
             txtRecipientId.Symbol = 62146;
-            txtRecipientId.SymbolColor = Color.FromArgb(30, 27, 75);
+            txtRecipientId.SymbolColor = Color.Silver;
             txtRecipientId.SymbolSize = 34;
             txtRecipientId.TabIndex = 3;
             txtRecipientId.TextAlignment = ContentAlignment.MiddleCenter;
-            txtRecipientId.Watermark = "Enter recipient ID";
+            txtRecipientId.Watermark = "Enter recipient ID (e.g. U002)";
             txtRecipientId.WatermarkActiveColor = Color.LightGray;
             txtRecipientId.WatermarkColor = Color.Gainsboro;
+            //txtRecipientId.Leave += txtRecipientId_Leave;
+            //txtRecipientId.Enter += txtRecipientId_Enter;
             // 
             // uiLabel1
             // 
@@ -386,6 +395,7 @@
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Name = "Main";
             Text = "Mini Digital Wallet System";
+            Load += Main_Load;
             tabMenu.ResumeLayout(false);
             tabDashboard.ResumeLayout(false);
             tabDashboard.PerformLayout();
@@ -413,7 +423,6 @@
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UITextBox txtAddNote;
         private Sunny.UI.UILabel uiLabel4;
-        private Sunny.UI.UIButton btnSendMoney;
         private Label LblName;
         private Panel PanelBalance;
         private Label LblTotal;
@@ -423,5 +432,6 @@
         private DataGridViewTextBoxColumn colAmount;
         private DataGridViewTextBoxColumn colDate;
         private Label LblHistory;
+        private Sunny.UI.UISymbolButton uiSymbolButton1;
     }
 }

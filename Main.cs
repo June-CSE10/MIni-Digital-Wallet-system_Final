@@ -71,14 +71,29 @@ namespace MIni_Digital_Wallet_system_Final
             dgvTransactions.Rows.Add("John", "-$25", "05,Jun,2026");
         }
 
-        private void uiLabel3_Click(object sender, EventArgs e)
+        //
+        private void TextBox_Enter(object sender, EventArgs e)
         {
-
+            ((Sunny.UI.UITextBox)sender).RectColor =
+                Color.FromArgb(96, 43, 217);
         }
 
-        private void uiLabel2_Click(object sender, EventArgs e)
+        private void TextBox_Leave(object sender, EventArgs e)
         {
+            ((Sunny.UI.UITextBox)sender).RectColor =
+                Color.LightGray;
+        }
 
+        private void Main_Load(object sender, EventArgs e)
+        {
+            txtRecipientId.Enter += TextBox_Enter;
+            txtRecipientId.Leave += TextBox_Leave;
+
+            txtAmount.Enter += TextBox_Enter;
+            txtAmount.Leave += TextBox_Leave;
+
+            txtAddNote.Enter += TextBox_Enter;
+            txtAddNote.Leave += TextBox_Leave;
         }
     }
 }
