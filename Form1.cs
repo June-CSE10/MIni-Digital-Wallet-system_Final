@@ -43,10 +43,12 @@ namespace MIni_Digital_Wallet_system_Final
 
         private void linkRegister_Click(object sender, EventArgs e)
         {
-            { 
+            {
 
-                MessageBox.Show("Register Clicked"); 
+                Register frm = new Register();
+                frm.Show();
 
+                this.Hide();
             }
 
         }
