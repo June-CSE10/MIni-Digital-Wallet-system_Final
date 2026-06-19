@@ -34,6 +34,9 @@
             Dashboard = new TabPage();
             SendMoney = new TabPage();
             PnlCardSendMoney = new Sunny.UI.UIPanel();
+            BtnSendMoney = new Sunny.UI.UISymbolButton();
+            PnlViewContacts = new Sunny.UI.UIPanel();
+            BtnViewContacts = new Sunny.UI.UIButton();
             PnlContacts = new Sunny.UI.UIPanel();
             AvatarContact5 = new Sunny.UI.UIAvatar();
             LblContactEmail5 = new Sunny.UI.UILabel();
@@ -58,11 +61,10 @@
             LblLabel = new Sunny.UI.UILabel();
             Btn100 = new Sunny.UI.UIButton();
             Btn50 = new Sunny.UI.UIButton();
-            uiButton1 = new Sunny.UI.UIButton();
             Btn20 = new Sunny.UI.UIButton();
+            Btn30 = new Sunny.UI.UIButton();
             Btn10 = new Sunny.UI.UIButton();
             TxtNote = new Sunny.UI.UITextBox();
-            BtnSendMoney = new Sunny.UI.UIButton();
             TxtAmount = new Sunny.UI.UITextBox();
             TxtRecipient = new Sunny.UI.UITextBox();
             AddMoney = new TabPage();
@@ -72,14 +74,12 @@
             Profile = new TabPage();
             Setting = new TabPage();
             imageList1 = new ImageList(components);
-            PnlViewContacts = new Sunny.UI.UIPanel();
-            BtnViewContacts = new Sunny.UI.UIButton();
             uiTabControlMenu1.SuspendLayout();
             SendMoney.SuspendLayout();
             PnlCardSendMoney.SuspendLayout();
+            PnlViewContacts.SuspendLayout();
             PnlContacts.SuspendLayout();
             Contacts.SuspendLayout();
-            PnlViewContacts.SuspendLayout();
             SuspendLayout();
             // 
             // uiTabControlMenu1
@@ -133,6 +133,7 @@
             // 
             // PnlCardSendMoney
             // 
+            PnlCardSendMoney.Controls.Add(BtnSendMoney);
             PnlCardSendMoney.Controls.Add(PnlViewContacts);
             PnlCardSendMoney.Controls.Add(PnlContacts);
             PnlCardSendMoney.Controls.Add(LblNote);
@@ -142,11 +143,10 @@
             PnlCardSendMoney.Controls.Add(LblLabel);
             PnlCardSendMoney.Controls.Add(Btn100);
             PnlCardSendMoney.Controls.Add(Btn50);
-            PnlCardSendMoney.Controls.Add(uiButton1);
             PnlCardSendMoney.Controls.Add(Btn20);
+            PnlCardSendMoney.Controls.Add(Btn30);
             PnlCardSendMoney.Controls.Add(Btn10);
             PnlCardSendMoney.Controls.Add(TxtNote);
-            PnlCardSendMoney.Controls.Add(BtnSendMoney);
             PnlCardSendMoney.Controls.Add(TxtAmount);
             PnlCardSendMoney.Controls.Add(TxtRecipient);
             PnlCardSendMoney.Dock = DockStyle.Fill;
@@ -162,6 +162,60 @@
             PnlCardSendMoney.TabIndex = 1;
             PnlCardSendMoney.Text = null;
             PnlCardSendMoney.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // BtnSendMoney
+            // 
+            BtnSendMoney.FillColor = Color.FromArgb(96, 43, 217);
+            BtnSendMoney.FillHoverColor = Color.FromArgb(120, 60, 255);
+            BtnSendMoney.FillPressColor = Color.FromArgb(70, 20, 180);
+            BtnSendMoney.Font = new Font("Segoe UI Black", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            BtnSendMoney.Location = new Point(40, 661);
+            BtnSendMoney.MinimumSize = new Size(1, 1);
+            BtnSendMoney.Name = "BtnSendMoney";
+            BtnSendMoney.Radius = 8;
+            BtnSendMoney.RectColor = Color.FromArgb(96, 43, 217);
+            BtnSendMoney.RectHoverColor = Color.FromArgb(120, 60, 255);
+            BtnSendMoney.RectPressColor = Color.FromArgb(70, 20, 180);
+            BtnSendMoney.Size = new Size(520, 60);
+            BtnSendMoney.Style = Sunny.UI.UIStyle.Custom;
+            BtnSendMoney.Symbol = 61912;
+            BtnSendMoney.SymbolSize = 34;
+            BtnSendMoney.TabIndex = 6;
+            BtnSendMoney.Text = "Send Money";
+            BtnSendMoney.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            BtnSendMoney.Click += BtnSendMoney_Click_1;
+            // 
+            // PnlViewContacts
+            // 
+            PnlViewContacts.Controls.Add(BtnViewContacts);
+            PnlViewContacts.FillColor = Color.FromArgb(244, 243, 253);
+            PnlViewContacts.Font = new Font("Microsoft Sans Serif", 12F);
+            PnlViewContacts.Location = new Point(600, 633);
+            PnlViewContacts.Margin = new Padding(4, 5, 4, 5);
+            PnlViewContacts.MinimumSize = new Size(1, 1);
+            PnlViewContacts.Name = "PnlViewContacts";
+            PnlViewContacts.Radius = 8;
+            PnlViewContacts.RectColor = Color.LightGray;
+            PnlViewContacts.Size = new Size(235, 89);
+            PnlViewContacts.TabIndex = 5;
+            PnlViewContacts.Text = null;
+            PnlViewContacts.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // BtnViewContacts
+            // 
+            BtnViewContacts.FillColor = Color.White;
+            BtnViewContacts.FillColor2 = Color.FromArgb(243, 249, 255);
+            BtnViewContacts.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            BtnViewContacts.ForeColor = Color.FromArgb(70, 20, 180);
+            BtnViewContacts.Location = new Point(14, 15);
+            BtnViewContacts.MinimumSize = new Size(1, 1);
+            BtnViewContacts.Name = "BtnViewContacts";
+            BtnViewContacts.Radius = 8;
+            BtnViewContacts.RectColor = Color.LightGray;
+            BtnViewContacts.Size = new Size(208, 58);
+            BtnViewContacts.TabIndex = 0;
+            BtnViewContacts.Text = "View All Contacts";
+            BtnViewContacts.TipsFont = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             // 
             // PnlContacts
             // 
@@ -181,12 +235,14 @@
             PnlContacts.Controls.Add(LblContactEmail1);
             PnlContacts.Controls.Add(LblContactName1);
             PnlContacts.Controls.Add(LblRecentContacts);
+            PnlContacts.FillColor = Color.FromArgb(244, 243, 253);
             PnlContacts.Font = new Font("Microsoft Sans Serif", 12F);
             PnlContacts.Location = new Point(600, 172);
             PnlContacts.Margin = new Padding(4, 5, 4, 5);
             PnlContacts.MinimumSize = new Size(1, 1);
             PnlContacts.Name = "PnlContacts";
             PnlContacts.Radius = 8;
+            PnlContacts.RectColor = Color.LightGray;
             PnlContacts.Size = new Size(235, 451);
             PnlContacts.TabIndex = 4;
             PnlContacts.Text = null;
@@ -205,11 +261,11 @@
             // 
             // LblContactEmail5
             // 
-            LblContactEmail5.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblContactEmail5.Font = new Font("Segoe UI", 8F);
             LblContactEmail5.ForeColor = Color.FromArgb(48, 48, 48);
-            LblContactEmail5.Location = new Point(95, 413);
+            LblContactEmail5.Location = new Point(92, 413);
             LblContactEmail5.Name = "LblContactEmail5";
-            LblContactEmail5.Size = new Size(137, 34);
+            LblContactEmail5.Size = new Size(140, 34);
             LblContactEmail5.TabIndex = 0;
             LblContactEmail5.Text = "ContactEmail";
             // 
@@ -226,11 +282,11 @@
             // 
             // LblContactEmail4
             // 
-            LblContactEmail4.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblContactEmail4.Font = new Font("Segoe UI", 8F);
             LblContactEmail4.ForeColor = Color.FromArgb(48, 48, 48);
-            LblContactEmail4.Location = new Point(95, 336);
+            LblContactEmail4.Location = new Point(92, 336);
             LblContactEmail4.Name = "LblContactEmail4";
-            LblContactEmail4.Size = new Size(137, 34);
+            LblContactEmail4.Size = new Size(140, 34);
             LblContactEmail4.TabIndex = 0;
             LblContactEmail4.Text = "ContactEmail";
             // 
@@ -247,24 +303,24 @@
             // 
             // LblContactEmail3
             // 
-            LblContactEmail3.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblContactEmail3.Font = new Font("Segoe UI", 8F);
             LblContactEmail3.ForeColor = Color.FromArgb(48, 48, 48);
-            LblContactEmail3.Location = new Point(95, 259);
+            LblContactEmail3.Location = new Point(92, 259);
             LblContactEmail3.Name = "LblContactEmail3";
-            LblContactEmail3.Size = new Size(137, 34);
+            LblContactEmail3.Size = new Size(140, 34);
             LblContactEmail3.TabIndex = 0;
             LblContactEmail3.Text = "ContactEmail";
             // 
             // LblContactName5
             // 
-            LblContactName5.Font = new Font("Microsoft Sans Serif", 10F);
-            LblContactName5.ForeColor = Color.FromArgb(48, 48, 48);
+            LblContactName5.Font = new Font("Segoe UI", 10F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LblContactName5.ForeColor = Color.FromArgb(70, 20, 180);
             LblContactName5.Location = new Point(88, 379);
             LblContactName5.Name = "LblContactName5";
             LblContactName5.Size = new Size(135, 34);
             LblContactName5.TabIndex = 0;
             LblContactName5.Text = "ContactName";
-            LblContactName5.Click += LblContactName_Click;
+            //LblContactName5.Click += LblContactName_Click;
             // 
             // AvatarContact2
             // 
@@ -279,35 +335,35 @@
             // 
             // LblContactName4
             // 
-            LblContactName4.Font = new Font("Microsoft Sans Serif", 10F);
-            LblContactName4.ForeColor = Color.FromArgb(48, 48, 48);
+            LblContactName4.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            LblContactName4.ForeColor = Color.FromArgb(70, 20, 180);
             LblContactName4.Location = new Point(88, 302);
             LblContactName4.Name = "LblContactName4";
             LblContactName4.Size = new Size(135, 34);
             LblContactName4.TabIndex = 0;
             LblContactName4.Text = "ContactName";
-            LblContactName4.Click += LblContactName_Click;
+            //LblContactName4.Click += LblContactName_Click;
             // 
             // LblContactEmail2
             // 
-            LblContactEmail2.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblContactEmail2.Font = new Font("Segoe UI", 8F);
             LblContactEmail2.ForeColor = Color.FromArgb(48, 48, 48);
-            LblContactEmail2.Location = new Point(95, 182);
+            LblContactEmail2.Location = new Point(92, 182);
             LblContactEmail2.Name = "LblContactEmail2";
-            LblContactEmail2.Size = new Size(137, 34);
+            LblContactEmail2.Size = new Size(140, 34);
             LblContactEmail2.TabIndex = 0;
             LblContactEmail2.Text = "ContactEmail";
             // 
             // LblContactName3
             // 
-            LblContactName3.Font = new Font("Microsoft Sans Serif", 10F);
-            LblContactName3.ForeColor = Color.FromArgb(48, 48, 48);
+            LblContactName3.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            LblContactName3.ForeColor = Color.FromArgb(70, 20, 180);
             LblContactName3.Location = new Point(88, 225);
             LblContactName3.Name = "LblContactName3";
             LblContactName3.Size = new Size(135, 34);
             LblContactName3.TabIndex = 0;
             LblContactName3.Text = "ContactName";
-            LblContactName3.Click += LblContactName_Click;
+            //LblContactName3.Click += LblContactName_Click;
             // 
             // AvatarContact1
             // 
@@ -322,60 +378,62 @@
             // 
             // LblContactName2
             // 
-            LblContactName2.Font = new Font("Microsoft Sans Serif", 10F);
-            LblContactName2.ForeColor = Color.FromArgb(48, 48, 48);
+            LblContactName2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            LblContactName2.ForeColor = Color.FromArgb(70, 20, 180);
             LblContactName2.Location = new Point(88, 148);
             LblContactName2.Name = "LblContactName2";
             LblContactName2.Size = new Size(135, 34);
             LblContactName2.TabIndex = 0;
             LblContactName2.Text = "ContactName";
-            LblContactName2.Click += LblContactName_Click;
+            //LblContactName2.Click += LblContactName_Click;
             // 
             // LblContactEmail1
             // 
-            LblContactEmail1.Font = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblContactEmail1.Font = new Font("Segoe UI", 8F);
             LblContactEmail1.ForeColor = Color.FromArgb(48, 48, 48);
-            LblContactEmail1.Location = new Point(95, 105);
+            LblContactEmail1.Location = new Point(92, 105);
             LblContactEmail1.Name = "LblContactEmail1";
-            LblContactEmail1.Size = new Size(137, 34);
+            LblContactEmail1.Size = new Size(140, 34);
             LblContactEmail1.TabIndex = 0;
             LblContactEmail1.Text = "ContactEmail";
             // 
             // LblContactName1
             // 
-            LblContactName1.Font = new Font("Microsoft Sans Serif", 10F);
-            LblContactName1.ForeColor = Color.FromArgb(48, 48, 48);
+            LblContactName1.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            LblContactName1.ForeColor = Color.FromArgb(70, 20, 180);
             LblContactName1.Location = new Point(88, 71);
             LblContactName1.Name = "LblContactName1";
             LblContactName1.Size = new Size(135, 34);
             LblContactName1.TabIndex = 0;
             LblContactName1.Text = "ContactName";
-            LblContactName1.Click += LblContactName_Click;
+            //LblContactName1.Click += LblContactName_Click;
             // 
             // LblRecentContacts
             // 
-            LblRecentContacts.Font = new Font("Microsoft Sans Serif", 12F);
-            LblRecentContacts.ForeColor = Color.FromArgb(48, 48, 48);
-            LblRecentContacts.Location = new Point(15, 24);
+            LblRecentContacts.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            LblRecentContacts.ForeColor = Color.FromArgb(70, 20, 180);
+            LblRecentContacts.Location = new Point(15, 19);
             LblRecentContacts.Name = "LblRecentContacts";
-            LblRecentContacts.Size = new Size(150, 34);
+            LblRecentContacts.Size = new Size(207, 34);
             LblRecentContacts.TabIndex = 0;
-            LblRecentContacts.Text = "RecentContacts";
+            LblRecentContacts.Text = "Recent Contacts";
             // 
             // LblNote
             // 
-            LblNote.Font = new Font("Microsoft Sans Serif", 12F);
-            LblNote.ForeColor = Color.FromArgb(48, 48, 48);
+            LblNote.BackColor = Color.White;
+            LblNote.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            LblNote.ForeColor = Color.FromArgb(70, 20, 180);
             LblNote.Location = new Point(40, 464);
             LblNote.Name = "LblNote";
-            LblNote.Size = new Size(65, 34);
+            LblNote.Size = new Size(180, 34);
             LblNote.TabIndex = 3;
-            LblNote.Text = "Note";
+            LblNote.Text = "Note (Optional)";
             // 
             // LblAmount
             // 
-            LblAmount.Font = new Font("Microsoft Sans Serif", 12F);
-            LblAmount.ForeColor = Color.FromArgb(48, 48, 48);
+            LblAmount.BackColor = Color.White;
+            LblAmount.Font = new Font("Segoe UI", 11F, FontStyle.Bold);
+            LblAmount.ForeColor = Color.FromArgb(70, 20, 180);
             LblAmount.Location = new Point(40, 293);
             LblAmount.Name = "LblAmount";
             LblAmount.Size = new Size(94, 34);
@@ -384,8 +442,9 @@
             // 
             // LblRecipient
             // 
-            LblRecipient.Font = new Font("Microsoft Sans Serif", 12F);
-            LblRecipient.ForeColor = Color.FromArgb(48, 48, 48);
+            LblRecipient.BackColor = Color.White;
+            LblRecipient.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LblRecipient.ForeColor = Color.FromArgb(70, 20, 180);
             LblRecipient.Location = new Point(40, 172);
             LblRecipient.Name = "LblRecipient";
             LblRecipient.Size = new Size(117, 34);
@@ -394,6 +453,7 @@
             // 
             // LblDescription
             // 
+            LblDescription.BackColor = Color.White;
             LblDescription.Font = new Font("Segoe UI", 11F, FontStyle.Regular, GraphicsUnit.Point, 0);
             LblDescription.ForeColor = Color.FromArgb(48, 48, 48);
             LblDescription.Location = new Point(40, 100);
@@ -404,8 +464,9 @@
             // 
             // LblLabel
             // 
+            LblLabel.BackColor = Color.White;
             LblLabel.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
-            LblLabel.ForeColor = Color.FromArgb(48, 48, 48);
+            LblLabel.ForeColor = Color.FromArgb(70, 20, 180);
             LblLabel.Location = new Point(40, 40);
             LblLabel.Name = "LblLabel";
             LblLabel.Size = new Size(240, 60);
@@ -415,81 +476,106 @@
             // Btn100
             // 
             Btn100.Cursor = Cursors.Hand;
-            Btn100.FillColor = Color.FromArgb(96, 43, 217);
+            Btn100.FillColor = Color.FromArgb(244, 243, 253);
+            Btn100.FillHoverColor = Color.FromArgb(120, 60, 255);
+            Btn100.FillPressColor = Color.FromArgb(70, 20, 180);
             Btn100.Font = new Font("Microsoft Sans Serif", 12F);
+            Btn100.ForeColor = Color.FromArgb(73, 73, 76);
             Btn100.Location = new Point(460, 400);
             Btn100.MinimumSize = new Size(1, 1);
             Btn100.Name = "Btn100";
             Btn100.Radius = 8;
-            Btn100.RectColor = Color.FromArgb(96, 43, 217);
+            Btn100.RectColor = Color.LightGray;
+            Btn100.RectHoverColor = Color.FromArgb(120, 60, 255);
             Btn100.Size = new Size(100, 50);
             Btn100.TabIndex = 1;
             Btn100.Text = "$ 100";
             Btn100.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            Btn100.Click += Btn100_Click;
             // 
             // Btn50
             // 
             Btn50.Cursor = Cursors.Hand;
-            Btn50.FillColor = Color.FromArgb(96, 43, 217);
+            Btn50.FillColor = Color.FromArgb(244, 243, 253);
+            Btn50.FillHoverColor = Color.FromArgb(120, 60, 255);
+            Btn50.FillPressColor = Color.FromArgb(70, 20, 180);
             Btn50.Font = new Font("Microsoft Sans Serif", 12F);
+            Btn50.ForeColor = Color.FromArgb(73, 73, 76);
             Btn50.Location = new Point(355, 400);
             Btn50.MinimumSize = new Size(1, 1);
             Btn50.Name = "Btn50";
             Btn50.Radius = 8;
-            Btn50.RectColor = Color.FromArgb(96, 43, 217);
+            Btn50.RectColor = Color.LightGray;
+            Btn50.RectHoverColor = Color.FromArgb(120, 60, 255);
             Btn50.Size = new Size(100, 50);
             Btn50.TabIndex = 1;
             Btn50.Text = "$ 50";
             Btn50.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            // 
-            // uiButton1
-            // 
-            uiButton1.Cursor = Cursors.Hand;
-            uiButton1.FillColor = Color.FromArgb(96, 43, 217);
-            uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(145, 400);
-            uiButton1.MinimumSize = new Size(1, 1);
-            uiButton1.Name = "uiButton1";
-            uiButton1.Radius = 8;
-            uiButton1.RectColor = Color.FromArgb(96, 43, 217);
-            uiButton1.Size = new Size(100, 50);
-            uiButton1.TabIndex = 1;
-            uiButton1.Text = "$ 20";
-            uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            Btn50.Click += Btn50_Click;
             // 
             // Btn20
             // 
             Btn20.Cursor = Cursors.Hand;
-            Btn20.FillColor = Color.FromArgb(96, 43, 217);
+            Btn20.FillColor = Color.FromArgb(244, 243, 253);
+            Btn20.FillHoverColor = Color.FromArgb(120, 60, 255);
+            Btn20.FillPressColor = Color.FromArgb(70, 20, 180);
             Btn20.Font = new Font("Microsoft Sans Serif", 12F);
-            Btn20.Location = new Point(250, 400);
+            Btn20.ForeColor = Color.FromArgb(73, 73, 76);
+            Btn20.Location = new Point(145, 400);
             Btn20.MinimumSize = new Size(1, 1);
             Btn20.Name = "Btn20";
             Btn20.Radius = 8;
-            Btn20.RectColor = Color.FromArgb(96, 43, 217);
+            Btn20.RectColor = Color.LightGray;
+            Btn20.RectHoverColor = Color.FromArgb(120, 60, 255);
             Btn20.Size = new Size(100, 50);
             Btn20.TabIndex = 1;
             Btn20.Text = "$ 20";
             Btn20.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            Btn20.Click += Btn20_Click_1;
+            // 
+            // Btn30
+            // 
+            Btn30.Cursor = Cursors.Hand;
+            Btn30.FillColor = Color.FromArgb(244, 243, 253);
+            Btn30.FillHoverColor = Color.FromArgb(120, 60, 255);
+            Btn30.FillPressColor = Color.FromArgb(70, 20, 180);
+            Btn30.Font = new Font("Microsoft Sans Serif", 12F);
+            Btn30.ForeColor = Color.FromArgb(73, 73, 76);
+            Btn30.Location = new Point(250, 400);
+            Btn30.MinimumSize = new Size(1, 1);
+            Btn30.Name = "Btn30";
+            Btn30.Radius = 8;
+            Btn30.RectColor = Color.LightGray;
+            Btn30.RectHoverColor = Color.FromArgb(120, 60, 255);
+            Btn30.Size = new Size(100, 50);
+            Btn30.TabIndex = 1;
+            Btn30.Text = "$ 30";
+            Btn30.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            Btn30.Click += Btn30_Click;
             // 
             // Btn10
             // 
             Btn10.Cursor = Cursors.Hand;
-            Btn10.FillColor = Color.FromArgb(96, 43, 217);
+            Btn10.FillColor = Color.FromArgb(244, 243, 253);
+            Btn10.FillHoverColor = Color.FromArgb(120, 60, 255);
+            Btn10.FillPressColor = Color.FromArgb(70, 20, 180);
             Btn10.Font = new Font("Microsoft Sans Serif", 12F);
+            Btn10.ForeColor = Color.FromArgb(73, 73, 76);
             Btn10.Location = new Point(40, 400);
             Btn10.MinimumSize = new Size(1, 1);
             Btn10.Name = "Btn10";
             Btn10.Radius = 8;
-            Btn10.RectColor = Color.FromArgb(96, 43, 217);
+            Btn10.RectColor = Color.LightGray;
+            Btn10.RectHoverColor = Color.FromArgb(120, 60, 255);
             Btn10.Size = new Size(100, 50);
             Btn10.TabIndex = 1;
             Btn10.Text = "$ 10";
             Btn10.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            Btn10.Click += Btn10_Click;
             // 
             // TxtNote
             // 
-            TxtNote.Font = new Font("Microsoft Sans Serif", 12F);
+            TxtNote.Font = new Font("Segoe UI", 12F);
             TxtNote.Location = new Point(40, 503);
             TxtNote.Margin = new Padding(4, 5, 4, 5);
             TxtNote.MinimumSize = new Size(520, 40);
@@ -501,27 +587,12 @@
             TxtNote.ShowText = false;
             TxtNote.Size = new Size(520, 120);
             TxtNote.TabIndex = 0;
-            TxtNote.TextAlignment = ContentAlignment.MiddleLeft;
+            TxtNote.TextAlignment = ContentAlignment.TopLeft;
             TxtNote.Watermark = "Add a note";
-            // 
-            // BtnSendMoney
-            // 
-            BtnSendMoney.Cursor = Cursors.Hand;
-            BtnSendMoney.FillColor = Color.FromArgb(96, 43, 217);
-            BtnSendMoney.Font = new Font("Microsoft Sans Serif", 12F);
-            BtnSendMoney.Location = new Point(40, 662);
-            BtnSendMoney.MinimumSize = new Size(1, 1);
-            BtnSendMoney.Name = "BtnSendMoney";
-            BtnSendMoney.Radius = 8;
-            BtnSendMoney.RectColor = Color.FromArgb(96, 43, 217);
-            BtnSendMoney.Size = new Size(520, 60);
-            BtnSendMoney.TabIndex = 1;
-            BtnSendMoney.Text = "Send Money";
-            BtnSendMoney.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
             // TxtAmount
             // 
-            TxtAmount.Font = new Font("Microsoft Sans Serif", 12F);
+            TxtAmount.Font = new Font("Segoe UI", 12F);
             TxtAmount.Location = new Point(40, 332);
             TxtAmount.Margin = new Padding(4, 5, 4, 5);
             TxtAmount.MinimumSize = new Size(520, 40);
@@ -538,7 +609,7 @@
             // 
             // TxtRecipient
             // 
-            TxtRecipient.Font = new Font("Microsoft Sans Serif", 12F);
+            TxtRecipient.Font = new Font("Segoe UI", 12F);
             TxtRecipient.Location = new Point(40, 211);
             TxtRecipient.Margin = new Padding(4, 5, 4, 5);
             TxtRecipient.MinimumSize = new Size(520, 40);
@@ -633,32 +704,6 @@
             imageList1.Images.SetKeyName(5, "icons8-send-money-50.png");
             imageList1.Images.SetKeyName(6, "icons8-transaction-64.png");
             // 
-            // PnlViewContacts
-            // 
-            PnlViewContacts.Controls.Add(BtnViewContacts);
-            PnlViewContacts.Font = new Font("Microsoft Sans Serif", 12F);
-            PnlViewContacts.Location = new Point(600, 633);
-            PnlViewContacts.Margin = new Padding(4, 5, 4, 5);
-            PnlViewContacts.MinimumSize = new Size(1, 1);
-            PnlViewContacts.Name = "PnlViewContacts";
-            PnlViewContacts.Radius = 8;
-            PnlViewContacts.Size = new Size(235, 89);
-            PnlViewContacts.TabIndex = 5;
-            PnlViewContacts.Text = null;
-            PnlViewContacts.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // BtnViewContacts
-            // 
-            BtnViewContacts.Font = new Font("Microsoft Sans Serif", 12F);
-            BtnViewContacts.Location = new Point(14, 15);
-            BtnViewContacts.MinimumSize = new Size(1, 1);
-            BtnViewContacts.Name = "BtnViewContacts";
-            BtnViewContacts.Radius = 8;
-            BtnViewContacts.Size = new Size(208, 58);
-            BtnViewContacts.TabIndex = 0;
-            BtnViewContacts.Text = "View All Contacts";
-            BtnViewContacts.TipsFont = new Font("Microsoft Sans Serif", 8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            // 
             // ModernDashboard
             // 
             AutoScaleMode = AutoScaleMode.None;
@@ -674,13 +719,13 @@
             TitleFont = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TitleHeight = 50;
             ZoomScaleRect = new Rectangle(22, 22, 1258, 664);
-            Load += ModernDashboard_Load;
+            //Load += ModernDashboard_Load;
             uiTabControlMenu1.ResumeLayout(false);
             SendMoney.ResumeLayout(false);
             PnlCardSendMoney.ResumeLayout(false);
+            PnlViewContacts.ResumeLayout(false);
             PnlContacts.ResumeLayout(false);
             Contacts.ResumeLayout(false);
-            PnlViewContacts.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -698,7 +743,6 @@
         private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UIPanel PnlCardSendMoney;
         private Sunny.UI.UITextBox TxtRecipient;
-        private Sunny.UI.UIButton BtnSendMoney;
         private Sunny.UI.UILabel LblDescription;
         private Sunny.UI.UILabel LblLabel;
         private Sunny.UI.UILabel LblRecipient;
@@ -706,12 +750,12 @@
         private Sunny.UI.UITextBox TxtAmount;
         private Sunny.UI.UIButton Btn100;
         private Sunny.UI.UIButton Btn50;
-        private Sunny.UI.UIButton Btn20;
+        private Sunny.UI.UIButton Btn30;
         private Sunny.UI.UIButton Btn10;
         private Sunny.UI.UILabel LblNote;
         private Sunny.UI.UITextBox TxtNote;
         private Sunny.UI.UIPanel PnlContacts;
-        private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UIButton Btn20;
         private Sunny.UI.UILabel LblRecentContacts;
         private Sunny.UI.UIAvatar AvatarContact1;
         private Sunny.UI.UILabel LblContactEmail1;
@@ -730,5 +774,6 @@
         private Sunny.UI.UILabel LblContactName2;
         private Sunny.UI.UIPanel PnlViewContacts;
         private Sunny.UI.UIButton BtnViewContacts;
+        private Sunny.UI.UISymbolButton BtnSendMoney;
     }
 }
