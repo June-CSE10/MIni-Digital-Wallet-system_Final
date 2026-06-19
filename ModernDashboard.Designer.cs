@@ -1,6 +1,6 @@
 ﻿namespace MIni_Digital_Wallet_system_Final
 {
-    partial class Register
+    partial class ModernDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -30,15 +30,14 @@
         {
             SuspendLayout();
             // 
-            // Register
+            // ModernDashboard
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1258, 664);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(2);
-            Name = "Register";
-            Text = "REGISTER";
+            Name = "ModernDashboard";
+            Text = "ModernDashboard";
+            Load += ModernDashboard_Load;
             ResumeLayout(false);
         }
 

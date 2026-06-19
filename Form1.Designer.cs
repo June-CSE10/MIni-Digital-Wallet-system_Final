@@ -60,11 +60,11 @@
             uiPanel1.Controls.Add(pictureBox1);
             uiPanel1.Controls.Add(lblTitle);
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(146, 2);
-            uiPanel1.Margin = new Padding(3, 4, 3, 4);
+            uiPanel1.Location = new Point(182, 2);
+            uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(559, 735);
+            uiPanel1.Size = new Size(699, 919);
             uiPanel1.TabIndex = 0;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -104,7 +104,7 @@
             lblDHAA.AutoSize = true;
             lblDHAA.Location = new Point(50, 688);
             lblDHAA.Name = "lblDHAA";
-            lblDHAA.Size = new Size(217, 25);
+            lblDHAA.Size = new Size(257, 29);
             lblDHAA.TabIndex = 13;
             lblDHAA.Text = "Don't have an account?";
             lblDHAA.Click += lblDHAA_Click;
@@ -213,12 +213,12 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1003, 806);
+            ClientSize = new Size(1254, 1008);
             Controls.Add(uiPanel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "Form1";
             Text = "LOGIN";
             Load += Form1_Load;

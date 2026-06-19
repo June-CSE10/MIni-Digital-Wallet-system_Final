@@ -93,10 +93,10 @@
             uiPanel1.FillColor = Color.DarkBlue;
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel1.Location = new Point(0, 0);
-            uiPanel1.Margin = new Padding(4, 5, 4, 5);
+            uiPanel1.Margin = new Padding(5, 6, 5, 6);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(244, 698);
+            uiPanel1.Size = new Size(305, 872);
             uiPanel1.TabIndex = 0;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
@@ -408,13 +408,13 @@
             uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
             uiPanel2.ForeColor = Color.White;
             uiPanel2.ForeDisableColor = Color.White;
-            uiPanel2.Location = new Point(245, 32);
-            uiPanel2.Margin = new Padding(4, 5, 4, 5);
+            uiPanel2.Location = new Point(306, 40);
+            uiPanel2.Margin = new Padding(5, 6, 5, 6);
             uiPanel2.MinimumSize = new Size(1, 1);
             uiPanel2.Name = "uiPanel2";
             uiPanel2.RectColor = Color.White;
             uiPanel2.RectDisableColor = Color.White;
-            uiPanel2.Size = new Size(899, 666);
+            uiPanel2.Size = new Size(1124, 832);
             uiPanel2.TabIndex = 7;
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
@@ -584,11 +584,12 @@
             // 
             // Dashboard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1222, 698);
+            ClientSize = new Size(1528, 872);
             Controls.Add(uiPanel2);
             Controls.Add(uiPanel1);
+            Margin = new Padding(4);
             Name = "Dashboard";
             Text = "Dashboard";
             uiPanel1.ResumeLayout(false);
