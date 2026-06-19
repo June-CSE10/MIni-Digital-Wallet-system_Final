@@ -88,24 +88,12 @@
             tabMenu.Font = new Font("Microsoft Sans Serif", 12F);
             tabMenu.ImageList = imageList1;
             tabMenu.Location = new Point(0, 0);
-//<<<<<<< HEAD
             tabMenu.Margin = new Padding(2);
-//=======
-            tabMenu.Margin = new Padding(2, 2, 2, 2);
-//>>>>>>> Update
             tabMenu.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             tabMenu.Multiline = true;
             tabMenu.Name = "tabMenu";
             tabMenu.SelectedIndex = 0;
-//<<<<<<< HEAD
-            tabMenu.Size = new Size(1219, 822);
-//=======
-//<<<<<<< HEAD
-            tabMenu.Size = new Size(975, 658);
-//=======
             tabMenu.Size = new Size(1055, 658);
-//>>>>>>> Update
-//>>>>>>> 7278142c00838f8cd795a43a3d41e77199fd9b03
             tabMenu.SizeMode = TabSizeMode.Fixed;
             tabMenu.TabBackColor = Color.FromArgb(96, 43, 217);
             tabMenu.TabIndex = 0;
@@ -120,19 +108,9 @@
             tabDashboard.Controls.Add(LblName);
             tabDashboard.Cursor = Cursors.Hand;
             tabDashboard.Location = new Point(201, 0);
-//<<<<<<< HEAD
             tabDashboard.Margin = new Padding(2);
             tabDashboard.Name = "tabDashboard";
-//<<<<<<< HEAD
-            tabDashboard.Size = new Size(1018, 822);
-//=======
-            tabDashboard.Size = new Size(774, 658);
-//=======
-            tabDashboard.Margin = new Padding(2, 2, 2, 2);
-            tabDashboard.Name = "tabDashboard";
             tabDashboard.Size = new Size(854, 658);
-//>>>>>>> Update
-//>>>>>>> 7278142c00838f8cd795a43a3d41e77199fd9b03
             tabDashboard.TabIndex = 0;
             tabDashboard.Text = "Dashboard";
             tabDashboard.Click += tabDashboard_Click;
@@ -232,20 +210,10 @@
             tabSendMoney.Controls.Add(uiLabel1);
             tabSendMoney.Cursor = Cursors.Hand;
             tabSendMoney.Location = new Point(201, 0);
-//<<<<<<< HEAD
             tabSendMoney.Margin = new Padding(2);
             tabSendMoney.Name = "tabSendMoney";
-//<<<<<<< HEAD
-            tabSendMoney.Size = new Size(1018, 822);
-            tabSendMoney.TabIndex = 1;
-//=======
-            tabSendMoney.Size = new Size(774, 658);
-//=======
-            tabSendMoney.Margin = new Padding(2, 2, 2, 2);
-            tabSendMoney.Name = "tabSendMoney";
             tabSendMoney.Size = new Size(854, 658);
-//            tabSendMoney.TabIndex = 1;
-//>>>>>>> 7278142c00838f8cd795a43a3d41e77199fd9b03
+            tabSendMoney.TabIndex = 1;
             tabSendMoney.Text = "Send Money";
             // 
             // pnlSendMoneyCard
@@ -267,28 +235,8 @@
             pnlSendMoneyCard.MinimumSize = new Size(1, 1);
             pnlSendMoneyCard.Name = "pnlSendMoneyCard";
             pnlSendMoneyCard.Radius = 20;
-//<<<<<<< HEAD
-//<<<<<<< HEAD
-            pnlSendMoneyCard.RectColor = Color.FromArgb(230, 230, 230);
-//<<<<<<< HEAD
-            pnlSendMoneyCard.Size = new Size(829, 639);
-//=======
-///<<<<<<< HEAD
-            pnlSendMoneyCard.Size = new Size(663, 511);
-//=======
-            pnlSendMoneyCard.Size = new Size(585, 594);
-//=======
-            pnlSendMoneyCard.RectColor = Color.Gainsboro;
-            pnlSendMoneyCard.Size = new Size(468, 475);
-//>>>>>>> Update
-//>>>>>>> Update
-//=======
-            pnlSendMoneyCard.RectColor = Color.Gainsboro;
-            pnlSendMoneyCard.Size = new Size(468, 475);
             pnlSendMoneyCard.RectColor = Color.FromArgb(230, 230, 230);
             pnlSendMoneyCard.Size = new Size(585, 594);
-//>>>>>>> update
-//>>>>>>> 7278142c00838f8cd795a43a3d41e77199fd9b03
             pnlSendMoneyCard.Style = Sunny.UI.UIStyle.Custom;
             pnlSendMoneyCard.TabIndex = 4;
             pnlSendMoneyCard.Text = null;
@@ -313,7 +261,7 @@
             btnSendMoney.TabIndex = 5;
             btnSendMoney.Text = "Send Money";
             btnSendMoney.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            btnSendMoney.Click += btnSendMoney_Click_1;
+            btnSendMoney.Click += btnSendMoney_Click;
             // 
             // txtAddNote
             // 
@@ -432,19 +380,9 @@
             tabTransactions.BackColor = Color.WhiteSmoke;
             tabTransactions.Cursor = Cursors.Hand;
             tabTransactions.Location = new Point(201, 0);
-//<<<<<<< HEAD
             tabTransactions.Margin = new Padding(2);
             tabTransactions.Name = "tabTransactions";
-//<<<<<<< HEAD
-            tabTransactions.Size = new Size(1018, 822);
-//=======
-            tabTransactions.Size = new Size(774, 658);
-//=======
-            tabTransactions.Margin = new Padding(2, 2, 2, 2);
-            tabTransactions.Name = "tabTransactions";
             tabTransactions.Size = new Size(854, 658);
-//>>>>>>> Update
-//>>>>>>> 7278142c00838f8cd795a43a3d41e77199fd9b03
             tabTransactions.TabIndex = 2;
             tabTransactions.Text = "Transactions";
             // 
@@ -465,21 +403,10 @@
             tabProfile.Controls.Add(lblmyprofile);
             tabProfile.Cursor = Cursors.Hand;
             tabProfile.Location = new Point(201, 0);
-//<<<<<<< HEAD
             tabProfile.Margin = new Padding(2);
             tabProfile.Name = "tabProfile";
             tabProfile.RightToLeft = RightToLeft.No;
-//<<<<<<< HEAD
-            tabProfile.Size = new Size(1018, 822);
-//=======
-            tabProfile.Size = new Size(774, 658);
-//=======
-            tabProfile.Margin = new Padding(2, 2, 2, 2);
-            tabProfile.Name = "tabProfile";
-            tabProfile.RightToLeft = RightToLeft.No;
             tabProfile.Size = new Size(854, 658);
-//>>>>>>> Update
-//>>>>>>> 7278142c00838f8cd795a43a3d41e77199fd9b03
             tabProfile.TabIndex = 3;
             tabProfile.Text = "Profile";
             // 
@@ -650,21 +577,11 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-//<<<<<<< HEAD
-            ClientSize = new Size(1219, 822);
-//=======
-//<<<<<<< HEAD
-            ClientSize = new Size(975, 658);
-//>>>>>>> 7278142c00838f8cd795a43a3d41e77199fd9b03
-            Controls.Add(tabMenu);
-            FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(2);
-//=======
             ClientSize = new Size(1055, 658);
             Controls.Add(tabMenu);
             FormBorderStyle = FormBorderStyle.FixedDialog;
-            Margin = new Padding(2, 2, 2, 2);
-//            Name = "Main";
+            Margin = new Padding(2);
+            Name = "Main";
             Text = "Mini Digital Wallet System";
             Load += Main_Load;
             tabMenu.ResumeLayout(false);

@@ -13,7 +13,7 @@ namespace MIni_Digital_Wallet_system_Final
     public partial class Main : Form
     {
         string MyServer = "JUNE-IT\\sQL_2025_C002";
-        string MyDb = "[Project]";
+        string MyDb = "Project";
         string MyUserID = "sa";
         string MyPwd = "1206";
 
@@ -42,7 +42,7 @@ namespace MIni_Digital_Wallet_system_Final
             e.Handled = true;
         }
 
-        private void btnSendMoney_Click_1(object sender, EventArgs e)
+        private void btnSendMoney_Click(object sender, EventArgs e)
         {
             //Input
             string StrMyConn_SqlAuth =
@@ -57,7 +57,6 @@ namespace MIni_Digital_Wallet_system_Final
                 MyConn.Open();      //Start connect to sqlserver
                 try
                 {
-                    MyConn.Open();
                     MessageBox.Show("ការតភ្ជាប់ទៅកាន់ Database បានជោគជ័យ!", "ជោគជ័យ", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
                     MyConn.Close();
