@@ -53,10 +53,6 @@
             tabTransactions = new TabPage();
             tabProfile = new TabPage();
             uiButton1 = new Sunny.UI.UIButton();
-            uiipTextBox4 = new Sunny.UI.UIIPTextBox();
-            uiipTextBox3 = new Sunny.UI.UIIPTextBox();
-            uiipTextBox2 = new Sunny.UI.UIIPTextBox();
-            uitxtuserid = new Sunny.UI.UIIPTextBox();
             lblPhonenumber = new Sunny.UI.UILabel();
             lblEmail = new Sunny.UI.UILabel();
             lblFullname = new Sunny.UI.UILabel();
@@ -65,6 +61,10 @@
             uiLabel5 = new Sunny.UI.UILabel();
             lblmyprofile = new Sunny.UI.UILabel();
             imageList1 = new ImageList(components);
+            uitxtuserid = new Sunny.UI.UITextBox();
+            uitxtfullname = new Sunny.UI.UITextBox();
+            uitxtemail = new Sunny.UI.UITextBox();
+            uitxtphonenumber = new Sunny.UI.UITextBox();
             tabMenu.SuspendLayout();
             tabDashboard.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvTransactions).BeginInit();
@@ -110,7 +110,7 @@
             tabDashboard.Location = new Point(201, 0);
             tabDashboard.Margin = new Padding(2);
             tabDashboard.Name = "tabDashboard";
-            tabDashboard.Size = new Size(643, 526);
+            tabDashboard.Size = new Size(779, 526);
             tabDashboard.TabIndex = 0;
             tabDashboard.Text = "Dashboard";
             tabDashboard.Click += tabDashboard_Click;
@@ -212,7 +212,7 @@
             tabSendMoney.Location = new Point(201, 0);
             tabSendMoney.Margin = new Padding(2);
             tabSendMoney.Name = "tabSendMoney";
-            tabSendMoney.Size = new Size(643, 526);
+            tabSendMoney.Size = new Size(779, 526);
             tabSendMoney.TabIndex = 1;
             tabSendMoney.Text = "Send Money";
             // 
@@ -382,18 +382,18 @@
             tabTransactions.Location = new Point(201, 0);
             tabTransactions.Margin = new Padding(2);
             tabTransactions.Name = "tabTransactions";
-            tabTransactions.Size = new Size(643, 526);
+            tabTransactions.Size = new Size(779, 526);
             tabTransactions.TabIndex = 2;
             tabTransactions.Text = "Transactions";
             // 
             // tabProfile
             // 
             tabProfile.BackColor = Color.WhiteSmoke;
-            tabProfile.Controls.Add(uiButton1);
-            tabProfile.Controls.Add(uiipTextBox4);
-            tabProfile.Controls.Add(uiipTextBox3);
-            tabProfile.Controls.Add(uiipTextBox2);
+            tabProfile.Controls.Add(uitxtphonenumber);
+            tabProfile.Controls.Add(uitxtemail);
+            tabProfile.Controls.Add(uitxtfullname);
             tabProfile.Controls.Add(uitxtuserid);
+            tabProfile.Controls.Add(uiButton1);
             tabProfile.Controls.Add(lblPhonenumber);
             tabProfile.Controls.Add(lblEmail);
             tabProfile.Controls.Add(lblFullname);
@@ -415,7 +415,7 @@
             uiButton1.BackColor = Color.WhiteSmoke;
             uiButton1.FillColor = Color.SteelBlue;
             uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(43, 491);
+            uiButton1.Location = new Point(43, 476);
             uiButton1.MinimumSize = new Size(1, 1);
             uiButton1.Name = "uiButton1";
             uiButton1.RectColor = Color.SkyBlue;
@@ -423,67 +423,6 @@
             uiButton1.TabIndex = 11;
             uiButton1.Text = "Update Profile";
             uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            // 
-            // uiipTextBox4
-            // 
-            uiipTextBox4.FillColor2 = Color.FromArgb(235, 243, 255);
-            uiipTextBox4.Font = new Font("Microsoft Sans Serif", 12F);
-            uiipTextBox4.Location = new Point(199, 422);
-            uiipTextBox4.Margin = new Padding(4, 5, 4, 5);
-            uiipTextBox4.MinimumSize = new Size(1, 1);
-            uiipTextBox4.Name = "uiipTextBox4";
-            uiipTextBox4.Padding = new Padding(1);
-            uiipTextBox4.RectColor = Color.White;
-            uiipTextBox4.ShowText = false;
-            uiipTextBox4.Size = new Size(310, 32);
-            uiipTextBox4.TabIndex = 10;
-            uiipTextBox4.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // uiipTextBox3
-            // 
-            uiipTextBox3.FillColor2 = Color.FromArgb(235, 243, 255);
-            uiipTextBox3.Font = new Font("Microsoft Sans Serif", 12F);
-            uiipTextBox3.Location = new Point(199, 365);
-            uiipTextBox3.Margin = new Padding(4, 5, 4, 5);
-            uiipTextBox3.MinimumSize = new Size(1, 1);
-            uiipTextBox3.Name = "uiipTextBox3";
-            uiipTextBox3.Padding = new Padding(1);
-            uiipTextBox3.RectColor = Color.White;
-            uiipTextBox3.ShowText = false;
-            uiipTextBox3.Size = new Size(310, 32);
-            uiipTextBox3.TabIndex = 9;
-            uiipTextBox3.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // uiipTextBox2
-            // 
-            uiipTextBox2.FillColor2 = Color.FromArgb(235, 243, 255);
-            uiipTextBox2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiipTextBox2.Location = new Point(199, 313);
-            uiipTextBox2.Margin = new Padding(4, 5, 4, 5);
-            uiipTextBox2.MinimumSize = new Size(1, 1);
-            uiipTextBox2.Name = "uiipTextBox2";
-            uiipTextBox2.Padding = new Padding(1);
-            uiipTextBox2.RectColor = Color.White;
-            uiipTextBox2.ShowText = false;
-            uiipTextBox2.Size = new Size(310, 32);
-            uiipTextBox2.TabIndex = 8;
-            uiipTextBox2.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // uitxtuserid
-            // 
-            uitxtuserid.FillColor2 = Color.FromArgb(245, 251, 241);
-            uitxtuserid.Font = new Font("Microsoft Sans Serif", 12F);
-            uitxtuserid.Location = new Point(199, 257);
-            uitxtuserid.Margin = new Padding(4, 5, 4, 5);
-            uitxtuserid.MinimumSize = new Size(1, 1);
-            uitxtuserid.Name = "uitxtuserid";
-            uitxtuserid.Padding = new Padding(1);
-            uitxtuserid.RectColor = Color.White;
-            uitxtuserid.ShowText = false;
-            uitxtuserid.Size = new Size(310, 32);
-            uitxtuserid.Style = Sunny.UI.UIStyle.Custom;
-            uitxtuserid.TabIndex = 7;
-            uitxtuserid.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // lblPhonenumber
             // 
@@ -565,6 +504,66 @@
             imageList1.ImageSize = new Size(16, 16);
             imageList1.TransparentColor = Color.Transparent;
             // 
+            // uitxtuserid
+            // 
+            uitxtuserid.Font = new Font("Microsoft Sans Serif", 12F);
+            uitxtuserid.Location = new Point(191, 254);
+            uitxtuserid.Margin = new Padding(4, 5, 4, 5);
+            uitxtuserid.MinimumSize = new Size(1, 16);
+            uitxtuserid.Name = "uitxtuserid";
+            uitxtuserid.Padding = new Padding(5);
+            uitxtuserid.RectColor = Color.White;
+            uitxtuserid.ShowText = false;
+            uitxtuserid.Size = new Size(300, 32);
+            uitxtuserid.TabIndex = 12;
+            uitxtuserid.TextAlignment = ContentAlignment.MiddleLeft;
+            uitxtuserid.Watermark = "";
+            // 
+            // uitxtfullname
+            // 
+            uitxtfullname.Font = new Font("Microsoft Sans Serif", 12F);
+            uitxtfullname.Location = new Point(191, 310);
+            uitxtfullname.Margin = new Padding(4, 5, 4, 5);
+            uitxtfullname.MinimumSize = new Size(1, 16);
+            uitxtfullname.Name = "uitxtfullname";
+            uitxtfullname.Padding = new Padding(5);
+            uitxtfullname.RectColor = Color.White;
+            uitxtfullname.ShowText = false;
+            uitxtfullname.Size = new Size(300, 32);
+            uitxtfullname.TabIndex = 13;
+            uitxtfullname.TextAlignment = ContentAlignment.MiddleLeft;
+            uitxtfullname.Watermark = "";
+            // 
+            // uitxtemail
+            // 
+            uitxtemail.Font = new Font("Microsoft Sans Serif", 12F);
+            uitxtemail.Location = new Point(191, 362);
+            uitxtemail.Margin = new Padding(4, 5, 4, 5);
+            uitxtemail.MinimumSize = new Size(1, 16);
+            uitxtemail.Name = "uitxtemail";
+            uitxtemail.Padding = new Padding(5);
+            uitxtemail.RectColor = Color.White;
+            uitxtemail.ShowText = false;
+            uitxtemail.Size = new Size(300, 32);
+            uitxtemail.TabIndex = 13;
+            uitxtemail.TextAlignment = ContentAlignment.MiddleLeft;
+            uitxtemail.Watermark = "";
+            // 
+            // uitxtphonenumber
+            // 
+            uitxtphonenumber.Font = new Font("Microsoft Sans Serif", 12F);
+            uitxtphonenumber.Location = new Point(191, 419);
+            uitxtphonenumber.Margin = new Padding(4, 5, 4, 5);
+            uitxtphonenumber.MinimumSize = new Size(1, 16);
+            uitxtphonenumber.Name = "uitxtphonenumber";
+            uitxtphonenumber.Padding = new Padding(5);
+            uitxtphonenumber.RectColor = Color.White;
+            uitxtphonenumber.ShowText = false;
+            uitxtphonenumber.Size = new Size(300, 32);
+            uitxtphonenumber.TabIndex = 13;
+            uitxtphonenumber.TextAlignment = ContentAlignment.MiddleLeft;
+            uitxtphonenumber.Watermark = "";
+            // 
             // Main
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -626,5 +625,9 @@
         private Sunny.UI.UIIPTextBox uiipTextBox2;
         private Sunny.UI.UIIPTextBox uitxtuserid;
         private Sunny.UI.UIButton uiButton1;
+        private Sunny.UI.UITextBox uitxtuserid;
+        private Sunny.UI.UITextBox uitxtphonenumber;
+        private Sunny.UI.UITextBox uitxtemail;
+        private Sunny.UI.UITextBox uitxtfullname;
     }
 }
