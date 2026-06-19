@@ -32,6 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModernDashboard));
             uiTabControlMenu1 = new Sunny.UI.UITabControlMenu();
             Dashboard = new TabPage();
+            ucDashboard1 = new UCDashboard();
             SendMoney = new TabPage();
             PnlCardSendMoney = new Sunny.UI.UIPanel();
             BtnSendMoney = new Sunny.UI.UISymbolButton();
@@ -70,15 +71,14 @@
             AddMoney = new TabPage();
             ucAddMoney1 = new UCAddMoney();
             Transactions = new TabPage();
+            ucTransactions1 = new UCTransactions();
             Contacts = new TabPage();
+            ucContacts1 = new UCContacts();
             Profile = new TabPage();
             ucProfile1 = new UCProfile();
             Setting = new TabPage();
             ucSetting1 = new UCSetting();
             imageList1 = new ImageList(components);
-            ucContacts1 = new UCContacts();
-            ucTransactions1 = new UCTransactions();
-            ucDashboard1 = new UCDashboard();
             uiTabControlMenu1.SuspendLayout();
             Dashboard.SuspendLayout();
             SendMoney.SuspendLayout();
@@ -130,6 +130,14 @@
             Dashboard.Size = new Size(879, 790);
             Dashboard.TabIndex = 2;
             Dashboard.Text = "Dashboard";
+            // 
+            // ucDashboard1
+            // 
+            ucDashboard1.Dock = DockStyle.Fill;
+            ucDashboard1.Location = new Point(0, 0);
+            ucDashboard1.Name = "ucDashboard1";
+            ucDashboard1.Size = new Size(879, 790);
+            ucDashboard1.TabIndex = 0;
             // 
             // SendMoney
             // 
@@ -660,6 +668,14 @@
             Transactions.TabIndex = 4;
             Transactions.Text = "Transactions";
             // 
+            // ucTransactions1
+            // 
+            ucTransactions1.Dock = DockStyle.Fill;
+            ucTransactions1.Location = new Point(0, 0);
+            ucTransactions1.Name = "ucTransactions1";
+            ucTransactions1.Size = new Size(879, 790);
+            ucTransactions1.TabIndex = 0;
+            // 
             // Contacts
             // 
             Contacts.BackColor = Color.FromArgb(245, 246, 250);
@@ -670,6 +686,14 @@
             Contacts.Size = new Size(879, 790);
             Contacts.TabIndex = 5;
             Contacts.Text = "Contacts";
+            // 
+            // ucContacts1
+            // 
+            ucContacts1.Dock = DockStyle.Fill;
+            ucContacts1.Location = new Point(0, 0);
+            ucContacts1.Name = "ucContacts1";
+            ucContacts1.Size = new Size(879, 790);
+            ucContacts1.TabIndex = 0;
             // 
             // Profile
             // 
@@ -689,6 +713,7 @@
             ucProfile1.Name = "ucProfile1";
             ucProfile1.Size = new Size(879, 790);
             ucProfile1.TabIndex = 0;
+            ucProfile1.Load += ucProfile1_Load;
             // 
             // Setting
             // 
@@ -721,30 +746,6 @@
             imageList1.Images.SetKeyName(4, "icons8-dashboard-50.png");
             imageList1.Images.SetKeyName(5, "icons8-send-money-50.png");
             imageList1.Images.SetKeyName(6, "icons8-transaction-64.png");
-            // 
-            // ucContacts1
-            // 
-            ucContacts1.Dock = DockStyle.Fill;
-            ucContacts1.Location = new Point(0, 0);
-            ucContacts1.Name = "ucContacts1";
-            ucContacts1.Size = new Size(879, 790);
-            ucContacts1.TabIndex = 0;
-            // 
-            // ucTransactions1
-            // 
-            ucTransactions1.Dock = DockStyle.Fill;
-            ucTransactions1.Location = new Point(0, 0);
-            ucTransactions1.Name = "ucTransactions1";
-            ucTransactions1.Size = new Size(879, 790);
-            ucTransactions1.TabIndex = 0;
-            // 
-            // ucDashboard1
-            // 
-            ucDashboard1.Dock = DockStyle.Fill;
-            ucDashboard1.Location = new Point(0, 0);
-            ucDashboard1.Name = "ucDashboard1";
-            ucDashboard1.Size = new Size(879, 790);
-            ucDashboard1.TabIndex = 0;
             // 
             // ModernDashboard
             // 

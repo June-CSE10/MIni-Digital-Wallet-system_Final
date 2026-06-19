@@ -14,5 +14,10 @@ namespace MIni_Digital_Wallet_system_Final
         {
             InitializeComponent();
         }
+
+        private void UCProfile_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
