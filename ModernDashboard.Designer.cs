@@ -68,9 +68,9 @@
             TxtAmount = new Sunny.UI.UITextBox();
             TxtRecipient = new Sunny.UI.UITextBox();
             AddMoney = new TabPage();
+            ucAddMoney1 = new UCAddMoney();
             Transactions = new TabPage();
             Contacts = new TabPage();
-            uiPanel1 = new Sunny.UI.UIPanel();
             Profile = new TabPage();
             Setting = new TabPage();
             imageList1 = new ImageList(components);
@@ -79,7 +79,7 @@
             PnlCardSendMoney.SuspendLayout();
             PnlViewContacts.SuspendLayout();
             PnlContacts.SuspendLayout();
-            Contacts.SuspendLayout();
+            AddMoney.SuspendLayout();
             SuspendLayout();
             // 
             // uiTabControlMenu1
@@ -320,7 +320,6 @@
             LblContactName5.Size = new Size(135, 34);
             LblContactName5.TabIndex = 0;
             LblContactName5.Text = "ContactName";
-            //LblContactName5.Click += LblContactName_Click;
             // 
             // AvatarContact2
             // 
@@ -342,7 +341,6 @@
             LblContactName4.Size = new Size(135, 34);
             LblContactName4.TabIndex = 0;
             LblContactName4.Text = "ContactName";
-            //LblContactName4.Click += LblContactName_Click;
             // 
             // LblContactEmail2
             // 
@@ -363,7 +361,6 @@
             LblContactName3.Size = new Size(135, 34);
             LblContactName3.TabIndex = 0;
             LblContactName3.Text = "ContactName";
-            //LblContactName3.Click += LblContactName_Click;
             // 
             // AvatarContact1
             // 
@@ -385,7 +382,6 @@
             LblContactName2.Size = new Size(135, 34);
             LblContactName2.TabIndex = 0;
             LblContactName2.Text = "ContactName";
-            //LblContactName2.Click += LblContactName_Click;
             // 
             // LblContactEmail1
             // 
@@ -406,7 +402,6 @@
             LblContactName1.Size = new Size(135, 34);
             LblContactName1.TabIndex = 0;
             LblContactName1.Text = "ContactName";
-            //LblContactName1.Click += LblContactName_Click;
             // 
             // LblRecentContacts
             // 
@@ -627,12 +622,21 @@
             // AddMoney
             // 
             AddMoney.BackColor = Color.FromArgb(245, 246, 250);
+            AddMoney.Controls.Add(ucAddMoney1);
             AddMoney.ImageIndex = 2;
             AddMoney.Location = new Point(201, 0);
             AddMoney.Name = "AddMoney";
             AddMoney.Size = new Size(879, 790);
             AddMoney.TabIndex = 3;
             AddMoney.Text = "Add Money";
+            // 
+            // ucAddMoney1
+            // 
+            ucAddMoney1.Dock = DockStyle.Fill;
+            ucAddMoney1.Location = new Point(0, 0);
+            ucAddMoney1.Name = "ucAddMoney1";
+            ucAddMoney1.Size = new Size(879, 790);
+            ucAddMoney1.TabIndex = 0;
             // 
             // Transactions
             // 
@@ -647,29 +651,12 @@
             // Contacts
             // 
             Contacts.BackColor = Color.FromArgb(245, 246, 250);
-            Contacts.Controls.Add(uiPanel1);
             Contacts.ImageIndex = 3;
             Contacts.Location = new Point(201, 0);
             Contacts.Name = "Contacts";
             Contacts.Size = new Size(879, 790);
             Contacts.TabIndex = 5;
             Contacts.Text = "Contacts";
-            // 
-            // uiPanel1
-            // 
-            uiPanel1.Dock = DockStyle.Fill;
-            uiPanel1.FillColor = Color.White;
-            uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(0, 0);
-            uiPanel1.Margin = new Padding(4, 5, 4, 5);
-            uiPanel1.MinimumSize = new Size(1, 1);
-            uiPanel1.Name = "uiPanel1";
-            uiPanel1.Radius = 15;
-            uiPanel1.RectColor = Color.FromArgb(230, 230, 230);
-            uiPanel1.Size = new Size(879, 790);
-            uiPanel1.TabIndex = 0;
-            uiPanel1.Text = "uiPanel1";
-            uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
             // 
             // Profile
             // 
@@ -719,13 +706,13 @@
             TitleFont = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             TitleHeight = 50;
             ZoomScaleRect = new Rectangle(22, 22, 1258, 664);
-            //Load += ModernDashboard_Load;
+            Load += ModernDashboard_Load;
             uiTabControlMenu1.ResumeLayout(false);
             SendMoney.ResumeLayout(false);
             PnlCardSendMoney.ResumeLayout(false);
             PnlViewContacts.ResumeLayout(false);
             PnlContacts.ResumeLayout(false);
-            Contacts.ResumeLayout(false);
+            AddMoney.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -740,7 +727,6 @@
         private TabPage Contacts;
         private TabPage Profile;
         private TabPage Setting;
-        private Sunny.UI.UIPanel uiPanel1;
         private Sunny.UI.UIPanel PnlCardSendMoney;
         private Sunny.UI.UITextBox TxtRecipient;
         private Sunny.UI.UILabel LblDescription;
@@ -775,5 +761,6 @@
         private Sunny.UI.UIPanel PnlViewContacts;
         private Sunny.UI.UIButton BtnViewContacts;
         private Sunny.UI.UISymbolButton BtnSendMoney;
+        private UCAddMoney ucAddMoney1;
     }
 }
