@@ -93,7 +93,7 @@
             tabMenu.Multiline = true;
             tabMenu.Name = "tabMenu";
             tabMenu.SelectedIndex = 0;
-            tabMenu.Size = new Size(844, 526);
+            tabMenu.Size = new Size(980, 526);
             tabMenu.SizeMode = TabSizeMode.Fixed;
             tabMenu.TabBackColor = Color.FromArgb(96, 43, 217);
             tabMenu.TabIndex = 0;
@@ -406,7 +406,7 @@
             tabProfile.Margin = new Padding(2);
             tabProfile.Name = "tabProfile";
             tabProfile.RightToLeft = RightToLeft.No;
-            tabProfile.Size = new Size(643, 526);
+            tabProfile.Size = new Size(779, 526);
             tabProfile.TabIndex = 3;
             tabProfile.Text = "Profile";
             // 
@@ -569,7 +569,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(844, 526);
+            ClientSize = new Size(980, 526);
             Controls.Add(tabMenu);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(2);
