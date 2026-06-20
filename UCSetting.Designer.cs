@@ -32,10 +32,11 @@
             // 
             // UCSetting
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Margin = new Padding(2, 2, 2, 2);
             Name = "UCSetting";
-            Size = new Size(679, 395);
+            Size = new Size(1134, 606);
             ResumeLayout(false);
         }
 
