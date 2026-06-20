@@ -645,7 +645,7 @@
             AddMoney.ImageIndex = 2;
             AddMoney.Location = new Point(201, 0);
             AddMoney.Name = "AddMoney";
-            AddMoney.Size = new Size(879, 790);
+            AddMoney.Size = new Size(249, 270);
             AddMoney.TabIndex = 3;
             AddMoney.Text = "Add Money";
             // 
@@ -654,7 +654,7 @@
             ucAddMoney1.Dock = DockStyle.Fill;
             ucAddMoney1.Location = new Point(0, 0);
             ucAddMoney1.Name = "ucAddMoney1";
-            ucAddMoney1.Size = new Size(879, 790);
+            ucAddMoney1.Size = new Size(249, 270);
             ucAddMoney1.TabIndex = 0;
             // 
             // Transactions
@@ -664,7 +664,7 @@
             Transactions.ImageIndex = 6;
             Transactions.Location = new Point(201, 0);
             Transactions.Name = "Transactions";
-            Transactions.Size = new Size(879, 790);
+            Transactions.Size = new Size(249, 270);
             Transactions.TabIndex = 4;
             Transactions.Text = "Transactions";
             // 
@@ -673,7 +673,7 @@
             ucTransactions1.Dock = DockStyle.Fill;
             ucTransactions1.Location = new Point(0, 0);
             ucTransactions1.Name = "ucTransactions1";
-            ucTransactions1.Size = new Size(879, 790);
+            ucTransactions1.Size = new Size(249, 270);
             ucTransactions1.TabIndex = 0;
             // 
             // Contacts
@@ -683,7 +683,7 @@
             Contacts.ImageIndex = 3;
             Contacts.Location = new Point(201, 0);
             Contacts.Name = "Contacts";
-            Contacts.Size = new Size(879, 790);
+            Contacts.Size = new Size(249, 270);
             Contacts.TabIndex = 5;
             Contacts.Text = "Contacts";
             // 
@@ -692,7 +692,7 @@
             ucContacts1.Dock = DockStyle.Fill;
             ucContacts1.Location = new Point(0, 0);
             ucContacts1.Name = "ucContacts1";
-            ucContacts1.Size = new Size(879, 790);
+            ucContacts1.Size = new Size(249, 270);
             ucContacts1.TabIndex = 0;
             // 
             // Profile
@@ -702,7 +702,7 @@
             Profile.ImageIndex = 2;
             Profile.Location = new Point(201, 0);
             Profile.Name = "Profile";
-            Profile.Size = new Size(879, 790);
+            Profile.Size = new Size(249, 270);
             Profile.TabIndex = 6;
             Profile.Text = "Profile";
             // 
@@ -712,7 +712,7 @@
             ucProfile1.Location = new Point(0, 0);
             ucProfile1.Margin = new Padding(2);
             ucProfile1.Name = "ucProfile1";
-            ucProfile1.Size = new Size(879, 790);
+            ucProfile1.Size = new Size(249, 270);
             ucProfile1.TabIndex = 0;
             ucProfile1.Load += ucProfile1_Load;
             // 
@@ -721,9 +721,9 @@
             Setting.BackColor = Color.FromArgb(245, 246, 250);
             Setting.Controls.Add(ucSetting1);
             Setting.ImageIndex = 0;
-            Setting.Location = new Point(201, 0);
+            Setting.Location = new Point(401, 0);
             Setting.Name = "Setting";
-            Setting.Size = new Size(879, 790);
+            Setting.Size = new Size(49, 270);
             Setting.TabIndex = 7;
             Setting.Text = "Setting";
             // 
@@ -733,7 +733,7 @@
             ucSetting1.Location = new Point(0, 0);
             ucSetting1.Margin = new Padding(2);
             ucSetting1.Name = "ucSetting1";
-            ucSetting1.Size = new Size(879, 790);
+            ucSetting1.Size = new Size(49, 270);
             ucSetting1.TabIndex = 0;
             // 
             // imageList1
