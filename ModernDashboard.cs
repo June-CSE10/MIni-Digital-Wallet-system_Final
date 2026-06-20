@@ -18,7 +18,7 @@ namespace MIni_Digital_Wallet_system_Final
         string MyPwd = "1206";
 
         //establis connect
-        SqlConnection MyConn = new();       
+        SqlConnection MyConn = new();
 
         public ModernDashboard()
         {
@@ -74,6 +74,30 @@ namespace MIni_Digital_Wallet_system_Final
             {
                 trans.Rollback();
             }
+        }   //Methona
+
+        private void LoadUserControl(TabPage tab, UserControl uc)
+        {
+            tab.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            tab.Controls.Add(uc);
+        }   //Methona
+
+        private void ModernDashboard_Load(object sender, EventArgs e)
+        {
+            LoadUserControl(AddMoney, new UCAddMoney());
+            LoadUserControl(Dashboard, new UCDashboard());
+            LoadUserControl(SendMoney, new UCSendMoney());
+            LoadUserControl(AddMoney, new UCAddMoney());
+            LoadUserControl(Transactions, new UCTransactions());
+            LoadUserControl(Contacts, new UCContacts());
+            LoadUserControl(Profile, new UCProfile());
+            LoadUserControl(Setting, new UCSetting());
+        }   //Methona
+
+        private void ucProfile1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
