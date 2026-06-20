@@ -49,8 +49,9 @@
             // 
             // uiAvatar1
             // 
+            uiAvatar1.BackColor = SystemColors.Control;
             uiAvatar1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiAvatar1.Location = new Point(2, 2);
+            uiAvatar1.Location = new Point(62, 51);
             uiAvatar1.Margin = new Padding(2, 2, 2, 2);
             uiAvatar1.MinimumSize = new Size(1, 1);
             uiAvatar1.Name = "uiAvatar1";
