@@ -19,5 +19,21 @@ namespace MIni_Digital_Wallet_system_Final
         {
 
         }
+
+        private void uiSymbolButton1_Click(object sender, EventArgs e)
+        {
+
+            // Create a new instance of UCSetting
+            UCSetting ucSetting = new UCSetting();
+
+            // Clear the current controls in the parent panel/form
+            this.Parent.Controls.Clear();
+
+            // Add UCSetting to the parent container
+            ucSetting.Dock = DockStyle.Fill; // make it fill the area
+            this.Parent.Controls.Add(ucSetting);
+        }
+        
     }
 }
+
