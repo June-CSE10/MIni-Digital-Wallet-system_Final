@@ -28,17 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
+            label1 = new Label();
             SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(962, 491);
+            label1.Name = "label1";
+            label1.Size = new Size(97, 41);
+            label1.TabIndex = 0;
+            label1.Text = "label1";
             // 
             // UCDashboard
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label1);
+            Margin = new Padding(5);
             Name = "UCDashboard";
-            Size = new Size(422, 542);
+            Size = new Size(2939, 1481);
+            Load += UCDashboard_Load;
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
     }
 }
