@@ -29,85 +29,56 @@
         private void InitializeComponent()
         {
             uiPanel1 = new Sunny.UI.UIPanel();
-            btnCNA = new Sunny.UI.UIButton();
-            lblOR = new Sunny.UI.UILabel();
             txtPassword = new Sunny.UI.UITextBox();
             txtEmail = new Sunny.UI.UITextBox();
+            lblDHAA = new Label();
+            linkRegister = new Sunny.UI.UILinkLabel();
             chkRemember = new Sunny.UI.UICheckBox();
             linkForgot = new Sunny.UI.UILinkLabel();
             btnLogin = new Sunny.UI.UIButton();
             lblEmail = new Sunny.UI.UILabel();
             lblPassword = new Sunny.UI.UILabel();
-            uiPanel2 = new Sunny.UI.UIPanel();
-            lblSEasy = new Sunny.UI.UIPanel();
             lblSubTitle = new Sunny.UI.UILabel();
-            pictureBox2 = new PictureBox();
+            pictureBox1 = new PictureBox();
             lblTitle = new Sunny.UI.UILabel();
-            lblSecure = new Sunny.UI.UILabel();
-            lblFast = new Sunny.UI.UILabel();
-            lblEasy = new Sunny.UI.UILabel();
-            lblMSecure = new Label();
-            lblSFast = new Label();
-            label2 = new Label();
             uiPanel1.SuspendLayout();
-            uiPanel2.SuspendLayout();
-            lblSEasy.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // uiPanel1
             // 
-            uiPanel1.Controls.Add(btnCNA);
-            uiPanel1.Controls.Add(lblOR);
             uiPanel1.Controls.Add(txtPassword);
             uiPanel1.Controls.Add(txtEmail);
+            uiPanel1.Controls.Add(lblDHAA);
+            uiPanel1.Controls.Add(linkRegister);
             uiPanel1.Controls.Add(chkRemember);
             uiPanel1.Controls.Add(linkForgot);
             uiPanel1.Controls.Add(btnLogin);
             uiPanel1.Controls.Add(lblEmail);
             uiPanel1.Controls.Add(lblPassword);
+            uiPanel1.Controls.Add(lblSubTitle);
+            uiPanel1.Controls.Add(pictureBox1);
+            uiPanel1.Controls.Add(lblTitle);
             uiPanel1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel1.Location = new Point(582, 14);
+            uiPanel1.Location = new Point(182, 2);
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.Size = new Size(544, 919);
+            uiPanel1.Size = new Size(699, 919);
             uiPanel1.TabIndex = 0;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
             // 
-            // btnCNA
-            // 
-            btnCNA.Font = new Font("Microsoft Sans Serif", 12F);
-            btnCNA.Location = new Point(42, 704);
-            btnCNA.MinimumSize = new Size(1, 1);
-            btnCNA.Name = "btnCNA";
-            btnCNA.Size = new Size(452, 52);
-            btnCNA.TabIndex = 16;
-            btnCNA.Text = "Create  New Account";
-            btnCNA.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            btnCNA.Click += btnCNA_Click;
-            // 
-            // lblOR
-            // 
-            lblOR.Font = new Font("Microsoft Sans Serif", 12F);
-            lblOR.ForeColor = Color.FromArgb(48, 48, 48);
-            lblOR.Location = new Point(235, 632);
-            lblOR.Name = "lblOR";
-            lblOR.Size = new Size(52, 34);
-            lblOR.TabIndex = 15;
-            lblOR.Text = "OR";
-            // 
             // txtPassword
             // 
             txtPassword.Font = new Font("Microsoft Sans Serif", 12F);
-            txtPassword.Location = new Point(42, 400);
+            txtPassword.Location = new Point(42, 489);
             txtPassword.Margin = new Padding(4, 5, 4, 5);
             txtPassword.MinimumSize = new Size(1, 16);
             txtPassword.Name = "txtPassword";
             txtPassword.Padding = new Padding(5);
             txtPassword.ShowText = false;
-            txtPassword.Size = new Size(452, 44);
+            txtPassword.Size = new Size(477, 44);
             txtPassword.Symbol = 61475;
             txtPassword.TabIndex = 3;
             txtPassword.TextAlignment = ContentAlignment.MiddleLeft;
@@ -116,23 +87,48 @@
             // txtEmail
             // 
             txtEmail.Font = new Font("Microsoft Sans Serif", 12F);
-            txtEmail.Location = new Point(42, 253);
+            txtEmail.Location = new Point(42, 371);
             txtEmail.Margin = new Padding(4, 5, 4, 5);
             txtEmail.MinimumSize = new Size(1, 16);
             txtEmail.Name = "txtEmail";
             txtEmail.Padding = new Padding(5);
             txtEmail.ShowText = false;
-            txtEmail.Size = new Size(452, 44);
+            txtEmail.Size = new Size(477, 44);
             txtEmail.Symbol = 61443;
             txtEmail.TabIndex = 14;
             txtEmail.TextAlignment = ContentAlignment.MiddleLeft;
             txtEmail.Watermark = "Enter your email";
             // 
+            // lblDHAA
+            // 
+            lblDHAA.AutoSize = true;
+            lblDHAA.Location = new Point(50, 688);
+            lblDHAA.Name = "lblDHAA";
+            lblDHAA.Size = new Size(257, 29);
+            lblDHAA.TabIndex = 13;
+            lblDHAA.Text = "Don't have an account?";
+            lblDHAA.Click += lblDHAA_Click;
+            // 
+            // linkRegister
+            // 
+            linkRegister.ActiveLinkColor = Color.FromArgb(80, 160, 255);
+            linkRegister.Font = new Font("Microsoft Sans Serif", 12F);
+            linkRegister.ForeColor = Color.FromArgb(48, 48, 48);
+            linkRegister.LinkBehavior = LinkBehavior.AlwaysUnderline;
+            linkRegister.Location = new Point(410, 688);
+            linkRegister.Name = "linkRegister";
+            linkRegister.Size = new Size(109, 25);
+            linkRegister.TabIndex = 10;
+            linkRegister.TabStop = true;
+            linkRegister.Text = "Register";
+            linkRegister.VisitedLinkColor = Color.FromArgb(230, 80, 80);
+            linkRegister.Click += linkRegister_Click;
+            // 
             // chkRemember
             // 
             chkRemember.Font = new Font("Microsoft Sans Serif", 12F);
             chkRemember.ForeColor = Color.FromArgb(48, 48, 48);
-            chkRemember.Location = new Point(42, 467);
+            chkRemember.Location = new Point(42, 566);
             chkRemember.MinimumSize = new Size(1, 1);
             chkRemember.Name = "chkRemember";
             chkRemember.Size = new Size(225, 34);
@@ -145,7 +141,7 @@
             linkForgot.Font = new Font("Microsoft Sans Serif", 12F);
             linkForgot.ForeColor = Color.FromArgb(48, 48, 48);
             linkForgot.LinkBehavior = LinkBehavior.AlwaysUnderline;
-            linkForgot.Location = new Point(284, 467);
+            linkForgot.Location = new Point(309, 566);
             linkForgot.Name = "linkForgot";
             linkForgot.Size = new Size(210, 34);
             linkForgot.TabIndex = 8;
@@ -157,10 +153,10 @@
             // btnLogin
             // 
             btnLogin.Font = new Font("Microsoft Sans Serif", 12F);
-            btnLogin.Location = new Point(42, 542);
+            btnLogin.Location = new Point(42, 618);
             btnLogin.MinimumSize = new Size(1, 1);
             btnLogin.Name = "btnLogin";
-            btnLogin.Size = new Size(452, 47);
+            btnLogin.Size = new Size(477, 47);
             btnLogin.TabIndex = 7;
             btnLogin.Text = "Login";
             btnLogin.TipsFont = new Font("Microsoft Sans Serif", 9F);
@@ -170,7 +166,7 @@
             // 
             lblEmail.Font = new Font("Microsoft Sans Serif", 12F);
             lblEmail.ForeColor = Color.FromArgb(48, 48, 48);
-            lblEmail.Location = new Point(42, 200);
+            lblEmail.Location = new Point(42, 332);
             lblEmail.Name = "lblEmail";
             lblEmail.Size = new Size(83, 34);
             lblEmail.TabIndex = 4;
@@ -180,137 +176,46 @@
             // 
             lblPassword.Font = new Font("Microsoft Sans Serif", 12F);
             lblPassword.ForeColor = Color.FromArgb(48, 48, 48);
-            lblPassword.Location = new Point(42, 348);
+            lblPassword.Location = new Point(42, 450);
             lblPassword.Name = "lblPassword";
             lblPassword.Size = new Size(122, 34);
             lblPassword.TabIndex = 3;
             lblPassword.Text = "Password";
             // 
-            // uiPanel2
-            // 
-            uiPanel2.Controls.Add(lblSEasy);
-            uiPanel2.Controls.Add(lblSubTitle);
-            uiPanel2.Controls.Add(pictureBox2);
-            uiPanel2.Controls.Add(lblTitle);
-            uiPanel2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiPanel2.Location = new Point(30, 14);
-            uiPanel2.Margin = new Padding(4, 5, 4, 5);
-            uiPanel2.MinimumSize = new Size(1, 1);
-            uiPanel2.Name = "uiPanel2";
-            uiPanel2.Size = new Size(544, 919);
-            uiPanel2.TabIndex = 15;
-            uiPanel2.Text = null;
-            uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
-            // lblSEasy
-            // 
-            lblSEasy.Controls.Add(label2);
-            lblSEasy.Controls.Add(lblSFast);
-            lblSEasy.Controls.Add(lblMSecure);
-            lblSEasy.Controls.Add(lblEasy);
-            lblSEasy.Controls.Add(lblFast);
-            lblSEasy.Controls.Add(lblSecure);
-            lblSEasy.Font = new Font("Microsoft Sans Serif", 12F);
-            lblSEasy.Location = new Point(42, 542);
-            lblSEasy.Margin = new Padding(4, 5, 4, 5);
-            lblSEasy.MinimumSize = new Size(1, 1);
-            lblSEasy.Name = "lblSEasy";
-            lblSEasy.Size = new Size(444, 326);
-            lblSEasy.TabIndex = 3;
-            lblSEasy.Text = " ";
-            lblSEasy.TextAlignment = ContentAlignment.MiddleCenter;
-            // 
             // lblSubTitle
             // 
             lblSubTitle.Font = new Font("Microsoft Sans Serif", 12F);
             lblSubTitle.ForeColor = Color.FromArgb(48, 48, 48);
-            lblSubTitle.Location = new Point(52, 176);
+            lblSubTitle.Location = new Point(141, 253);
             lblSubTitle.Name = "lblSubTitle";
-            lblSubTitle.Size = new Size(434, 29);
+            lblSubTitle.Size = new Size(302, 29);
             lblSubTitle.TabIndex = 2;
-            lblSubTitle.Text = "Login to access your Mini Digital wallet\r\n";
+            lblSubTitle.Text = "Login to access your wallet\r\n";
             // 
-            // pictureBox2
+            // pictureBox1
             // 
-            pictureBox2.Location = new Point(141, 253);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(247, 231);
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
+            pictureBox1.Location = new Point(195, 44);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(185, 136);
+            pictureBox1.TabIndex = 1;
+            pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click;
             // 
             // lblTitle
             // 
             lblTitle.Font = new Font("Microsoft Sans Serif", 12F);
             lblTitle.ForeColor = Color.FromArgb(48, 48, 48);
-            lblTitle.Location = new Point(166, 107);
+            lblTitle.Location = new Point(195, 211);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(185, 42);
             lblTitle.TabIndex = 0;
             lblTitle.Text = "Welcome Back!";
-            // 
-            // lblSecure
-            // 
-            lblSecure.Font = new Font("Microsoft Sans Serif", 12F);
-            lblSecure.ForeColor = Color.FromArgb(48, 48, 48);
-            lblSecure.Location = new Point(40, 28);
-            lblSecure.Name = "lblSecure";
-            lblSecure.Size = new Size(96, 35);
-            lblSecure.TabIndex = 1;
-            lblSecure.Text = "Secure";
-            // 
-            // lblFast
-            // 
-            lblFast.Font = new Font("Microsoft Sans Serif", 12F);
-            lblFast.ForeColor = Color.FromArgb(48, 48, 48);
-            lblFast.Location = new Point(40, 128);
-            lblFast.Name = "lblFast";
-            lblFast.Size = new Size(63, 35);
-            lblFast.TabIndex = 2;
-            lblFast.Text = "Fast";
-            // 
-            // lblEasy
-            // 
-            lblEasy.Font = new Font("Microsoft Sans Serif", 12F);
-            lblEasy.ForeColor = Color.FromArgb(48, 48, 48);
-            lblEasy.Location = new Point(40, 221);
-            lblEasy.Name = "lblEasy";
-            lblEasy.Size = new Size(70, 35);
-            lblEasy.TabIndex = 3;
-            lblEasy.Text = "Easy";
-            // 
-            // lblMSecure
-            // 
-            lblMSecure.AutoSize = true;
-            lblMSecure.Location = new Point(40, 72);
-            lblMSecure.Name = "lblMSecure";
-            lblMSecure.Size = new Size(345, 29);
-            lblMSecure.TabIndex = 4;
-            lblMSecure.Text = "Your transaction are 100% safe";
-            // 
-            // lblSFast
-            // 
-            lblSFast.AutoSize = true;
-            lblSFast.Location = new Point(40, 172);
-            lblSFast.Name = "lblSFast";
-            lblSFast.Size = new Size(364, 29);
-            lblSFast.TabIndex = 4;
-            lblSFast.Text = "Send and receiw money instantly\r\n";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(40, 265);
-            label2.Name = "label2";
-            label2.Size = new Size(343, 58);
-            label2.TabIndex = 5;
-            label2.Text = "Simple and user-friendly wallet\r\n\r\n";
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1254, 1008);
-            Controls.Add(uiPanel2);
             Controls.Add(uiPanel1);
             FormBorderStyle = FormBorderStyle.FixedDialog;
             Margin = new Padding(2);
@@ -318,35 +223,25 @@
             Text = "LOGIN";
             Load += Form1_Load;
             uiPanel1.ResumeLayout(false);
-            uiPanel2.ResumeLayout(false);
-            lblSEasy.ResumeLayout(false);
-            lblSEasy.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            uiPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
         }
 
         #endregion
 
         private Sunny.UI.UIPanel uiPanel1;
+        private PictureBox pictureBox1;
+        private Sunny.UI.UILabel lblTitle;
         private Sunny.UI.UILabel lblEmail;
         private Sunny.UI.UILabel lblPassword;
+        private Sunny.UI.UILabel lblSubTitle;
         private Sunny.UI.UIButton btnLogin;
         private Sunny.UI.UILinkLabel linkForgot;
         private Sunny.UI.UICheckBox chkRemember;
+        private Sunny.UI.UILinkLabel linkRegister;
+        private Label lblDHAA;
         private Sunny.UI.UITextBox txtPassword;
         private Sunny.UI.UITextBox txtEmail;
-        private Sunny.UI.UILabel lblOR;
-        private Sunny.UI.UIPanel uiPanel2;
-        private Sunny.UI.UILabel lblSubTitle;
-        private PictureBox pictureBox2;
-        private Sunny.UI.UILabel lblTitle;
-        private Sunny.UI.UIButton btnCNA;
-        private Sunny.UI.UIPanel lblSEasy;
-        private Label lblMSecure;
-        private Sunny.UI.UILabel lblEasy;
-        private Sunny.UI.UILabel lblFast;
-        private Sunny.UI.UILabel lblSecure;
-        private Label label2;
-        private Label lblSFast;
     }
 }

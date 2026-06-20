@@ -710,6 +710,7 @@
             // 
             ucProfile1.Dock = DockStyle.Fill;
             ucProfile1.Location = new Point(0, 0);
+            ucProfile1.Margin = new Padding(2);
             ucProfile1.Name = "ucProfile1";
             ucProfile1.Size = new Size(879, 790);
             ucProfile1.TabIndex = 0;
@@ -730,6 +731,7 @@
             // 
             ucSetting1.Dock = DockStyle.Fill;
             ucSetting1.Location = new Point(0, 0);
+            ucSetting1.Margin = new Padding(2);
             ucSetting1.Name = "ucSetting1";
             ucSetting1.Size = new Size(879, 790);
             ucSetting1.TabIndex = 0;

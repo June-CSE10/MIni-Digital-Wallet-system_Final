@@ -1,11 +1,7 @@
-using Microsoft.Data.SqlClient;
-using System.Windows.Forms;
-
 namespace MIni_Digital_Wallet_system_Final
 {
     public partial class Form1 : Form
     {
-        SqlConnection con = new SqlConnection();
         public Form1()
         {
             InitializeComponent();
@@ -23,69 +19,15 @@ namespace MIni_Digital_Wallet_system_Final
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+
+            if (txtEmail.Text == "" &&
+                 txtPassword.Text == "")
             {
-
-                try
-
-                {
-
-                    con.Open();
-
-                    string query = "SELECT COUNT(*) FROM Users WHERE Email=@Email AND Password=@Password";
-
-                    SqlCommand cmd = new SqlCommand(query, con);
-
-                    cmd.Parameters.AddWithValue("@Email", txtEmail.Text);
-
-                    cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
-
-                    int count = (int)cmd.ExecuteScalar();
-
-                    if (count > 0)
-
-                    {
-
-                        MessageBox.Show("Login Successful!",
-
-                                        "Success",
-
-                                        MessageBoxButtons.OK,
-
-                                        MessageBoxIcon.Information);
-
-                        Dashboard frm = new Dashboard();
-
-                        frm.Show();
-
-                        this.Hide();
-
-                    }
-
-                    else
-
-                    {
-
-                        MessageBox.Show("Invalid Email or Password!",
-
-                                        "Login Failed",
-
-                                        MessageBoxButtons.OK,
-
-                                        MessageBoxIcon.Error);
-
-                    }
-
-                    con.Close();
-
-                }
-
-                catch (Exception ex)
-
-                {
-
-                    MessageBox.Show(ex.Message);
-
-                }
+                MessageBox.Show("Login Successful!");
+            }
+            else
+            {
+                MessageBox.Show("Invalid Email or Password!");
             }
         }
 
@@ -114,15 +56,6 @@ namespace MIni_Digital_Wallet_system_Final
         private void lblDHAA_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void btnCNA_Click(object sender, EventArgs e)
-        {
-
-            Register frm = new Register();
-            frm.Show();
-
-            this.Hide();
         }
     }
 }
