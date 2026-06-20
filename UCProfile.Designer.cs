@@ -30,6 +30,7 @@
         {
             uiAvatar1 = new Sunny.UI.UIAvatar();
             uiPanel1 = new Sunny.UI.UIPanel();
+            uiLabel6 = new Sunny.UI.UILabel();
             uiPanel2 = new Sunny.UI.UIPanel();
             uiDatePicker2 = new Sunny.UI.UIDatePicker();
             uiSymbolButton1 = new Sunny.UI.UISymbolButton();
@@ -43,7 +44,6 @@
             uiLabel2 = new Sunny.UI.UILabel();
             uiLabel1 = new Sunny.UI.UILabel();
             uiPanel3 = new Sunny.UI.UIPanel();
-            uiLabel6 = new Sunny.UI.UILabel();
             uiPanel1.SuspendLayout();
             uiPanel2.SuspendLayout();
             SuspendLayout();
@@ -75,6 +75,17 @@
             uiPanel1.TabIndex = 1;
             uiPanel1.Text = null;
             uiPanel1.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // uiLabel6
+            // 
+            uiLabel6.BackColor = SystemColors.Control;
+            uiLabel6.Font = new Font("Microsoft Sans Serif", 12F);
+            uiLabel6.ForeColor = Color.Black;
+            uiLabel6.Location = new Point(45, 119);
+            uiLabel6.Name = "uiLabel6";
+            uiLabel6.Size = new Size(119, 23);
+            uiLabel6.TabIndex = 1;
+            uiLabel6.Text = "uiLabel6";
             // 
             // uiPanel2
             // 
@@ -117,6 +128,7 @@
             uiDatePicker2.SymbolNormal = 61555;
             uiDatePicker2.SymbolSize = 24;
             uiDatePicker2.TabIndex = 11;
+            uiDatePicker2.Text = "2026-06-20";
             uiDatePicker2.TextAlignment = ContentAlignment.MiddleLeft;
             uiDatePicker2.Value = new DateTime(2026, 6, 20, 22, 22, 35, 936);
             uiDatePicker2.Watermark = "";
@@ -262,17 +274,6 @@
             uiPanel3.Text = "Profile";
             uiPanel3.TextAlignment = ContentAlignment.MiddleLeft;
             // 
-            // uiLabel6
-            // 
-            uiLabel6.BackColor = SystemColors.Control;
-            uiLabel6.Font = new Font("Microsoft Sans Serif", 12F);
-            uiLabel6.ForeColor = Color.Black;
-            uiLabel6.Location = new Point(45, 119);
-            uiLabel6.Name = "uiLabel6";
-            uiLabel6.Size = new Size(119, 23);
-            uiLabel6.TabIndex = 1;
-            uiLabel6.Text = "uiLabel6";
-            // 
             // UCProfile
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -282,7 +283,7 @@
             Controls.Add(uiPanel1);
             Margin = new Padding(2);
             Name = "UCProfile";
-            Size = new Size(853, 665);
+            Size = new Size(738, 657);
             Load += UCProfile_Load;
             uiPanel1.ResumeLayout(false);
             uiPanel2.ResumeLayout(false);
