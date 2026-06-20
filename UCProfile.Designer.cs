@@ -40,8 +40,9 @@
             uiTextBox1 = new Sunny.UI.UITextBox();
             uiTextBox2 = new Sunny.UI.UITextBox();
             uiTextBox3 = new Sunny.UI.UITextBox();
-            uiTextBox4 = new Sunny.UI.UITextBox();
             uiTextBox5 = new Sunny.UI.UITextBox();
+            uiSymbolButton1 = new Sunny.UI.UISymbolButton();
+            uiDatePicker2 = new Sunny.UI.UIDatePicker();
             uiPanel1.SuspendLayout();
             uiPanel2.SuspendLayout();
             SuspendLayout();
@@ -72,8 +73,9 @@
             // 
             // uiPanel2
             // 
+            uiPanel2.Controls.Add(uiDatePicker2);
+            uiPanel2.Controls.Add(uiSymbolButton1);
             uiPanel2.Controls.Add(uiTextBox5);
-            uiPanel2.Controls.Add(uiTextBox4);
             uiPanel2.Controls.Add(uiTextBox3);
             uiPanel2.Controls.Add(uiTextBox2);
             uiPanel2.Controls.Add(uiTextBox1);
@@ -88,7 +90,7 @@
             uiPanel2.MinimumSize = new Size(1, 1);
             uiPanel2.Name = "uiPanel2";
             uiPanel2.RectColor = Color.White;
-            uiPanel2.Size = new Size(550, 540);
+            uiPanel2.Size = new Size(441, 540);
             uiPanel2.TabIndex = 2;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
             // 
@@ -100,7 +102,7 @@
             uiPanel3.MinimumSize = new Size(1, 1);
             uiPanel3.Name = "uiPanel3";
             uiPanel3.RectColor = Color.White;
-            uiPanel3.Size = new Size(779, 71);
+            uiPanel3.Size = new Size(670, 71);
             uiPanel3.TabIndex = 3;
             uiPanel3.Text = "Profile";
             uiPanel3.TextAlignment = ContentAlignment.MiddleLeft;
@@ -110,7 +112,7 @@
             uiLabel1.BackColor = Color.Transparent;
             uiLabel1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(38, 24);
+            uiLabel1.Location = new Point(17, 24);
             uiLabel1.Name = "uiLabel1";
             uiLabel1.Size = new Size(125, 29);
             uiLabel1.TabIndex = 0;
@@ -121,7 +123,7 @@
             uiLabel2.BackColor = Color.Transparent;
             uiLabel2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel2.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel2.Location = new Point(38, 111);
+            uiLabel2.Location = new Point(17, 111);
             uiLabel2.Name = "uiLabel2";
             uiLabel2.Size = new Size(125, 29);
             uiLabel2.TabIndex = 1;
@@ -132,7 +134,7 @@
             uiLabel3.BackColor = Color.Transparent;
             uiLabel3.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel3.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel3.Location = new Point(38, 201);
+            uiLabel3.Location = new Point(17, 201);
             uiLabel3.Name = "uiLabel3";
             uiLabel3.Size = new Size(159, 29);
             uiLabel3.TabIndex = 2;
@@ -143,7 +145,7 @@
             uiLabel4.BackColor = Color.Transparent;
             uiLabel4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel4.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel4.Location = new Point(38, 296);
+            uiLabel4.Location = new Point(17, 296);
             uiLabel4.Name = "uiLabel4";
             uiLabel4.Size = new Size(125, 29);
             uiLabel4.TabIndex = 3;
@@ -154,7 +156,7 @@
             uiLabel5.BackColor = Color.Transparent;
             uiLabel5.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel5.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel5.Location = new Point(38, 380);
+            uiLabel5.Location = new Point(17, 380);
             uiLabel5.Name = "uiLabel5";
             uiLabel5.Size = new Size(125, 29);
             uiLabel5.TabIndex = 4;
@@ -163,7 +165,7 @@
             // uiTextBox1
             // 
             uiTextBox1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox1.Location = new Point(38, 49);
+            uiTextBox1.Location = new Point(17, 49);
             uiTextBox1.Margin = new Padding(4, 5, 4, 5);
             uiTextBox1.MinimumSize = new Size(1, 16);
             uiTextBox1.Name = "uiTextBox1";
@@ -178,7 +180,7 @@
             // uiTextBox2
             // 
             uiTextBox2.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox2.Location = new Point(38, 135);
+            uiTextBox2.Location = new Point(17, 135);
             uiTextBox2.Margin = new Padding(4, 5, 4, 5);
             uiTextBox2.MinimumSize = new Size(1, 16);
             uiTextBox2.Name = "uiTextBox2";
@@ -193,7 +195,7 @@
             // uiTextBox3
             // 
             uiTextBox3.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox3.Location = new Point(38, 226);
+            uiTextBox3.Location = new Point(17, 226);
             uiTextBox3.Margin = new Padding(4, 5, 4, 5);
             uiTextBox3.MinimumSize = new Size(1, 16);
             uiTextBox3.Name = "uiTextBox3";
@@ -205,35 +207,53 @@
             uiTextBox3.TextAlignment = ContentAlignment.MiddleLeft;
             uiTextBox3.Watermark = "";
             // 
-            // uiTextBox4
-            // 
-            uiTextBox4.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox4.Location = new Point(38, 321);
-            uiTextBox4.Margin = new Padding(4, 5, 4, 5);
-            uiTextBox4.MinimumSize = new Size(1, 16);
-            uiTextBox4.Name = "uiTextBox4";
-            uiTextBox4.Padding = new Padding(5);
-            uiTextBox4.RectColor = Color.White;
-            uiTextBox4.ShowText = false;
-            uiTextBox4.Size = new Size(362, 36);
-            uiTextBox4.TabIndex = 8;
-            uiTextBox4.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox4.Watermark = "";
-            // 
             // uiTextBox5
             // 
             uiTextBox5.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox5.Location = new Point(38, 402);
+            uiTextBox5.Location = new Point(17, 402);
             uiTextBox5.Margin = new Padding(4, 5, 4, 5);
             uiTextBox5.MinimumSize = new Size(1, 16);
             uiTextBox5.Name = "uiTextBox5";
             uiTextBox5.Padding = new Padding(5);
             uiTextBox5.RectColor = Color.White;
             uiTextBox5.ShowText = false;
-            uiTextBox5.Size = new Size(362, 36);
+            uiTextBox5.Size = new Size(362, 58);
             uiTextBox5.TabIndex = 9;
             uiTextBox5.TextAlignment = ContentAlignment.MiddleLeft;
             uiTextBox5.Watermark = "";
+            // 
+            // uiSymbolButton1
+            // 
+            uiSymbolButton1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiSymbolButton1.Location = new Point(17, 480);
+            uiSymbolButton1.MinimumSize = new Size(1, 1);
+            uiSymbolButton1.Name = "uiSymbolButton1";
+            uiSymbolButton1.Size = new Size(362, 44);
+            uiSymbolButton1.Symbol = 62236;
+            uiSymbolButton1.TabIndex = 3;
+            uiSymbolButton1.Text = "Update Profile";
+            uiSymbolButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            // 
+            // uiDatePicker2
+            // 
+            uiDatePicker2.DateCultureInfo = new System.Globalization.CultureInfo("");
+            uiDatePicker2.FillColor = Color.White;
+            uiDatePicker2.Font = new Font("Microsoft Sans Serif", 12F);
+            uiDatePicker2.Location = new Point(17, 317);
+            uiDatePicker2.Margin = new Padding(4, 5, 4, 5);
+            uiDatePicker2.MaxLength = 10;
+            uiDatePicker2.MinimumSize = new Size(63, 0);
+            uiDatePicker2.Name = "uiDatePicker2";
+            uiDatePicker2.Padding = new Padding(0, 0, 30, 2);
+            uiDatePicker2.RectColor = Color.White;
+            uiDatePicker2.Size = new Size(362, 36);
+            uiDatePicker2.SymbolDropDown = 61555;
+            uiDatePicker2.SymbolNormal = 61555;
+            uiDatePicker2.SymbolSize = 24;
+            uiDatePicker2.TabIndex = 11;
+            uiDatePicker2.TextAlignment = ContentAlignment.MiddleLeft;
+            uiDatePicker2.Value = new DateTime(2026, 6, 20, 22, 22, 35, 936);
+            uiDatePicker2.Watermark = "";
             // 
             // UCProfile
             // 
@@ -259,7 +279,6 @@
         private Sunny.UI.UILabel uiLabel1;
         private Sunny.UI.UIPanel uiPanel3;
         private Sunny.UI.UITextBox uiTextBox5;
-        private Sunny.UI.UITextBox uiTextBox4;
         private Sunny.UI.UITextBox uiTextBox3;
         private Sunny.UI.UITextBox uiTextBox2;
         private Sunny.UI.UITextBox uiTextBox1;
@@ -267,5 +286,7 @@
         private Sunny.UI.UILabel uiLabel4;
         private Sunny.UI.UILabel uiLabel3;
         private Sunny.UI.UILabel uiLabel2;
+        private Sunny.UI.UIDatePicker uiDatePicker2;
+        private Sunny.UI.UISymbolButton uiSymbolButton1;
     }
 }
