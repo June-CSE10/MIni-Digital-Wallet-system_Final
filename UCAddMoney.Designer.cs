@@ -79,7 +79,7 @@
             Controls.Add(uiAvatar1);
             Controls.Add(uiBarChart1);
             Name = "UCAddMoney";
-            Size = new Size(1305, 863);
+            Size = new Size(879, 790);
             ResumeLayout(false);
         }
 
