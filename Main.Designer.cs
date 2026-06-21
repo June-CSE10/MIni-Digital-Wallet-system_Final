@@ -31,6 +31,15 @@
             components = new System.ComponentModel.Container();
             tabMenu = new Sunny.UI.UITabControlMenu();
             tabDashboard = new TabPage();
+            LblHistory = new Label();
+            dgvTransactions = new DataGridView();
+            colName = new DataGridViewTextBoxColumn();
+            colAmount = new DataGridViewTextBoxColumn();
+            colDate = new DataGridViewTextBoxColumn();
+            PanelBalance = new Panel();
+            LblTotal = new Label();
+            LblMoney = new Label();
+            LblName = new Label();
             tabSendMoney = new TabPage();
             pnlSendMoneyCard = new Sunny.UI.UIPanel();
             btnSendMoney = new Sunny.UI.UISymbolButton();
@@ -59,6 +68,9 @@
             lblmyprofile = new Sunny.UI.UILabel();
             imageList1 = new ImageList(components);
             tabMenu.SuspendLayout();
+            tabDashboard.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTransactions).BeginInit();
+            PanelBalance.SuspendLayout();
             tabSendMoney.SuspendLayout();
             pnlSendMoneyCard.SuspendLayout();
             tabProfile.SuspendLayout();
@@ -79,11 +91,12 @@
             tabMenu.Font = new Font("Microsoft Sans Serif", 12F);
             tabMenu.ImageList = imageList1;
             tabMenu.Location = new Point(0, 0);
+            tabMenu.Margin = new Padding(2);
             tabMenu.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             tabMenu.Multiline = true;
             tabMenu.Name = "tabMenu";
             tabMenu.SelectedIndex = 0;
-            tabMenu.Size = new Size(2139, 1089);
+            tabMenu.Size = new Size(1258, 664);
             tabMenu.SizeMode = TabSizeMode.Fixed;
             tabMenu.TabBackColor = Color.FromArgb(96, 43, 217);
             tabMenu.TabIndex = 0;
@@ -92,13 +105,106 @@
             // tabDashboard
             // 
             tabDashboard.BackColor = Color.WhiteSmoke;
+            tabDashboard.Controls.Add(LblHistory);
+            tabDashboard.Controls.Add(dgvTransactions);
+            tabDashboard.Controls.Add(PanelBalance);
+            tabDashboard.Controls.Add(LblName);
             tabDashboard.Cursor = Cursors.Hand;
             tabDashboard.Location = new Point(201, 0);
+            tabDashboard.Margin = new Padding(2);
             tabDashboard.Name = "tabDashboard";
-            tabDashboard.Size = new Size(1938, 1089);
+            tabDashboard.Size = new Size(1057, 664);
             tabDashboard.TabIndex = 0;
             tabDashboard.Text = "Dashboard";
             tabDashboard.Click += tabDashboard_Click;
+            // 
+            // LblHistory
+            // 
+            LblHistory.AutoSize = true;
+            LblHistory.BackColor = Color.DarkTurquoise;
+            LblHistory.ForeColor = SystemColors.HighlightText;
+            LblHistory.Location = new Point(91, 216);
+            LblHistory.Margin = new Padding(2, 0, 2, 0);
+            LblHistory.Name = "LblHistory";
+            LblHistory.Size = new Size(87, 29);
+            LblHistory.TabIndex = 3;
+            LblHistory.Text = "History";
+            // 
+            // dgvTransactions
+            // 
+            dgvTransactions.BackgroundColor = SystemColors.ButtonFace;
+            dgvTransactions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvTransactions.Columns.AddRange(new DataGridViewColumn[] { colName, colAmount, colDate });
+            dgvTransactions.Location = new Point(91, 262);
+            dgvTransactions.Margin = new Padding(2);
+            dgvTransactions.Name = "dgvTransactions";
+            dgvTransactions.RowHeadersWidth = 102;
+            dgvTransactions.Size = new Size(549, 229);
+            dgvTransactions.TabIndex = 2;
+            // 
+            // colName
+            // 
+            colName.HeaderText = "Name";
+            colName.MinimumWidth = 12;
+            colName.Name = "colName";
+            colName.Width = 250;
+            // 
+            // colAmount
+            // 
+            colAmount.HeaderText = "Amount";
+            colAmount.MinimumWidth = 12;
+            colAmount.Name = "colAmount";
+            colAmount.Width = 250;
+            // 
+            // colDate
+            // 
+            colDate.HeaderText = "Date";
+            colDate.MinimumWidth = 12;
+            colDate.Name = "colDate";
+            colDate.Width = 250;
+            // 
+            // PanelBalance
+            // 
+            PanelBalance.BackColor = Color.MediumTurquoise;
+            PanelBalance.Controls.Add(LblTotal);
+            PanelBalance.Controls.Add(LblMoney);
+            PanelBalance.ForeColor = SystemColors.ControlLightLight;
+            PanelBalance.Location = new Point(91, 112);
+            PanelBalance.Margin = new Padding(2);
+            PanelBalance.Name = "PanelBalance";
+            PanelBalance.Size = new Size(548, 86);
+            PanelBalance.TabIndex = 1;
+            // 
+            // LblTotal
+            // 
+            LblTotal.AutoSize = true;
+            LblTotal.Location = new Point(22, 21);
+            LblTotal.Margin = new Padding(2, 0, 2, 0);
+            LblTotal.Name = "LblTotal";
+            LblTotal.Size = new Size(161, 29);
+            LblTotal.TabIndex = 2;
+            LblTotal.Text = "Total Balance";
+            // 
+            // LblMoney
+            // 
+            LblMoney.AutoSize = true;
+            LblMoney.Location = new Point(338, 21);
+            LblMoney.Margin = new Padding(2, 0, 2, 0);
+            LblMoney.Name = "LblMoney";
+            LblMoney.Size = new Size(116, 29);
+            LblMoney.TabIndex = 0;
+            LblMoney.Text = "$1,250.00";
+            // 
+            // LblName
+            // 
+            LblName.AutoSize = true;
+            LblName.Font = new Font("Segoe UI", 15.9000006F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            LblName.Location = new Point(76, 51);
+            LblName.Margin = new Padding(2, 0, 2, 0);
+            LblName.Name = "LblName";
+            LblName.Size = new Size(356, 45);
+            LblName.TabIndex = 0;
+            LblName.Text = "Good Morning, Messi!";
             // 
             // tabSendMoney
             // 
@@ -107,8 +213,9 @@
             tabSendMoney.Controls.Add(uiLabel1);
             tabSendMoney.Cursor = Cursors.Hand;
             tabSendMoney.Location = new Point(201, 0);
+            tabSendMoney.Margin = new Padding(2);
             tabSendMoney.Name = "tabSendMoney";
-            tabSendMoney.Size = new Size(1938, 1089);
+            tabSendMoney.Size = new Size(1057, 664);
             tabSendMoney.TabIndex = 1;
             tabSendMoney.Text = "Send Money";
             // 
@@ -126,13 +233,13 @@
             pnlSendMoneyCard.FillColor = Color.White;
             pnlSendMoneyCard.FillColor2 = Color.FromArgb(248, 248, 248);
             pnlSendMoneyCard.Font = new Font("Microsoft Sans Serif", 12F);
-            pnlSendMoneyCard.Location = new Point(155, 180);
-            pnlSendMoneyCard.Margin = new Padding(7, 8, 7, 8);
-            pnlSendMoneyCard.MinimumSize = new Size(2, 2);
+            pnlSendMoneyCard.Location = new Point(91, 110);
+            pnlSendMoneyCard.Margin = new Padding(4, 5, 4, 5);
+            pnlSendMoneyCard.MinimumSize = new Size(1, 1);
             pnlSendMoneyCard.Name = "pnlSendMoneyCard";
             pnlSendMoneyCard.Radius = 20;
             pnlSendMoneyCard.RectColor = Color.FromArgb(230, 230, 230);
-            pnlSendMoneyCard.Size = new Size(994, 974);
+            pnlSendMoneyCard.Size = new Size(585, 594);
             pnlSendMoneyCard.Style = Sunny.UI.UIStyle.Custom;
             pnlSendMoneyCard.TabIndex = 4;
             pnlSendMoneyCard.Text = null;
@@ -264,9 +371,10 @@
             // 
             uiLabel1.Font = new Font("Segoe UI", 16F, FontStyle.Bold, GraphicsUnit.Point, 0);
             uiLabel1.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel1.Location = new Point(129, 84);
+            uiLabel1.Location = new Point(76, 51);
+            uiLabel1.Margin = new Padding(2, 0, 2, 0);
             uiLabel1.Name = "uiLabel1";
-            uiLabel1.Size = new Size(382, 69);
+            uiLabel1.Size = new Size(225, 42);
             uiLabel1.TabIndex = 0;
             uiLabel1.Text = "Send Money";
             // 
@@ -275,8 +383,9 @@
             tabTransactions.BackColor = Color.WhiteSmoke;
             tabTransactions.Cursor = Cursors.Hand;
             tabTransactions.Location = new Point(201, 0);
+            tabTransactions.Margin = new Padding(2);
             tabTransactions.Name = "tabTransactions";
-            tabTransactions.Size = new Size(1938, 1089);
+            tabTransactions.Size = new Size(1057, 664);
             tabTransactions.TabIndex = 2;
             tabTransactions.Text = "Transactions";
             // 
@@ -299,9 +408,10 @@
             tabProfile.Controls.Add(lblmyprofile);
             tabProfile.Cursor = Cursors.Hand;
             tabProfile.Location = new Point(201, 0);
+            tabProfile.Margin = new Padding(2);
             tabProfile.Name = "tabProfile";
             tabProfile.RightToLeft = RightToLeft.No;
-            tabProfile.Size = new Size(1938, 1089);
+            tabProfile.Size = new Size(1057, 664);
             tabProfile.TabIndex = 3;
             tabProfile.Text = "Profile";
             // 
@@ -311,10 +421,10 @@
             uiLinkLabel1.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLinkLabel1.ForeColor = Color.FromArgb(48, 48, 48);
             uiLinkLabel1.LinkBehavior = LinkBehavior.AlwaysUnderline;
-            uiLinkLabel1.Location = new Point(92, 453);
-            uiLinkLabel1.Margin = new Padding(7, 0, 7, 0);
+            uiLinkLabel1.Location = new Point(54, 276);
+            uiLinkLabel1.Margin = new Padding(4, 0, 4, 0);
             uiLinkLabel1.Name = "uiLinkLabel1";
-            uiLinkLabel1.Size = new Size(206, 41);
+            uiLinkLabel1.Size = new Size(121, 25);
             uiLinkLabel1.TabIndex = 16;
             uiLinkLabel1.TabStop = true;
             uiLinkLabel1.Text = "Upload Profile";
@@ -323,10 +433,10 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(92, 243);
-            pictureBox1.Margin = new Padding(7, 7, 7, 7);
+            pictureBox1.Location = new Point(54, 148);
+            pictureBox1.Margin = new Padding(4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(212, 205);
+            pictureBox1.Size = new Size(125, 125);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 15;
             pictureBox1.TabStop = false;
@@ -334,14 +444,14 @@
             // uitxtuser
             // 
             uitxtuser.Font = new Font("Microsoft Sans Serif", 12F);
-            uitxtuser.Location = new Point(406, 523);
-            uitxtuser.Margin = new Padding(8, 10, 8, 10);
-            uitxtuser.MinimumSize = new Size(2, 33);
+            uitxtuser.Location = new Point(239, 319);
+            uitxtuser.Margin = new Padding(5, 6, 5, 6);
+            uitxtuser.MinimumSize = new Size(1, 20);
             uitxtuser.Name = "uitxtuser";
-            uitxtuser.Padding = new Padding(10, 10, 10, 10);
+            uitxtuser.Padding = new Padding(6);
             uitxtuser.RectColor = Color.White;
             uitxtuser.ShowText = false;
-            uitxtuser.Size = new Size(638, 66);
+            uitxtuser.Size = new Size(375, 40);
             uitxtuser.TabIndex = 14;
             uitxtuser.TextAlignment = ContentAlignment.MiddleLeft;
             uitxtuser.Watermark = "";
@@ -349,14 +459,14 @@
             // uitxtphonenumber
             // 
             uitxtphonenumber.Font = new Font("Microsoft Sans Serif", 12F);
-            uitxtphonenumber.Location = new Point(406, 859);
-            uitxtphonenumber.Margin = new Padding(8, 10, 8, 10);
-            uitxtphonenumber.MinimumSize = new Size(2, 33);
+            uitxtphonenumber.Location = new Point(239, 524);
+            uitxtphonenumber.Margin = new Padding(5, 6, 5, 6);
+            uitxtphonenumber.MinimumSize = new Size(1, 20);
             uitxtphonenumber.Name = "uitxtphonenumber";
-            uitxtphonenumber.Padding = new Padding(10, 10, 10, 10);
+            uitxtphonenumber.Padding = new Padding(6);
             uitxtphonenumber.RectColor = Color.White;
             uitxtphonenumber.ShowText = false;
-            uitxtphonenumber.Size = new Size(638, 66);
+            uitxtphonenumber.Size = new Size(375, 40);
             uitxtphonenumber.TabIndex = 13;
             uitxtphonenumber.TextAlignment = ContentAlignment.MiddleLeft;
             uitxtphonenumber.Watermark = "";
@@ -364,14 +474,14 @@
             // uitxtemail
             // 
             uitxtemail.Font = new Font("Microsoft Sans Serif", 12F);
-            uitxtemail.Location = new Point(406, 741);
-            uitxtemail.Margin = new Padding(8, 10, 8, 10);
-            uitxtemail.MinimumSize = new Size(2, 33);
+            uitxtemail.Location = new Point(239, 452);
+            uitxtemail.Margin = new Padding(5, 6, 5, 6);
+            uitxtemail.MinimumSize = new Size(1, 20);
             uitxtemail.Name = "uitxtemail";
-            uitxtemail.Padding = new Padding(10, 10, 10, 10);
+            uitxtemail.Padding = new Padding(6);
             uitxtemail.RectColor = Color.White;
             uitxtemail.ShowText = false;
-            uitxtemail.Size = new Size(638, 66);
+            uitxtemail.Size = new Size(375, 40);
             uitxtemail.TabIndex = 13;
             uitxtemail.TextAlignment = ContentAlignment.MiddleLeft;
             uitxtemail.Watermark = "";
@@ -379,14 +489,14 @@
             // uitxtfullname
             // 
             uitxtfullname.Font = new Font("Microsoft Sans Serif", 12F);
-            uitxtfullname.Location = new Point(406, 636);
-            uitxtfullname.Margin = new Padding(8, 10, 8, 10);
-            uitxtfullname.MinimumSize = new Size(2, 33);
+            uitxtfullname.Location = new Point(239, 388);
+            uitxtfullname.Margin = new Padding(5, 6, 5, 6);
+            uitxtfullname.MinimumSize = new Size(1, 20);
             uitxtfullname.Name = "uitxtfullname";
-            uitxtfullname.Padding = new Padding(10, 10, 10, 10);
+            uitxtfullname.Padding = new Padding(6);
             uitxtfullname.RectColor = Color.White;
             uitxtfullname.ShowText = false;
-            uitxtfullname.Size = new Size(638, 66);
+            uitxtfullname.Size = new Size(375, 40);
             uitxtfullname.TabIndex = 13;
             uitxtfullname.TextAlignment = ContentAlignment.MiddleLeft;
             uitxtfullname.Watermark = "";
@@ -396,12 +506,12 @@
             uiButton1.BackColor = Color.WhiteSmoke;
             uiButton1.FillColor = Color.SteelBlue;
             uiButton1.Font = new Font("Microsoft Sans Serif", 12F);
-            uiButton1.Location = new Point(92, 976);
-            uiButton1.Margin = new Padding(7, 7, 7, 7);
-            uiButton1.MinimumSize = new Size(2, 2);
+            uiButton1.Location = new Point(54, 595);
+            uiButton1.Margin = new Padding(4);
+            uiButton1.MinimumSize = new Size(1, 1);
             uiButton1.Name = "uiButton1";
             uiButton1.RectColor = Color.SkyBlue;
-            uiButton1.Size = new Size(1477, 79);
+            uiButton1.Size = new Size(869, 48);
             uiButton1.TabIndex = 11;
             uiButton1.Text = "Update Profile";
             uiButton1.TipsFont = new Font("Microsoft Sans Serif", 9F);
@@ -410,10 +520,10 @@
             // 
             lblPhonenumber.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblPhonenumber.ForeColor = Color.FromArgb(48, 48, 48);
-            lblPhonenumber.Location = new Point(92, 889);
-            lblPhonenumber.Margin = new Padding(7, 0, 7, 0);
+            lblPhonenumber.Location = new Point(54, 542);
+            lblPhonenumber.Margin = new Padding(4, 0, 4, 0);
             lblPhonenumber.Name = "lblPhonenumber";
-            lblPhonenumber.Size = new Size(355, 59);
+            lblPhonenumber.Size = new Size(209, 36);
             lblPhonenumber.TabIndex = 6;
             lblPhonenumber.Text = "Phone Number";
             // 
@@ -421,10 +531,10 @@
             // 
             lblEmail.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblEmail.ForeColor = Color.FromArgb(48, 48, 48);
-            lblEmail.Location = new Point(92, 772);
-            lblEmail.Margin = new Padding(7, 0, 7, 0);
+            lblEmail.Location = new Point(54, 471);
+            lblEmail.Margin = new Padding(4, 0, 4, 0);
             lblEmail.Name = "lblEmail";
-            lblEmail.Size = new Size(265, 59);
+            lblEmail.Size = new Size(156, 36);
             lblEmail.TabIndex = 5;
             lblEmail.Text = "Email";
             // 
@@ -432,10 +542,10 @@
             // 
             lblFullname.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblFullname.ForeColor = Color.FromArgb(48, 48, 48);
-            lblFullname.Location = new Point(92, 659);
-            lblFullname.Margin = new Padding(7, 0, 7, 0);
+            lblFullname.Location = new Point(54, 402);
+            lblFullname.Margin = new Padding(4, 0, 4, 0);
             lblFullname.Name = "lblFullname";
-            lblFullname.Size = new Size(265, 59);
+            lblFullname.Size = new Size(156, 36);
             lblFullname.TabIndex = 4;
             lblFullname.Text = "Full Name";
             // 
@@ -443,10 +553,10 @@
             // 
             lblUserID.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             lblUserID.ForeColor = Color.FromArgb(48, 48, 48);
-            lblUserID.Location = new Point(92, 551);
-            lblUserID.Margin = new Padding(7, 0, 7, 0);
+            lblUserID.Location = new Point(54, 336);
+            lblUserID.Margin = new Padding(4, 0, 4, 0);
             lblUserID.Name = "lblUserID";
-            lblUserID.Size = new Size(265, 62);
+            lblUserID.Size = new Size(156, 38);
             lblUserID.TabIndex = 3;
             lblUserID.Text = "User ID";
             // 
@@ -455,12 +565,12 @@
             Btneditprofile.BackColor = Color.WhiteSmoke;
             Btneditprofile.FillColor = SystemColors.ActiveCaption;
             Btneditprofile.Font = new Font("Microsoft Sans Serif", 12F);
-            Btneditprofile.Location = new Point(1306, 194);
-            Btneditprofile.Margin = new Padding(7, 7, 7, 7);
-            Btneditprofile.MinimumSize = new Size(2, 2);
+            Btneditprofile.Location = new Point(768, 118);
+            Btneditprofile.Margin = new Padding(4);
+            Btneditprofile.MinimumSize = new Size(1, 1);
             Btneditprofile.Name = "Btneditprofile";
             Btneditprofile.RectColor = Color.SkyBlue;
-            Btneditprofile.Size = new Size(264, 75);
+            Btneditprofile.Size = new Size(155, 46);
             Btneditprofile.TabIndex = 2;
             Btneditprofile.Text = "Edit Profile";
             Btneditprofile.TipsFont = new Font("Microsoft Sans Serif", 9F);
@@ -469,10 +579,10 @@
             // 
             uiLabel5.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             uiLabel5.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel5.Location = new Point(92, 154);
-            uiLabel5.Margin = new Padding(7, 0, 7, 0);
+            uiLabel5.Location = new Point(54, 94);
+            uiLabel5.Margin = new Padding(4, 0, 4, 0);
             uiLabel5.Name = "uiLabel5";
-            uiLabel5.Size = new Size(899, 59);
+            uiLabel5.Size = new Size(529, 36);
             uiLabel5.TabIndex = 1;
             uiLabel5.Text = "Manage your account information.";
             // 
@@ -480,10 +590,10 @@
             // 
             lblmyprofile.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             lblmyprofile.ForeColor = Color.FromArgb(48, 48, 48);
-            lblmyprofile.Location = new Point(92, 98);
-            lblmyprofile.Margin = new Padding(7, 0, 7, 0);
+            lblmyprofile.Location = new Point(54, 60);
+            lblmyprofile.Margin = new Padding(4, 0, 4, 0);
             lblmyprofile.Name = "lblmyprofile";
-            lblmyprofile.Size = new Size(355, 56);
+            lblmyprofile.Size = new Size(209, 34);
             lblmyprofile.TabIndex = 0;
             lblmyprofile.Text = "My Profile";
             // 
@@ -495,15 +605,21 @@
             // 
             // Main
             // 
-            AutoScaleDimensions = new SizeF(17F, 41F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(2139, 1089);
+            ClientSize = new Size(1258, 664);
             Controls.Add(tabMenu);
             FormBorderStyle = FormBorderStyle.FixedDialog;
+            Margin = new Padding(2);
             Name = "Main";
             Text = "Mini Digital Wallet System";
             Load += Main_Load;
             tabMenu.ResumeLayout(false);
+            tabDashboard.ResumeLayout(false);
+            tabDashboard.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)dgvTransactions).EndInit();
+            PanelBalance.ResumeLayout(false);
+            PanelBalance.PerformLayout();
             tabSendMoney.ResumeLayout(false);
             pnlSendMoneyCard.ResumeLayout(false);
             tabProfile.ResumeLayout(false);
@@ -527,6 +643,15 @@
         private Sunny.UI.UILabel uiLabel2;
         private Sunny.UI.UITextBox txtAddNote;
         private Sunny.UI.UILabel uiLabel4;
+        private Label LblName;
+        private Panel PanelBalance;
+        private Label LblTotal;
+        private Label LblMoney;
+        private DataGridView dgvTransactions;
+        private DataGridViewTextBoxColumn colName;
+        private DataGridViewTextBoxColumn colAmount;
+        private DataGridViewTextBoxColumn colDate;
+        private Label LblHistory;
         private Sunny.UI.UISymbolButton btnSendMoney;
         private Sunny.UI.UILabel uiLabel5;
         private Sunny.UI.UILabel lblmyprofile;
