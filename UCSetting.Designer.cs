@@ -138,7 +138,7 @@
             uiTextBox4.MinimumSize = new Size(1, 16);
             uiTextBox4.Name = "uiTextBox4";
             uiTextBox4.Padding = new Padding(5);
-            uiTextBox4.RectColor = Color.White;
+            uiTextBox4.RectColor = Color.LightSkyBlue;
             uiTextBox4.ShowText = false;
             uiTextBox4.Size = new Size(362, 36);
             uiTextBox4.TabIndex = 8;
@@ -153,7 +153,7 @@
             uiTextBox3.MinimumSize = new Size(1, 16);
             uiTextBox3.Name = "uiTextBox3";
             uiTextBox3.Padding = new Padding(5);
-            uiTextBox3.RectColor = Color.White;
+            uiTextBox3.RectColor = Color.LightSkyBlue;
             uiTextBox3.ShowText = false;
             uiTextBox3.Size = new Size(362, 36);
             uiTextBox3.TabIndex = 7;
@@ -168,7 +168,7 @@
             uiTextBox2.MinimumSize = new Size(1, 16);
             uiTextBox2.Name = "uiTextBox2";
             uiTextBox2.Padding = new Padding(5);
-            uiTextBox2.RectColor = Color.White;
+            uiTextBox2.RectColor = Color.LightSkyBlue;
             uiTextBox2.ShowText = false;
             uiTextBox2.Size = new Size(362, 36);
             uiTextBox2.TabIndex = 6;
@@ -183,7 +183,7 @@
             uiTextBox1.MinimumSize = new Size(1, 16);
             uiTextBox1.Name = "uiTextBox1";
             uiTextBox1.Padding = new Padding(5);
-            uiTextBox1.RectColor = Color.White;
+            uiTextBox1.RectColor = Color.LightSkyBlue;
             uiTextBox1.ShowText = false;
             uiTextBox1.Size = new Size(362, 36);
             uiTextBox1.TabIndex = 5;

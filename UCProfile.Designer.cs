@@ -122,7 +122,7 @@
             uiDatePicker2.MinimumSize = new Size(63, 0);
             uiDatePicker2.Name = "uiDatePicker2";
             uiDatePicker2.Padding = new Padding(0, 0, 30, 2);
-            uiDatePicker2.RectColor = Color.White;
+            uiDatePicker2.RectColor = Color.LightSkyBlue;
             uiDatePicker2.Size = new Size(362, 36);
             uiDatePicker2.SymbolDropDown = 61555;
             uiDatePicker2.SymbolNormal = 61555;
@@ -154,7 +154,7 @@
             uiTextBox5.MinimumSize = new Size(1, 16);
             uiTextBox5.Name = "uiTextBox5";
             uiTextBox5.Padding = new Padding(5);
-            uiTextBox5.RectColor = Color.White;
+            uiTextBox5.RectColor = Color.LightSkyBlue;
             uiTextBox5.ShowText = false;
             uiTextBox5.Size = new Size(362, 58);
             uiTextBox5.TabIndex = 9;
@@ -169,7 +169,7 @@
             uiTextBox3.MinimumSize = new Size(1, 16);
             uiTextBox3.Name = "uiTextBox3";
             uiTextBox3.Padding = new Padding(5);
-            uiTextBox3.RectColor = Color.White;
+            uiTextBox3.RectColor = Color.LightSkyBlue;
             uiTextBox3.ShowText = false;
             uiTextBox3.Size = new Size(362, 36);
             uiTextBox3.TabIndex = 7;
@@ -184,7 +184,7 @@
             uiTextBox2.MinimumSize = new Size(1, 16);
             uiTextBox2.Name = "uiTextBox2";
             uiTextBox2.Padding = new Padding(5);
-            uiTextBox2.RectColor = Color.White;
+            uiTextBox2.RectColor = Color.LightSkyBlue;
             uiTextBox2.ShowText = false;
             uiTextBox2.Size = new Size(362, 36);
             uiTextBox2.TabIndex = 6;
@@ -199,7 +199,7 @@
             uiTextBox1.MinimumSize = new Size(1, 16);
             uiTextBox1.Name = "uiTextBox1";
             uiTextBox1.Padding = new Padding(5);
-            uiTextBox1.RectColor = Color.White;
+            uiTextBox1.RectColor = Color.LightSkyBlue;
             uiTextBox1.ShowText = false;
             uiTextBox1.Size = new Size(362, 36);
             uiTextBox1.TabIndex = 5;
