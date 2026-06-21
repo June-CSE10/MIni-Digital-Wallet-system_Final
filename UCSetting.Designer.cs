@@ -30,17 +30,17 @@
         {
             uiPanel3 = new Sunny.UI.UIPanel();
             uiPanel2 = new Sunny.UI.UIPanel();
+            uiSymbolButton1 = new Sunny.UI.UISymbolButton();
+            uiSymbolButton4 = new Sunny.UI.UISymbolButton();
+            uiSymbolButton2 = new Sunny.UI.UISymbolButton();
+            uiTextBox4 = new Sunny.UI.UITextBox();
             uiTextBox3 = new Sunny.UI.UITextBox();
             uiTextBox2 = new Sunny.UI.UITextBox();
             uiTextBox1 = new Sunny.UI.UITextBox();
+            uiLabel4 = new Sunny.UI.UILabel();
             uiLabel3 = new Sunny.UI.UILabel();
             uiLabel2 = new Sunny.UI.UILabel();
             uiLabel1 = new Sunny.UI.UILabel();
-            uiLabel4 = new Sunny.UI.UILabel();
-            uiTextBox4 = new Sunny.UI.UITextBox();
-            uiSymbolButton2 = new Sunny.UI.UISymbolButton();
-            uiSymbolButton4 = new Sunny.UI.UISymbolButton();
-            uiSymbolButton1 = new Sunny.UI.UISymbolButton();
             uiPanel2.SuspendLayout();
             SuspendLayout();
             // 
@@ -51,7 +51,7 @@
             uiPanel3.Margin = new Padding(4, 5, 4, 5);
             uiPanel3.MinimumSize = new Size(1, 1);
             uiPanel3.Name = "uiPanel3";
-            uiPanel3.RectColor = Color.White;
+            uiPanel3.RectColor = Color.DeepSkyBlue;
             uiPanel3.Size = new Size(670, 71);
             uiPanel3.TabIndex = 6;
             uiPanel3.Text = "Setting";
@@ -80,6 +80,70 @@
             uiPanel2.TabIndex = 5;
             uiPanel2.Text = null;
             uiPanel2.TextAlignment = ContentAlignment.MiddleCenter;
+            // 
+            // uiSymbolButton1
+            // 
+            uiSymbolButton1.FillColor = Color.White;
+            uiSymbolButton1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiSymbolButton1.ForeColor = Color.Maroon;
+            uiSymbolButton1.Location = new Point(17, 393);
+            uiSymbolButton1.MinimumSize = new Size(1, 1);
+            uiSymbolButton1.Name = "uiSymbolButton1";
+            uiSymbolButton1.RectColor = Color.RosyBrown;
+            uiSymbolButton1.Size = new Size(627, 46);
+            uiSymbolButton1.Symbol = 61579;
+            uiSymbolButton1.SymbolColor = Color.Maroon;
+            uiSymbolButton1.SymbolSize = 35;
+            uiSymbolButton1.TabIndex = 13;
+            uiSymbolButton1.Text = "Log Out";
+            uiSymbolButton1.TipsFont = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            // 
+            // uiSymbolButton4
+            // 
+            uiSymbolButton4.FillColor = Color.White;
+            uiSymbolButton4.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiSymbolButton4.ForeColor = Color.Maroon;
+            uiSymbolButton4.Location = new Point(411, 227);
+            uiSymbolButton4.MinimumSize = new Size(1, 1);
+            uiSymbolButton4.Name = "uiSymbolButton4";
+            uiSymbolButton4.RectColor = Color.RosyBrown;
+            uiSymbolButton4.Size = new Size(158, 36);
+            uiSymbolButton4.Symbol = 61475;
+            uiSymbolButton4.SymbolColor = Color.Maroon;
+            uiSymbolButton4.TabIndex = 12;
+            uiSymbolButton4.Text = "Change Password";
+            uiSymbolButton4.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            // 
+            // uiSymbolButton2
+            // 
+            uiSymbolButton2.FillColor = Color.White;
+            uiSymbolButton2.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            uiSymbolButton2.ForeColor = Color.Maroon;
+            uiSymbolButton2.Location = new Point(411, 135);
+            uiSymbolButton2.MinimumSize = new Size(1, 1);
+            uiSymbolButton2.Name = "uiSymbolButton2";
+            uiSymbolButton2.RectColor = Color.RosyBrown;
+            uiSymbolButton2.Size = new Size(158, 36);
+            uiSymbolButton2.Symbol = 61473;
+            uiSymbolButton2.SymbolColor = Color.Maroon;
+            uiSymbolButton2.TabIndex = 10;
+            uiSymbolButton2.Text = "Change Email";
+            uiSymbolButton2.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            // 
+            // uiTextBox4
+            // 
+            uiTextBox4.Font = new Font("Microsoft Sans Serif", 12F);
+            uiTextBox4.Location = new Point(17, 227);
+            uiTextBox4.Margin = new Padding(4, 5, 4, 5);
+            uiTextBox4.MinimumSize = new Size(1, 16);
+            uiTextBox4.Name = "uiTextBox4";
+            uiTextBox4.Padding = new Padding(5);
+            uiTextBox4.RectColor = Color.White;
+            uiTextBox4.ShowText = false;
+            uiTextBox4.Size = new Size(362, 36);
+            uiTextBox4.TabIndex = 8;
+            uiTextBox4.TextAlignment = ContentAlignment.MiddleLeft;
+            uiTextBox4.Watermark = "";
             // 
             // uiTextBox3
             // 
@@ -126,6 +190,17 @@
             uiTextBox1.TextAlignment = ContentAlignment.MiddleLeft;
             uiTextBox1.Watermark = "";
             // 
+            // uiLabel4
+            // 
+            uiLabel4.BackColor = Color.Transparent;
+            uiLabel4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            uiLabel4.ForeColor = Color.FromArgb(48, 48, 48);
+            uiLabel4.Location = new Point(17, 205);
+            uiLabel4.Name = "uiLabel4";
+            uiLabel4.Size = new Size(125, 29);
+            uiLabel4.TabIndex = 3;
+            uiLabel4.Text = "Password";
+            // 
             // uiLabel3
             // 
             uiLabel3.BackColor = Color.Transparent;
@@ -158,81 +233,6 @@
             uiLabel1.Size = new Size(125, 29);
             uiLabel1.TabIndex = 0;
             uiLabel1.Text = "Full Name";
-            // 
-            // uiLabel4
-            // 
-            uiLabel4.BackColor = Color.Transparent;
-            uiLabel4.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            uiLabel4.ForeColor = Color.FromArgb(48, 48, 48);
-            uiLabel4.Location = new Point(17, 205);
-            uiLabel4.Name = "uiLabel4";
-            uiLabel4.Size = new Size(125, 29);
-            uiLabel4.TabIndex = 3;
-            uiLabel4.Text = "Password";
-            // 
-            // uiTextBox4
-            // 
-            uiTextBox4.Font = new Font("Microsoft Sans Serif", 12F);
-            uiTextBox4.Location = new Point(17, 227);
-            uiTextBox4.Margin = new Padding(4, 5, 4, 5);
-            uiTextBox4.MinimumSize = new Size(1, 16);
-            uiTextBox4.Name = "uiTextBox4";
-            uiTextBox4.Padding = new Padding(5);
-            uiTextBox4.RectColor = Color.White;
-            uiTextBox4.ShowText = false;
-            uiTextBox4.Size = new Size(362, 36);
-            uiTextBox4.TabIndex = 8;
-            uiTextBox4.TextAlignment = ContentAlignment.MiddleLeft;
-            uiTextBox4.Watermark = "";
-            // 
-            // uiSymbolButton2
-            // 
-            uiSymbolButton2.FillColor = Color.White;
-            uiSymbolButton2.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiSymbolButton2.ForeColor = Color.Maroon;
-            uiSymbolButton2.Location = new Point(411, 135);
-            uiSymbolButton2.MinimumSize = new Size(1, 1);
-            uiSymbolButton2.Name = "uiSymbolButton2";
-            uiSymbolButton2.RectColor = Color.RosyBrown;
-            uiSymbolButton2.Size = new Size(158, 36);
-            uiSymbolButton2.Symbol = 61473;
-            uiSymbolButton2.SymbolColor = Color.Maroon;
-            uiSymbolButton2.TabIndex = 10;
-            uiSymbolButton2.Text = "Change Email";
-            uiSymbolButton2.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            // 
-            // uiSymbolButton4
-            // 
-            uiSymbolButton4.FillColor = Color.White;
-            uiSymbolButton4.Font = new Font("Microsoft Sans Serif", 7.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiSymbolButton4.ForeColor = Color.Maroon;
-            uiSymbolButton4.Location = new Point(411, 227);
-            uiSymbolButton4.MinimumSize = new Size(1, 1);
-            uiSymbolButton4.Name = "uiSymbolButton4";
-            uiSymbolButton4.RectColor = Color.RosyBrown;
-            uiSymbolButton4.Size = new Size(158, 36);
-            uiSymbolButton4.Symbol = 61475;
-            uiSymbolButton4.SymbolColor = Color.Maroon;
-            uiSymbolButton4.TabIndex = 12;
-            uiSymbolButton4.Text = "Change Password";
-            uiSymbolButton4.TipsFont = new Font("Microsoft Sans Serif", 9F);
-            // 
-            // uiSymbolButton1
-            // 
-            uiSymbolButton1.FillColor = Color.White;
-            uiSymbolButton1.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            uiSymbolButton1.ForeColor = Color.Maroon;
-            uiSymbolButton1.Location = new Point(17, 393);
-            uiSymbolButton1.MinimumSize = new Size(1, 1);
-            uiSymbolButton1.Name = "uiSymbolButton1";
-            uiSymbolButton1.RectColor = Color.RosyBrown;
-            uiSymbolButton1.Size = new Size(627, 46);
-            uiSymbolButton1.Symbol = 61579;
-            uiSymbolButton1.SymbolColor = Color.Maroon;
-            uiSymbolButton1.SymbolSize = 35;
-            uiSymbolButton1.TabIndex = 13;
-            uiSymbolButton1.Text = "Log Out";
-            uiSymbolButton1.TipsFont = new Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
             // 
             // UCSetting
             // 
