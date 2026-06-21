@@ -25,57 +25,6 @@ namespace MIni_Digital_Wallet_system_Final
             InitializeComponent();
         }
 
-        private void Btn10_Click(object sender, EventArgs e)
-        {
-            TxtAmount.Text = "10";
-        }
-
-        private void Btn20_Click_1(object sender, EventArgs e)
-        {
-            TxtAmount.Text = "20";
-        }
-
-        private void Btn30_Click(object sender, EventArgs e)
-        {
-            TxtAmount.Text = "30";
-        }
-
-        private void Btn50_Click(object sender, EventArgs e)
-        {
-            TxtAmount.Text = "50";
-        }
-
-        private void Btn100_Click(object sender, EventArgs e)
-        {
-            TxtAmount.Text = "100";
-        }
-
-        private void BtnSendMoney_Click_1(object sender, EventArgs e)
-        {
-            decimal amount =
-    Convert.ToDecimal(TxtAmount.Text);
-
-            SqlTransaction trans =
-            MyConn.BeginTransaction();
-
-            try
-            {
-                // deduct sender
-
-                // add receiver
-
-                // insert transaction
-
-                trans.Commit();
-
-                MessageBox.Show("Transfer Successful");
-            }
-            catch
-            {
-                trans.Rollback();
-            }
-        }   //Methona
-
         private void LoadUserControl(TabPage tab, UserControl uc)
         {
             tab.Controls.Clear();
@@ -94,10 +43,5 @@ namespace MIni_Digital_Wallet_system_Final
             LoadUserControl(Profile, new UCProfile());
             LoadUserControl(Setting, new UCSetting());
         }   //Methona
-
-        private void ucProfile1_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }
