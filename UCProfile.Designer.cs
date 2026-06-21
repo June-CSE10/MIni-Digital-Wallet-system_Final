@@ -70,7 +70,7 @@
             uiPanel1.Margin = new Padding(4, 5, 4, 5);
             uiPanel1.MinimumSize = new Size(1, 1);
             uiPanel1.Name = "uiPanel1";
-            uiPanel1.RectColor = Color.White;
+            uiPanel1.RectColor = Color.DodgerBlue;
             uiPanel1.Size = new Size(223, 388);
             uiPanel1.TabIndex = 1;
             uiPanel1.Text = null;
@@ -105,7 +105,7 @@
             uiPanel2.Margin = new Padding(4, 5, 4, 5);
             uiPanel2.MinimumSize = new Size(1, 1);
             uiPanel2.Name = "uiPanel2";
-            uiPanel2.RectColor = Color.White;
+            uiPanel2.RectColor = Color.DodgerBlue;
             uiPanel2.Size = new Size(441, 540);
             uiPanel2.TabIndex = 2;
             uiPanel2.Text = null;
@@ -268,7 +268,7 @@
             uiPanel3.Margin = new Padding(4, 5, 4, 5);
             uiPanel3.MinimumSize = new Size(1, 1);
             uiPanel3.Name = "uiPanel3";
-            uiPanel3.RectColor = Color.White;
+            uiPanel3.RectColor = Color.DodgerBlue;
             uiPanel3.Size = new Size(670, 71);
             uiPanel3.TabIndex = 3;
             uiPanel3.Text = "Profile";
