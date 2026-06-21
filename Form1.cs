@@ -2,6 +2,8 @@ namespace MIni_Digital_Wallet_system_Final
 {
     public partial class Form1 : Form
     {
+        internal object PnlCardSendMoney;
+
         public Form1()
         {
             InitializeComponent();

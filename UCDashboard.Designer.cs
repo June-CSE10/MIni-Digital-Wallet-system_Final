@@ -29,67 +29,66 @@
         private void InitializeComponent()
         {
             LblBalance = new Label();
-            btnAdd = new Sunny.UI.UIButton();
-            btnSend = new Sunny.UI.UIButton();
-            dgvTransactions = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)dgvTransactions).BeginInit();
+            btnAddMoney = new Sunny.UI.UIButton();
+            btnSendMoney = new Sunny.UI.UIButton();
+            LblWalletBalance = new Label();
             SuspendLayout();
             // 
             // LblBalance
             // 
             LblBalance.AutoSize = true;
             LblBalance.Font = new Font("Segoe UI", 20.1F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            LblBalance.Location = new Point(1032, 191);
+            LblBalance.Location = new Point(753, 148);
             LblBalance.Name = "LblBalance";
             LblBalance.Size = new Size(110, 89);
             LblBalance.TabIndex = 0;
             LblBalance.Text = "$0";
             // 
-            // btnAdd
+            // btnAddMoney
             // 
-            btnAdd.Font = new Font("Microsoft Sans Serif", 12F);
-            btnAdd.Location = new Point(1032, 388);
-            btnAdd.MinimumSize = new Size(1, 1);
-            btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(246, 149);
-            btnAdd.TabIndex = 1;
-            btnAdd.Text = "Add Money";
-            btnAdd.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            btnAddMoney.Font = new Font("Microsoft Sans Serif", 12F);
+            btnAddMoney.Location = new Point(374, 268);
+            btnAddMoney.MinimumSize = new Size(1, 1);
+            btnAddMoney.Name = "btnAddMoney";
+            btnAddMoney.Size = new Size(246, 149);
+            btnAddMoney.TabIndex = 1;
+            btnAddMoney.Text = "Add Money";
+            btnAddMoney.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            btnAddMoney.Click += btnAdd_Click;
             // 
-            // btnSend
+            // btnSendMoney
             // 
-            btnSend.Font = new Font("Microsoft Sans Serif", 12F);
-            btnSend.Location = new Point(1670, 388);
-            btnSend.MinimumSize = new Size(1, 1);
-            btnSend.Name = "btnSend";
-            btnSend.Size = new Size(246, 149);
-            btnSend.TabIndex = 2;
-            btnSend.Text = "Send Money";
-            btnSend.TipsFont = new Font("Microsoft Sans Serif", 9F);
+            btnSendMoney.Font = new Font("Microsoft Sans Serif", 12F);
+            btnSendMoney.Location = new Point(374, 483);
+            btnSendMoney.MinimumSize = new Size(1, 1);
+            btnSendMoney.Name = "btnSendMoney";
+            btnSendMoney.Size = new Size(246, 149);
+            btnSendMoney.TabIndex = 2;
+            btnSendMoney.Text = "Send Money";
+            btnSendMoney.TipsFont = new Font("Microsoft Sans Serif", 9F);
             // 
-            // dgvTransactions
+            // LblWalletBalance
             // 
-            dgvTransactions.BackgroundColor = SystemColors.ActiveCaption;
-            dgvTransactions.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvTransactions.Location = new Point(1032, 572);
-            dgvTransactions.Name = "dgvTransactions";
-            dgvTransactions.RowHeadersWidth = 102;
-            dgvTransactions.Size = new Size(884, 311);
-            dgvTransactions.TabIndex = 3;
+            LblWalletBalance.AutoSize = true;
+            LblWalletBalance.Font = new Font("Segoe UI", 15.9000006F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            LblWalletBalance.Location = new Point(374, 165);
+            LblWalletBalance.Name = "LblWalletBalance";
+            LblWalletBalance.Size = new Size(386, 72);
+            LblWalletBalance.TabIndex = 3;
+            LblWalletBalance.Text = "Wallet Balance:";
             // 
             // UCDashboard
             // 
             AutoScaleDimensions = new SizeF(17F, 41F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(dgvTransactions);
-            Controls.Add(btnSend);
-            Controls.Add(btnAdd);
+            Controls.Add(LblWalletBalance);
+            Controls.Add(btnSendMoney);
+            Controls.Add(btnAddMoney);
             Controls.Add(LblBalance);
             Margin = new Padding(5);
             Name = "UCDashboard";
             Size = new Size(2939, 1481);
             Load += UCDashboard_Load;
-            ((System.ComponentModel.ISupportInitialize)dgvTransactions).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -97,8 +96,8 @@
         #endregion
 
         private Label LblBalance;
-        private Sunny.UI.UIButton btnAdd;
-        private Sunny.UI.UIButton btnSend;
-        private DataGridView dgvTransactions;
+        private Sunny.UI.UIButton btnAddMoney;
+        private Sunny.UI.UIButton btnSendMoney;
+        private Label LblWalletBalance;
     }
 }
