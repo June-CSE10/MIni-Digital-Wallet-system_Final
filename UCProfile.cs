@@ -33,7 +33,23 @@ namespace MIni_Digital_Wallet_system_Final
             ucSetting.Dock = DockStyle.Fill; // make it fill the area
             this.Parent.Controls.Add(ucSetting);
         }
-        
+
+        private void uiLinkLabel1_Click(object sender, EventArgs e)
+        {
+            // Create and configure the file dialog
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp;*.gif";
+
+            // Show the dialog and check if user selected a file
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // Load the selected image into the PictureBox
+                pictureBox1.Image = Image.FromFile(openFileDialog.FileName);
+
+                // Optional: make the image fit nicely
+                pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            }
+        }
     }
 }
 
