@@ -112,13 +112,14 @@
             uiTabControlMenu1.Multiline = true;
             uiTabControlMenu1.Name = "uiTabControlMenu1";
             uiTabControlMenu1.SelectedIndex = 0;
-            uiTabControlMenu1.Size = new Size(1080, 790);
+            uiTabControlMenu1.Size = new Size(2322, 790);
             uiTabControlMenu1.SizeMode = TabSizeMode.Fixed;
             uiTabControlMenu1.Style = Sunny.UI.UIStyle.Custom;
             uiTabControlMenu1.TabBackColor = Color.FromArgb(30, 27, 75);
             uiTabControlMenu1.TabIndex = 0;
             uiTabControlMenu1.TabSelectedColor = Color.White;
             uiTabControlMenu1.TabUnSelectedForeColor = Color.LightGray;
+            uiTabControlMenu1.SelectedIndexChanged += uiTabControlMenu1_SelectedIndexChanged;
             // 
             // Dashboard
             // 
@@ -127,7 +128,7 @@
             Dashboard.ImageIndex = 4;
             Dashboard.Location = new Point(201, 0);
             Dashboard.Name = "Dashboard";
-            Dashboard.Size = new Size(879, 790);
+            Dashboard.Size = new Size(2121, 790);
             Dashboard.TabIndex = 2;
             Dashboard.Text = "Dashboard";
             // 
@@ -135,9 +136,11 @@
             // 
             ucDashboard1.Dock = DockStyle.Fill;
             ucDashboard1.Location = new Point(0, 0);
+            ucDashboard1.Margin = new Padding(5);
             ucDashboard1.Name = "ucDashboard1";
-            ucDashboard1.Size = new Size(879, 790);
+            ucDashboard1.Size = new Size(2121, 790);
             ucDashboard1.TabIndex = 0;
+            ucDashboard1.Load += ucDashboard1_Load;
             // 
             // SendMoney
             // 
@@ -146,7 +149,7 @@
             SendMoney.ImageIndex = 5;
             SendMoney.Location = new Point(201, 0);
             SendMoney.Name = "SendMoney";
-            SendMoney.Size = new Size(879, 790);
+            SendMoney.Size = new Size(249, 270);
             SendMoney.TabIndex = 1;
             SendMoney.Text = "Send Money";
             // 
@@ -177,7 +180,7 @@
             PnlCardSendMoney.Name = "PnlCardSendMoney";
             PnlCardSendMoney.Radius = 15;
             PnlCardSendMoney.RectColor = Color.FromArgb(230, 230, 230);
-            PnlCardSendMoney.Size = new Size(879, 790);
+            PnlCardSendMoney.Size = new Size(249, 270);
             PnlCardSendMoney.TabIndex = 1;
             PnlCardSendMoney.Text = null;
             PnlCardSendMoney.TextAlignment = ContentAlignment.MiddleCenter;
@@ -653,6 +656,7 @@
             // 
             ucAddMoney1.Dock = DockStyle.Fill;
             ucAddMoney1.Location = new Point(0, 0);
+            ucAddMoney1.Margin = new Padding(5, 5, 5, 5);
             ucAddMoney1.Name = "ucAddMoney1";
             ucAddMoney1.Size = new Size(249, 270);
             ucAddMoney1.TabIndex = 0;
@@ -753,7 +757,7 @@
             // 
             AutoScaleMode = AutoScaleMode.None;
             BackColor = Color.FromArgb(245, 246, 250);
-            ClientSize = new Size(1080, 840);
+            ClientSize = new Size(2322, 840);
             Controls.Add(uiTabControlMenu1);
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "ModernDashboard";

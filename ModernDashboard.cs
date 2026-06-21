@@ -99,5 +99,15 @@ namespace MIni_Digital_Wallet_system_Final
         {
 
         }
+
+        private void uiTabControlMenu1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ucDashboard1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

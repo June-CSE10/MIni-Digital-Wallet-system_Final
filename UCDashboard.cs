@@ -1,4 +1,5 @@
 ﻿using Microsoft.Data.SqlClient;
+using Sunny.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,6 +14,7 @@ namespace MIni_Digital_Wallet_system_Final
     {
         SqlConnection con = new SqlConnection(@"Data Source=.;Initial Catalog=WalletDB;Integrated Security=True");
         int userId = 1;
+        private readonly object uiTabControlMenu1;
 
         public UCDashboard()
         {
@@ -24,5 +26,15 @@ namespace MIni_Digital_Wallet_system_Final
         {
 
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+         
+            ModernDashboard frm = (ModernDashboard)this.FindForm();
+
+            frm.Controls["panelMain"].Controls.Clear();
+            frm.Controls["panelMain"].Controls.Add(new UCAddMoney());
+        }
     }
-}
+      }
+    
