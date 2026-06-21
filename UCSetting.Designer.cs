@@ -51,7 +51,7 @@
             uiPanel3.Margin = new Padding(4, 5, 4, 5);
             uiPanel3.MinimumSize = new Size(1, 1);
             uiPanel3.Name = "uiPanel3";
-            uiPanel3.RectColor = Color.DeepSkyBlue;
+            uiPanel3.RectColor = Color.DodgerBlue;
             uiPanel3.Size = new Size(670, 71);
             uiPanel3.TabIndex = 6;
             uiPanel3.Text = "Setting";
@@ -75,7 +75,7 @@
             uiPanel2.Margin = new Padding(4, 5, 4, 5);
             uiPanel2.MinimumSize = new Size(1, 1);
             uiPanel2.Name = "uiPanel2";
-            uiPanel2.RectColor = Color.White;
+            uiPanel2.RectColor = Color.DodgerBlue;
             uiPanel2.Size = new Size(670, 540);
             uiPanel2.TabIndex = 5;
             uiPanel2.Text = null;
